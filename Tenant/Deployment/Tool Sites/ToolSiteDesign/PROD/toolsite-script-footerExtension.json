@@ -1,0 +1,15 @@
+{
+    "$schema": "schema.json",
+    "actions": [
+      {
+        "verb": "associateExtension",
+        "title": "ShareSiteFooter",
+        "location": "ClientSideExtension.ApplicationCustomizer",
+        "clientSideComponentId": "0e495638-16a0-44ef-958d-fa6473260a76",
+        "clientSideComponentProperties":"{\"HubSiteRelativeUrl\":\"/sites/toolsitelanding\", \"RequestedSitesListName\":\"All Tool sites\",\"ShowOnlyOnWelcomePage\":\"N\"}",
+        "scope": "Site"
+      }
+    ],
+    "bindata": {},
+    "version": 1
+  }

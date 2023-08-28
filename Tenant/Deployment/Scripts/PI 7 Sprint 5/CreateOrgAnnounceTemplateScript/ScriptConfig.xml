@@ -1,0 +1,6 @@
+<root>
+  <siteURL>https://TENANT.sharepoint.com/sites/share</siteURL>      
+  <usrname>USERNAME</usrname>
+  <password>PASSWORD</password>
+  <pageTemplatePath>NewsTemplatesAll-NewsCorporateOrganization.xml</pageTemplatePath>  
+</root>

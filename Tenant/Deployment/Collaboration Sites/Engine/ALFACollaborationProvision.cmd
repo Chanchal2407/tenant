@@ -1,0 +1,1 @@
+PowerShell.exe -ExecutionPolicy RemoteSigned -NonInteractive -File ModernSiteProvision.ps1

@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.6.1902.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-ALFALAVAL_PEOPLEPRO_SHARE_MAPPING">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-ALFALAVAL_PEOPLEPRO_SHARE_MAPPING" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:SupportedUILanguages>
+        <pnp:SupportedUILanguage LCID="1033" />
+      </pnp:SupportedUILanguages>
+      <pnp:SiteFields>
+		<Field Type="Text" DisplayName="Term Name" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="AlfaLaval" ID="{2556c406-23d9-4015-ae25-442c58ad0687}" SourceID="{6b9e67d0-7a76-488b-ad1e-64d17d6c38af}" StaticName="shareTermName" Name="shareTermName" CustomFormatter="">
+        </Field>
+		<Field Type="Text" DisplayName="Term Guid" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="AlfaLaval" ID="{d58c1f39-bbff-418b-bba0-061b4d89c6cc}" SourceID="{6b9e67d0-7a76-488b-ad1e-64d17d6c38af}" StaticName="shareTermGuid" Name="shareTermGuid" CustomFormatter="">
+        </Field>
+		<Field Type="Text" DisplayName="PeoplePro ID" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="AlfaLaval" ID="{1a744549-fb24-4284-9dc8-1bd455de5993}" SourceID="{6b9e67d0-7a76-488b-ad1e-64d17d6c38af}" StaticName="sharePeopleProID" Name="sharePeopleProID" CustomFormatter="">
+        </Field>
+       </pnp:SiteFields>
+      <pnp:ContentTypes>
+		<pnp:ContentType ID="0x01004B1ED830A9EDAB4D9F242C9E1DCB6DFC" Name="Organization PeoplePro Mapping" Description="" Group="Alfa Laval" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Hidden="true" />
+            <pnp:FieldRef ID="1a744549-fb24-4284-9dc8-1bd455de5993" Name="sharePeopleProID" />
+            <pnp:FieldRef ID="d58c1f39-bbff-418b-bba0-061b4d89c6cc" Name="shareTermGuid" />
+            <pnp:FieldRef ID="2556c406-23d9-4015-ae25-442c58ad0687" Name="shareTermName" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x0100CB212914AEC5E94B9875453683F77C27" Name="Location PeoplePro Mapping" Description="" Group="Alfa Laval" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Hidden="true" />
+            <pnp:FieldRef ID="1a744549-fb24-4284-9dc8-1bd455de5993" Name="sharePeopleProID" />
+            <pnp:FieldRef ID="d58c1f39-bbff-418b-bba0-061b4d89c6cc" Name="shareTermGuid" />
+            <pnp:FieldRef ID="2556c406-23d9-4015-ae25-442c58ad0687" Name="shareTermName" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+      </pnp:ContentTypes>
+      <pnp:Lists>
+        <pnp:ListInstance Title="Location PeoplePro Mapping" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/LocationPeopleProMapping" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/LocationPeopleProMapping/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/LocationPeopleProMapping/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/LocationPeopleProMapping/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=45" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0100CB212914AEC5E94B9875453683F77C27" Default="true" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{5FAD50F3-4287-4278-B610-E5CF01E0F6A8}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/sites/AdminPortal/Lists/LocationPeopleProMapping/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=45">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="shareTermName" />
+                <FieldRef Name="shareTermGuid" />
+                <FieldRef Name="sharePeopleProID" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="1a744549-fb24-4284-9dc8-1bd455de5993" Name="sharePeopleProID" DisplayName="PeoplePro ID" />
+            <pnp:FieldRef ID="d58c1f39-bbff-418b-bba0-061b4d89c6cc" Name="shareTermGuid" DisplayName="Term Guid" />
+            <pnp:FieldRef ID="2556c406-23d9-4015-ae25-442c58ad0687" Name="shareTermName" DisplayName="Term Name" />
+          </pnp:FieldRefs>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://2-southeastasia1.pushp.svc.ms/notifications?token=w2-2533f79c-a2a5-4d32-ae20-02be8416cbb3" ExpiresInDays="1" />
+            <pnp:Webhook ServerNotificationUrl="https://2-southeastasia1.pushp.svc.ms/notifications?token=w2-c8558c83-641b-4ae7-be63-b7ab496110a1" ExpiresInDays="1" />
+            <pnp:Webhook ServerNotificationUrl="https://2-southeastasia1.pushp.svc.ms/notifications?token=w3-220eb5f4-a62f-4433-a1ac-3c7d102ba0bb" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Organization PeoplePro Mapping" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/OrganizationPeopleProMapping" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/OrganizationPeopleProMapping/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/OrganizationPeopleProMapping/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/OrganizationPeopleProMapping/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=45" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01004B1ED830A9EDAB4D9F242C9E1DCB6DFC" Default="true" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{A1C039B9-9B95-47B5-967B-281257F1411A}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/sites/AdminPortal/Lists/OrganizationPeopleProMapping/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=45">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="shareTermName" />
+                <FieldRef Name="shareTermGuid" />
+                <FieldRef Name="sharePeopleProID" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="1a744549-fb24-4284-9dc8-1bd455de5993" Name="sharePeopleProID" DisplayName="PeoplePro ID" />
+            <pnp:FieldRef ID="d58c1f39-bbff-418b-bba0-061b4d89c6cc" Name="shareTermGuid" DisplayName="Term Guid" />
+            <pnp:FieldRef ID="2556c406-23d9-4015-ae25-442c58ad0687" Name="shareTermName" DisplayName="Term Name" />
+          </pnp:FieldRefs>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://2-southeastasia1.pushp.svc.ms/notifications?token=w3-802be9f2-57ab-4213-a505-a35a7c35eefe" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+      </pnp:Lists>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

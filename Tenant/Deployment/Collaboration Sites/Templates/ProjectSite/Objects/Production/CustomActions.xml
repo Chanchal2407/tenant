@@ -1,0 +1,28 @@
+<pnp:CustomActions xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema">
+        <pnp:SiteCustomActions>
+          <pnp:CustomAction Name="AlfaCollaborationFooterApplicationCustom" 
+		                        Location="ClientSideExtension.ApplicationCustomizer"
+		                        Title="AlfaCollaborationFooterApplicationCustom" 
+		                        Sequence="0" Rights="" RegistrationType="None" 
+		                        ClientSideComponentId="292615b6-0f1f-462a-a144-bdfc195e56a3" 
+		                        ClientSideComponentProperties="" />
+	  <pnp:CustomAction Name="MoveEveryoneToVisitorsApplicationCustomi" 
+		                        Location="ClientSideExtension.ApplicationCustomizer" 
+					Title="MoveEveryoneToVisitorsApplicationCustomi" 
+					Rights="ManageWeb"
+					ClientSideComponentId="f45d80e6-2239-4d98-bd6e-05d5e2cc148a" 
+					ClientSideComponentProperties="{}" />
+	  <pnp:CustomAction Name="GroupLogoApplicationCustomizer" 
+	                                Location="ClientSideExtension.ApplicationCustomizer" 
+					Title="GroupLogoApplicationCustomizer" 
+					Rights="ManageWeb" 
+					ClientSideComponentId="21282707-fbfc-40fc-851e-54600c7e5109" 
+					ClientSideComponentProperties="{&quot;logoUrl&quot;:&quot;{parameter:LogoUrl}&quot;}" />
+	  <pnp:CustomAction Name="ShareNavigationExtension" Description="Custom action for Tenant Global NavBar Application Customizer" 
+		                        Location="ClientSideExtension.ApplicationCustomizer" 
+					Title="Share Navigation Extension" Sequence="0" Rights="" RegistrationType="None" 
+		                        ClientSideComponentId="1fd0ff15-3c75-4da4-8e4f-f4ab92adece3" 
+					ClientSideComponentProperties="{&quot;TopMenuTermSet&quot;:&quot;Top Navigation&quot;}" />
+        </pnp:SiteCustomActions>
+</pnp:CustomActions>
+ 

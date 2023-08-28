@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root executiontime="2018-11-07 00:48:16" type="Service Taxonomy" xmlvalidationstatus="Success">
+	<units>
+		<ServiceLevel1 name="Support Services" id="7857130E-2700-D436-56C6-A5BD00C8C851">
+			<variable name="Service Visibility" id="C509BF0F-E6E9-7F48-0C3B-A5B6007CF93B">
+				<value id="D34A84ED-8588-C59E-7245-A5B6007D114D" name="All"/>
+			</variable>
+			<ServiceLevel2 name="Remote Support" id="63DF88DF-EEB3-1CA4-9275-A5BD00CA276D">
+				<variable name="Service Visibility" id="C509BF0F-E6E9-7F48-0C3B-A5B6007CF93B">
+					<value id="D34A84ED-8588-C59E-7245-A5B6007D114D" name="All"/>
+				</variable>
+				<variable name="Product" id="EC6D9C40-34B8-0A27-CC49-A3EF00799968">
+					<value id="D92E6E4D-45CE-4FD6-A27A-02E07A72CB01" name="Welded plate-and-frame heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="FED97EA1-30F7-4AF2-811E-F3DAC88923ED" name="Finned coil gas coolers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="863CACC7-9E93-42C3-96B3-9868782F39FF" name="Welded plate-and-block heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="834F796E-C790-48FB-8157-5C278FD3CC39" name="Decanters" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="D49B5AB1-0E9A-4B4D-BEFC-0CDF0C11DA1E" name="Welded spiral heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="AC00B420-46A5-450B-94D9-DD430AC4AE87" name="Freshwater generators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="A26BC4AA-B180-D4F0-A057-A252009498B8" name="Belt press" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="CCD37359-B98C-4510-B400-0EE7C25A5060" name="Finned coil liquid coolers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="3C5E803E-CEF0-48F6-BA02-F547E612B6D3" name="Disc stack separators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="4553E2BC-AFA2-4F30-865F-75E0E32443F7" name="Pumps" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="244079F4-3AA8-4CFA-8C34-7EF4AB800C0B" name="Air heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="434982B6-886C-07A0-954D-A26800A02D97" name="Finned tube air heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="411B9241-B5BC-4DD3-8D3D-0F7F868C7865" name="Tank equipment" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="DBB36FA0-5846-9A31-1117-A48E008419F2" name="Inert gas system"/>
+					<value id="AB4D5B43-86D2-4094-81E1-BE3EEC5157D7" name="Finned coil condensers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="EE6E166C-70D8-40FB-B423-99D322942F2E" name="Gasketed plate-and-frame heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="129822EF-89EF-634E-F074-A28B00EBE320" name="Belt thickener" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="4EE53E21-27B7-4DDD-B27E-78945129E56C" name="Welded plate-and-shell heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="DE89B94E-B5E3-45F0-B77C-4E9E9F481209" name="Valves" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="AC87584D-6461-40A4-9319-C6A2DB9F7FF9" name="Membranes" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+				</variable>
+			</ServiceLevel2>
+			<ServiceLevel2 name="Troubleshooting" id="B79E849F-891A-A10A-64E4-A5BD00CA2771">
+				<variable name="Service Visibility" id="C509BF0F-E6E9-7F48-0C3B-A5B6007CF93B">
+					<value id="D34A84ED-8588-C59E-7245-A5B6007D114D" name="All"/>
+				</variable>
+				<variable name="Product" id="EC6D9C40-34B8-0A27-CC49-A3EF00799968">
+					<value id="CCD37359-B98C-4510-B400-0EE7C25A5060" name="Finned coil liquid coolers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="AC87584D-6461-40A4-9319-C6A2DB9F7FF9" name="Membranes" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="4EE53E21-27B7-4DDD-B27E-78945129E56C" name="Welded plate-and-shell heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="472421D3-12BF-4367-9817-77139584DCF6" name="Scraped surface heat exchangers"/>
+					<value id="4553E2BC-AFA2-4F30-865F-75E0E32443F7" name="Pumps" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="DE89B94E-B5E3-45F0-B77C-4E9E9F481209" name="Valves" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="3EC804AC-5388-46CF-8BEA-B2AC3ADADA93" name="Automation" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="863CACC7-9E93-42C3-96B3-9868782F39FF" name="Welded plate-and-block heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="DBB36FA0-5846-9A31-1117-A48E008419F2" name="Inert gas system"/>
+					<value id="834F796E-C790-48FB-8157-5C278FD3CC39" name="Decanters" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="D49B5AB1-0E9A-4B4D-BEFC-0CDF0C11DA1E" name="Welded spiral heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="D92E6E4D-45CE-4FD6-A27A-02E07A72CB01" name="Welded plate-and-frame heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="AB4D5B43-86D2-4094-81E1-BE3EEC5157D7" name="Finned coil condensers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="3C5E803E-CEF0-48F6-BA02-F547E612B6D3" name="Disc stack separators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="A26BC4AA-B180-D4F0-A057-A252009498B8" name="Belt press" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="DA3EF4B1-235E-E2A0-D892-A4220090C7D2" name="Boilers"/>
+					<value id="EE6E166C-70D8-40FB-B423-99D322942F2E" name="Gasketed plate-and-frame heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="129822EF-89EF-634E-F074-A28B00EBE320" name="Belt thickener" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="244079F4-3AA8-4CFA-8C34-7EF4AB800C0B" name="Air heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="434982B6-886C-07A0-954D-A26800A02D97" name="Finned tube air heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="FED97EA1-30F7-4AF2-811E-F3DAC88923ED" name="Finned coil gas coolers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="411B9241-B5BC-4DD3-8D3D-0F7F868C7865" name="Tank equipment" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="AC00B420-46A5-450B-94D9-DD430AC4AE87" name="Freshwater generators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+				</variable>
+			</ServiceLevel2>
+			<ServiceLevel2 name="Technical Documentation" id="A26A2E03-1684-ED0C-5FE7-A5BD00CA2771">
+				<variable name="Service Visibility" id="C509BF0F-E6E9-7F48-0C3B-A5B6007CF93B">
+					<value id="D34A84ED-8588-C59E-7245-A5B6007D114D" name="All"/>
+				</variable>
+				<variable name="Product" id="EC6D9C40-34B8-0A27-CC49-A3EF00799968">
+					<value id="834F796E-C790-48FB-8157-5C278FD3CC39" name="Decanters" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="AB4D5B43-86D2-4094-81E1-BE3EEC5157D7" name="Finned coil condensers" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="D49B5AB1-0E9A-4B4D-BEFC-0CDF0C11DA1E" name="Welded spiral heat exchangers" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="94CDC78C-4613-47E0-874B-C5AC6ACE5342" name="Ballast water treatment systems"/>
+					<value id="D92E6E4D-45CE-4FD6-A27A-02E07A72CB01" name="Welded plate-and-frame heat exchangers" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="FED97EA1-30F7-4AF2-811E-F3DAC88923ED" name="Finned coil gas coolers" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="434982B6-886C-07A0-954D-A26800A02D97" name="Finned tube air heat exchangers" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="472421D3-12BF-4367-9817-77139584DCF6" name="Scraped surface heat exchangers"/>
+					<value id="CCD37359-B98C-4510-B400-0EE7C25A5060" name="Finned coil liquid coolers" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="411B9241-B5BC-4DD3-8D3D-0F7F868C7865" name="Tank equipment" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="DA3EF4B1-235E-E2A0-D892-A4220090C7D2" name="Boilers" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="129822EF-89EF-634E-F074-A28B00EBE320" name="Belt thickener" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="244079F4-3AA8-4CFA-8C34-7EF4AB800C0B" name="Air heat exchangers" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="863CACC7-9E93-42C3-96B3-9868782F39FF" name="Welded plate-and-block heat exchangers" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="FB9BF5BB-7D7F-01B3-F788-A8A300FEB74C" name="Exhaust gas scrubber solutions"/>
+					<value id="AC87584D-6461-40A4-9319-C6A2DB9F7FF9" name="Membranes" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="EE6E166C-70D8-40FB-B423-99D322942F2E" name="Gasketed plate-and-frame heat exchangers" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="3C5E803E-CEF0-48F6-BA02-F547E612B6D3" name="Disc stack separators" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="4553E2BC-AFA2-4F30-865F-75E0E32443F7" name="Pumps" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="DBB36FA0-5846-9A31-1117-A48E008419F2" name="Inert gas system"/>
+					<value id="AC00B420-46A5-450B-94D9-DD430AC4AE87" name="Freshwater generators" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="DE89B94E-B5E3-45F0-B77C-4E9E9F481209" name="Valves" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="4EE53E21-27B7-4DDD-B27E-78945129E56C" name="Welded plate-and-shell heat exchangers" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="A26BC4AA-B180-D4F0-A057-A252009498B8" name="Belt press" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="3EC804AC-5388-46CF-8BEA-B2AC3ADADA93" name="Automation" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+				</variable>
+			</ServiceLevel2>
+			<ServiceLevel2 name="Training" id="A27E8B81-3EF3-1C13-56D1-A5F600927A7B">
+				<variable name="Service Visibility" id="C509BF0F-E6E9-7F48-0C3B-A5B6007CF93B">
+					<value id="D34A84ED-8588-C59E-7245-A5B6007D114D" name="All"/>
+				</variable>
+				<variable name="Product" id="EC6D9C40-34B8-0A27-CC49-A3EF00799968">
+					<value id="863CACC7-9E93-42C3-96B3-9868782F39FF" name="Welded plate-and-block heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="AC00B420-46A5-450B-94D9-DD430AC4AE87" name="Freshwater generators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="D49B5AB1-0E9A-4B4D-BEFC-0CDF0C11DA1E" name="Welded spiral heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="CCD37359-B98C-4510-B400-0EE7C25A5060" name="Finned coil liquid coolers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="4EE53E21-27B7-4DDD-B27E-78945129E56C" name="Welded plate-and-shell heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="A26BC4AA-B180-D4F0-A057-A252009498B8" name="Belt press" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="EE6E166C-70D8-40FB-B423-99D322942F2E" name="Gasketed plate-and-frame heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="AC87584D-6461-40A4-9319-C6A2DB9F7FF9" name="Membranes" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="FB9BF5BB-7D7F-01B3-F788-A8A300FEB74C" name="Exhaust gas scrubber solutions"/>
+					<value id="434982B6-886C-07A0-954D-A26800A02D97" name="Finned tube air heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="244079F4-3AA8-4CFA-8C34-7EF4AB800C0B" name="Air heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="FED97EA1-30F7-4AF2-811E-F3DAC88923ED" name="Finned coil gas coolers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="AB4D5B43-86D2-4094-81E1-BE3EEC5157D7" name="Finned coil condensers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="129822EF-89EF-634E-F074-A28B00EBE320" name="Belt thickener" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="3C5E803E-CEF0-48F6-BA02-F547E612B6D3" name="Disc stack separators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="DE89B94E-B5E3-45F0-B77C-4E9E9F481209" name="Valves" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="834F796E-C790-48FB-8157-5C278FD3CC39" name="Decanters" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="DBB36FA0-5846-9A31-1117-A48E008419F2" name="Inert gas system"/>
+					<value id="411B9241-B5BC-4DD3-8D3D-0F7F868C7865" name="Tank equipment" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="4553E2BC-AFA2-4F30-865F-75E0E32443F7" name="Pumps" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="D92E6E4D-45CE-4FD6-A27A-02E07A72CB01" name="Welded plate-and-frame heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+				</variable>
+			</ServiceLevel2>
+			<ServiceLevel2 name="Exclusive Stock" id="C24DF3EF-43E1-0899-CED7-A5BD00CA276F">
+				<variable name="Service Visibility" id="C509BF0F-E6E9-7F48-0C3B-A5B6007CF93B">
+					<value id="D34A84ED-8588-C59E-7245-A5B6007D114D" name="All"/>
+				</variable>
+				<variable name="Product" id="EC6D9C40-34B8-0A27-CC49-A3EF00799968">
+					<value id="D49B5AB1-0E9A-4B4D-BEFC-0CDF0C11DA1E" name="Welded spiral heat exchangers" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="244079F4-3AA8-4CFA-8C34-7EF4AB800C0B" name="Air heat exchangers" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="4EE53E21-27B7-4DDD-B27E-78945129E56C" name="Welded plate-and-shell heat exchangers" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="3C5E803E-CEF0-48F6-BA02-F547E612B6D3" name="Disc stack separators" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="129822EF-89EF-634E-F074-A28B00EBE320" name="Belt thickener" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="DE89B94E-B5E3-45F0-B77C-4E9E9F481209" name="Valves" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="DBB36FA0-5846-9A31-1117-A48E008419F2" name="Inert gas system"/>
+					<value id="834F796E-C790-48FB-8157-5C278FD3CC39" name="Decanters" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="CCD37359-B98C-4510-B400-0EE7C25A5060" name="Finned coil liquid coolers" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="D92E6E4D-45CE-4FD6-A27A-02E07A72CB01" name="Welded plate-and-frame heat exchangers" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="FED97EA1-30F7-4AF2-811E-F3DAC88923ED" name="Finned coil gas coolers" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="FB9BF5BB-7D7F-01B3-F788-A8A300FEB74C" name="Exhaust gas scrubber solutions"/>
+					<value id="A26BC4AA-B180-D4F0-A057-A252009498B8" name="Belt press" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="472421D3-12BF-4367-9817-77139584DCF6" name="Scraped surface heat exchangers"/>
+					<value id="863CACC7-9E93-42C3-96B3-9868782F39FF" name="Welded plate-and-block heat exchangers" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="4553E2BC-AFA2-4F30-865F-75E0E32443F7" name="Pumps" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="DA3EF4B1-235E-E2A0-D892-A4220090C7D2" name="Boilers" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="AB4D5B43-86D2-4094-81E1-BE3EEC5157D7" name="Finned coil condensers" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="434982B6-886C-07A0-954D-A26800A02D97" name="Finned tube air heat exchangers" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="411B9241-B5BC-4DD3-8D3D-0F7F868C7865" name="Tank equipment" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="EE6E166C-70D8-40FB-B423-99D322942F2E" name="Gasketed plate-and-frame heat exchangers" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+					<value id="AC00B420-46A5-450B-94D9-DD430AC4AE87" name="Freshwater generators" statusname="Service available but equipment independent" statusid="FDEB6ECA-87BF-1D35-3E50-A5BD00C7E422"/>
+				</variable>
+			</ServiceLevel2>
+		</ServiceLevel1>
+		<ServiceLevel1 name="Start-up Services" id="5D37EE4C-E3F9-1A95-C105-A5BD00C6248E">
+			<variable name="Service Visibility" id="C509BF0F-E6E9-7F48-0C3B-A5B6007CF93B">
+				<value id="D34A84ED-8588-C59E-7245-A5B6007D114D" name="All"/>
+			</variable>
+			<ServiceLevel2 name="Installation" id="5486CD63-C04C-C64F-62AF-A5BD00C64F89">
+				<variable name="Service Visibility" id="C509BF0F-E6E9-7F48-0C3B-A5B6007CF93B">
+					<value id="D34A84ED-8588-C59E-7245-A5B6007D114D" name="All"/>
+				</variable>
+				<variable name="Product" id="EC6D9C40-34B8-0A27-CC49-A3EF00799968">
+					<value id="A26BC4AA-B180-D4F0-A057-A252009498B8" name="Belt press" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="411B9241-B5BC-4DD3-8D3D-0F7F868C7865" name="Tank equipment" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="3C5E803E-CEF0-48F6-BA02-F547E612B6D3" name="Disc stack separators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="834F796E-C790-48FB-8157-5C278FD3CC39" name="Decanters" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="DE89B94E-B5E3-45F0-B77C-4E9E9F481209" name="Valves" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="4553E2BC-AFA2-4F30-865F-75E0E32443F7" name="Pumps" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="434982B6-886C-07A0-954D-A26800A02D97" name="Finned tube air heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="AC87584D-6461-40A4-9319-C6A2DB9F7FF9" name="Membranes" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="AB4D5B43-86D2-4094-81E1-BE3EEC5157D7" name="Finned coil condensers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="244079F4-3AA8-4CFA-8C34-7EF4AB800C0B" name="Air heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="CCD37359-B98C-4510-B400-0EE7C25A5060" name="Finned coil liquid coolers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="AC00B420-46A5-450B-94D9-DD430AC4AE87" name="Freshwater generators"/>
+					<value id="129822EF-89EF-634E-F074-A28B00EBE320" name="Belt thickener" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="FED97EA1-30F7-4AF2-811E-F3DAC88923ED" name="Finned coil gas coolers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+				</variable>
+			</ServiceLevel2>
+			<ServiceLevel2 name="Installation Supervision" id="A74DE707-55CC-18B7-77F2-A5BD00C959B8">
+				<variable name="Service Visibility" id="C509BF0F-E6E9-7F48-0C3B-A5B6007CF93B">
+					<value id="D34A84ED-8588-C59E-7245-A5B6007D114D" name="All"/>
+				</variable>
+				<variable name="Product" id="EC6D9C40-34B8-0A27-CC49-A3EF00799968">
+					<value id="D49B5AB1-0E9A-4B4D-BEFC-0CDF0C11DA1E" name="Welded spiral heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="411B9241-B5BC-4DD3-8D3D-0F7F868C7865" name="Tank equipment" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="D92E6E4D-45CE-4FD6-A27A-02E07A72CB01" name="Welded plate-and-frame heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="DE89B94E-B5E3-45F0-B77C-4E9E9F481209" name="Valves" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="94CDC78C-4613-47E0-874B-C5AC6ACE5342" name="Ballast water treatment systems"/>
+					<value id="4EE53E21-27B7-4DDD-B27E-78945129E56C" name="Welded plate-and-shell heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="863CACC7-9E93-42C3-96B3-9868782F39FF" name="Welded plate-and-block heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="834F796E-C790-48FB-8157-5C278FD3CC39" name="Decanters" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="EE6E166C-70D8-40FB-B423-99D322942F2E" name="Gasketed plate-and-frame heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="4553E2BC-AFA2-4F30-865F-75E0E32443F7" name="Pumps" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+				</variable>
+			</ServiceLevel2>
+			<ServiceLevel2 name="Commissioning" id="8C270900-3BE7-A3D4-1F45-A5BD00C959B9">
+				<variable name="Service Visibility" id="C509BF0F-E6E9-7F48-0C3B-A5B6007CF93B">
+					<value id="D34A84ED-8588-C59E-7245-A5B6007D114D" name="All"/>
+				</variable>
+				<variable name="Product" id="EC6D9C40-34B8-0A27-CC49-A3EF00799968">
+					<value id="DE89B94E-B5E3-45F0-B77C-4E9E9F481209" name="Valves" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="EE6E166C-70D8-40FB-B423-99D322942F2E" name="Gasketed plate-and-frame heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="411B9241-B5BC-4DD3-8D3D-0F7F868C7865" name="Tank equipment" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="A26BC4AA-B180-D4F0-A057-A252009498B8" name="Belt press" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="4553E2BC-AFA2-4F30-865F-75E0E32443F7" name="Pumps" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="AC87584D-6461-40A4-9319-C6A2DB9F7FF9" name="Membranes" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="834F796E-C790-48FB-8157-5C278FD3CC39" name="Decanters" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="AB4D5B43-86D2-4094-81E1-BE3EEC5157D7" name="Finned coil condensers"/>
+					<value id="3C5E803E-CEF0-48F6-BA02-F547E612B6D3" name="Disc stack separators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="FED97EA1-30F7-4AF2-811E-F3DAC88923ED" name="Finned coil gas coolers"/>
+					<value id="472421D3-12BF-4367-9817-77139584DCF6" name="Scraped surface heat exchangers"/>
+					<value id="94CDC78C-4613-47E0-874B-C5AC6ACE5342" name="Ballast water treatment systems"/>
+					<value id="129822EF-89EF-634E-F074-A28B00EBE320" name="Belt thickener" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="AC00B420-46A5-450B-94D9-DD430AC4AE87" name="Freshwater generators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+				</variable>
+			</ServiceLevel2>
+			<ServiceLevel2 name="Commissioning Supervision" id="FB931C92-58A8-EAB8-2137-A5BD00C959BA">
+				<variable name="Service Visibility" id="C509BF0F-E6E9-7F48-0C3B-A5B6007CF93B">
+					<value id="D34A84ED-8588-C59E-7245-A5B6007D114D" name="All"/>
+				</variable>
+				<variable name="Product" id="EC6D9C40-34B8-0A27-CC49-A3EF00799968">
+					<value id="863CACC7-9E93-42C3-96B3-9868782F39FF" name="Welded plate-and-block heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="D49B5AB1-0E9A-4B4D-BEFC-0CDF0C11DA1E" name="Welded spiral heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="AB4D5B43-86D2-4094-81E1-BE3EEC5157D7" name="Finned coil condensers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="13C5CF2B-4DD1-A0F4-CFF6-A59F00981595" name="Wet surface air heat exchangers"/>
+					<value id="D92E6E4D-45CE-4FD6-A27A-02E07A72CB01" name="Welded plate-and-frame heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="4EE53E21-27B7-4DDD-B27E-78945129E56C" name="Welded plate-and-shell heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="AC00B420-46A5-450B-94D9-DD430AC4AE87" name="Freshwater generators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+				</variable>
+			</ServiceLevel2>
+		</ServiceLevel1>
+		<ServiceLevel1 name="Improvement Services" id="BA9B0A44-0485-F759-A6EC-A5BD00C8C852">
+			<variable name="Service Visibility" id="C509BF0F-E6E9-7F48-0C3B-A5B6007CF93B">
+				<value id="D34A84ED-8588-C59E-7245-A5B6007D114D" name="All"/>
+			</variable>
+			<ServiceLevel2 name="Equipment Upgrades" id="12320A17-60CD-E26E-21E3-A5BD00CA276D">
+				<variable name="Service Visibility" id="C509BF0F-E6E9-7F48-0C3B-A5B6007CF93B">
+					<value id="D34A84ED-8588-C59E-7245-A5B6007D114D" name="All"/>
+				</variable>
+				<variable name="Product" id="EC6D9C40-34B8-0A27-CC49-A3EF00799968">
+					<value id="CCD37359-B98C-4510-B400-0EE7C25A5060" name="Finned coil liquid coolers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="AB4D5B43-86D2-4094-81E1-BE3EEC5157D7" name="Finned coil condensers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="411B9241-B5BC-4DD3-8D3D-0F7F868C7865" name="Tank equipment" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="FED97EA1-30F7-4AF2-811E-F3DAC88923ED" name="Finned coil gas coolers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="434982B6-886C-07A0-954D-A26800A02D97" name="Finned tube air heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="472421D3-12BF-4367-9817-77139584DCF6" name="Scraped surface heat exchangers"/>
+					<value id="129822EF-89EF-634E-F074-A28B00EBE320" name="Belt thickener" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="EE6E166C-70D8-40FB-B423-99D322942F2E" name="Gasketed plate-and-frame heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="A26BC4AA-B180-D4F0-A057-A252009498B8" name="Belt press" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="3EC804AC-5388-46CF-8BEA-B2AC3ADADA93" name="Automation" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="3C5E803E-CEF0-48F6-BA02-F547E612B6D3" name="Disc stack separators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="834F796E-C790-48FB-8157-5C278FD3CC39" name="Decanters" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="DBB36FA0-5846-9A31-1117-A48E008419F2" name="Inert gas system"/>
+					<value id="244079F4-3AA8-4CFA-8C34-7EF4AB800C0B" name="Air heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="DA3EF4B1-235E-E2A0-D892-A4220090C7D2" name="Boilers"/>
+					<value id="AC00B420-46A5-450B-94D9-DD430AC4AE87" name="Freshwater generators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+				</variable>
+			</ServiceLevel2>
+			<ServiceLevel2 name="Replacement &amp; Retrofit" id="B3141208-A432-B785-276A-A5BD00CA2771">
+				<variable name="Service Visibility" id="C509BF0F-E6E9-7F48-0C3B-A5B6007CF93B">
+					<value id="D34A84ED-8588-C59E-7245-A5B6007D114D" name="All"/>
+				</variable>
+				<variable name="Product" id="EC6D9C40-34B8-0A27-CC49-A3EF00799968">
+					<value id="244079F4-3AA8-4CFA-8C34-7EF4AB800C0B" name="Air heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="AB4D5B43-86D2-4094-81E1-BE3EEC5157D7" name="Finned coil condensers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="FED97EA1-30F7-4AF2-811E-F3DAC88923ED" name="Finned coil gas coolers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="CCD37359-B98C-4510-B400-0EE7C25A5060" name="Finned coil liquid coolers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="3C5E803E-CEF0-48F6-BA02-F547E612B6D3" name="Disc stack separators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="AC00B420-46A5-450B-94D9-DD430AC4AE87" name="Freshwater generators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="434982B6-886C-07A0-954D-A26800A02D97" name="Finned tube air heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="AC87584D-6461-40A4-9319-C6A2DB9F7FF9" name="Membranes" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="EE6E166C-70D8-40FB-B423-99D322942F2E" name="Gasketed plate-and-frame heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+				</variable>
+			</ServiceLevel2>
+			<ServiceLevel2 name="Redesign" id="4D69F035-FB0D-B66F-81E7-A5BD00CA276F">
+				<variable name="Service Visibility" id="C509BF0F-E6E9-7F48-0C3B-A5B6007CF93B">
+					<value id="D34A84ED-8588-C59E-7245-A5B6007D114D" name="All"/>
+				</variable>
+				<variable name="Product" id="EC6D9C40-34B8-0A27-CC49-A3EF00799968">
+					<value id="4553E2BC-AFA2-4F30-865F-75E0E32443F7" name="Pumps" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="AC00B420-46A5-450B-94D9-DD430AC4AE87" name="Freshwater generators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="411B9241-B5BC-4DD3-8D3D-0F7F868C7865" name="Tank equipment" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="834F796E-C790-48FB-8157-5C278FD3CC39" name="Decanters" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="EE6E166C-70D8-40FB-B423-99D322942F2E" name="Gasketed plate-and-frame heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="AC87584D-6461-40A4-9319-C6A2DB9F7FF9" name="Membranes" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="DE89B94E-B5E3-45F0-B77C-4E9E9F481209" name="Valves" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+				</variable>
+			</ServiceLevel2>
+		</ServiceLevel1>
+		<ServiceLevel1 name="Maintenance Services" id="69593B6D-2241-6C23-A3E9-A5BD00C8C850">
+			<variable name="Service Visibility" id="C509BF0F-E6E9-7F48-0C3B-A5B6007CF93B">
+				<value id="D34A84ED-8588-C59E-7245-A5B6007D114D" name="All"/>
+			</variable>
+			<ServiceLevel2 name="Service Tools" id="4B2BFBCA-EF53-0D9F-2248-A5BD00CA2771">
+				<variable name="Service Visibility" id="C509BF0F-E6E9-7F48-0C3B-A5B6007CF93B">
+					<value id="D34A84ED-8588-C59E-7245-A5B6007D114D" name="All"/>
+				</variable>
+				<variable name="Product" id="EC6D9C40-34B8-0A27-CC49-A3EF00799968">
+					<value id="834F796E-C790-48FB-8157-5C278FD3CC39" name="Decanters" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="DE89B94E-B5E3-45F0-B77C-4E9E9F481209" name="Valves" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="EE6E166C-70D8-40FB-B423-99D322942F2E" name="Gasketed plate-and-frame heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="472421D3-12BF-4367-9817-77139584DCF6" name="Scraped surface heat exchangers"/>
+					<value id="4553E2BC-AFA2-4F30-865F-75E0E32443F7" name="Pumps" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="411B9241-B5BC-4DD3-8D3D-0F7F868C7865" name="Tank equipment" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="AC00B420-46A5-450B-94D9-DD430AC4AE87" name="Freshwater generators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="3C5E803E-CEF0-48F6-BA02-F547E612B6D3" name="Disc stack separators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="FED97EA1-30F7-4AF2-811E-F3DAC88923ED" name="Finned coil gas coolers"/>
+					<value id="AB4D5B43-86D2-4094-81E1-BE3EEC5157D7" name="Finned coil condensers"/>
+				</variable>
+			</ServiceLevel2>
+			<ServiceLevel2 name="Repair" id="B766D85A-CB5F-D6C5-F9C1-A5BD00CA276D">
+				<variable name="Service Visibility" id="C509BF0F-E6E9-7F48-0C3B-A5B6007CF93B">
+					<value id="D34A84ED-8588-C59E-7245-A5B6007D114D" name="All"/>
+				</variable>
+				<variable name="Product" id="EC6D9C40-34B8-0A27-CC49-A3EF00799968">
+					<value id="4553E2BC-AFA2-4F30-865F-75E0E32443F7" name="Pumps" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="434982B6-886C-07A0-954D-A26800A02D97" name="Finned tube air heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="AC00B420-46A5-450B-94D9-DD430AC4AE87" name="Freshwater generators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="CCD37359-B98C-4510-B400-0EE7C25A5060" name="Finned coil liquid coolers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="D49B5AB1-0E9A-4B4D-BEFC-0CDF0C11DA1E" name="Welded spiral heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="411B9241-B5BC-4DD3-8D3D-0F7F868C7865" name="Tank equipment" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="3C5E803E-CEF0-48F6-BA02-F547E612B6D3" name="Disc stack separators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="AB4D5B43-86D2-4094-81E1-BE3EEC5157D7" name="Finned coil condensers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="FED97EA1-30F7-4AF2-811E-F3DAC88923ED" name="Finned coil gas coolers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="DE89B94E-B5E3-45F0-B77C-4E9E9F481209" name="Valves" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="D92E6E4D-45CE-4FD6-A27A-02E07A72CB01" name="Welded plate-and-frame heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="4EE53E21-27B7-4DDD-B27E-78945129E56C" name="Welded plate-and-shell heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="834F796E-C790-48FB-8157-5C278FD3CC39" name="Decanters" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="244079F4-3AA8-4CFA-8C34-7EF4AB800C0B" name="Air heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="EE6E166C-70D8-40FB-B423-99D322942F2E" name="Gasketed plate-and-frame heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="863CACC7-9E93-42C3-96B3-9868782F39FF" name="Welded plate-and-block heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="472421D3-12BF-4367-9817-77139584DCF6" name="Scraped surface heat exchangers"/>
+				</variable>
+			</ServiceLevel2>
+			<ServiceLevel2 name="Exchange" id="F59B7DC5-0AE7-B45B-0E08-A5BD00CA276D">
+				<variable name="Service Visibility" id="C509BF0F-E6E9-7F48-0C3B-A5B6007CF93B">
+					<value id="D34A84ED-8588-C59E-7245-A5B6007D114D" name="All"/>
+				</variable>
+				<variable name="Product" id="EC6D9C40-34B8-0A27-CC49-A3EF00799968">
+					<value id="834F796E-C790-48FB-8157-5C278FD3CC39" name="Decanters" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="129822EF-89EF-634E-F074-A28B00EBE320" name="Belt thickener" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="AC00B420-46A5-450B-94D9-DD430AC4AE87" name="Freshwater generators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="D49B5AB1-0E9A-4B4D-BEFC-0CDF0C11DA1E" name="Welded spiral heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="D92E6E4D-45CE-4FD6-A27A-02E07A72CB01" name="Welded plate-and-frame heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="A26BC4AA-B180-D4F0-A057-A252009498B8" name="Belt press" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="3EC804AC-5388-46CF-8BEA-B2AC3ADADA93" name="Automation" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="FB9BF5BB-7D7F-01B3-F788-A8A300FEB74C" name="Exhaust gas scrubber solutions"/>
+					<value id="863CACC7-9E93-42C3-96B3-9868782F39FF" name="Welded plate-and-block heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="3C5E803E-CEF0-48F6-BA02-F547E612B6D3" name="Disc stack separators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="4EE53E21-27B7-4DDD-B27E-78945129E56C" name="Welded plate-and-shell heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+				</variable>
+			</ServiceLevel2>
+			<ServiceLevel2 name="Cleaning Services" id="01AF4612-A3B6-0FDE-9577-A5BD00CA2771">
+				<variable name="Service Visibility" id="C509BF0F-E6E9-7F48-0C3B-A5B6007CF93B">
+					<value id="D34A84ED-8588-C59E-7245-A5B6007D114D" name="All"/>
+				</variable>
+				<variable name="Product" id="EC6D9C40-34B8-0A27-CC49-A3EF00799968">
+					<value id="434982B6-886C-07A0-954D-A26800A02D97" name="Finned tube air heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="D92E6E4D-45CE-4FD6-A27A-02E07A72CB01" name="Welded plate-and-frame heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="244079F4-3AA8-4CFA-8C34-7EF4AB800C0B" name="Air heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="FED97EA1-30F7-4AF2-811E-F3DAC88923ED" name="Finned coil gas coolers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="D49B5AB1-0E9A-4B4D-BEFC-0CDF0C11DA1E" name="Welded spiral heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="CCD37359-B98C-4510-B400-0EE7C25A5060" name="Finned coil liquid coolers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="EE6E166C-70D8-40FB-B423-99D322942F2E" name="Gasketed plate-and-frame heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="863CACC7-9E93-42C3-96B3-9868782F39FF" name="Welded plate-and-block heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="4EE53E21-27B7-4DDD-B27E-78945129E56C" name="Welded plate-and-shell heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="3C5E803E-CEF0-48F6-BA02-F547E612B6D3" name="Disc stack separators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="AC00B420-46A5-450B-94D9-DD430AC4AE87" name="Freshwater generators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="AB4D5B43-86D2-4094-81E1-BE3EEC5157D7" name="Finned coil condensers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+				</variable>
+			</ServiceLevel2>
+			<ServiceLevel2 name="Preventive Maintenance" id="CD0C163A-5C58-867D-249C-A5BD00CA276F">
+				<variable name="Service Visibility" id="C509BF0F-E6E9-7F48-0C3B-A5B6007CF93B">
+					<value id="D34A84ED-8588-C59E-7245-A5B6007D114D" name="All"/>
+				</variable>
+				<variable name="Product" id="EC6D9C40-34B8-0A27-CC49-A3EF00799968">
+					<value id="863CACC7-9E93-42C3-96B3-9868782F39FF" name="Welded plate-and-block heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="A26BC4AA-B180-D4F0-A057-A252009498B8" name="Belt press" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="AC00B420-46A5-450B-94D9-DD430AC4AE87" name="Freshwater generators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="4553E2BC-AFA2-4F30-865F-75E0E32443F7" name="Pumps" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="129822EF-89EF-634E-F074-A28B00EBE320" name="Belt thickener" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="411B9241-B5BC-4DD3-8D3D-0F7F868C7865" name="Tank equipment" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="DE89B94E-B5E3-45F0-B77C-4E9E9F481209" name="Valves" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="4EE53E21-27B7-4DDD-B27E-78945129E56C" name="Welded plate-and-shell heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="D49B5AB1-0E9A-4B4D-BEFC-0CDF0C11DA1E" name="Welded spiral heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="834F796E-C790-48FB-8157-5C278FD3CC39" name="Decanters" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="472421D3-12BF-4367-9817-77139584DCF6" name="Scraped surface heat exchangers"/>
+					<value id="3C5E803E-CEF0-48F6-BA02-F547E612B6D3" name="Disc stack separators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="D92E6E4D-45CE-4FD6-A27A-02E07A72CB01" name="Welded plate-and-frame heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+				</variable>
+			</ServiceLevel2>
+			<ServiceLevel2 name="Calibration" id="05AFEA73-0E4B-FC47-934F-A5BD00CA276F">
+				<variable name="Service Visibility" id="C509BF0F-E6E9-7F48-0C3B-A5B6007CF93B">
+					<value id="D34A84ED-8588-C59E-7245-A5B6007D114D" name="All"/>
+				</variable>
+				<variable name="Product" id="EC6D9C40-34B8-0A27-CC49-A3EF00799968">
+					<value id="94CDC78C-4613-47E0-874B-C5AC6ACE5342" name="Ballast water treatment systems"/>
+				</variable>
+			</ServiceLevel2>
+			<ServiceLevel2 name="Spare Parts" id="A0A7588B-C55F-665A-6F5F-A5BD00CA276D">
+				<variable name="Service Visibility" id="C509BF0F-E6E9-7F48-0C3B-A5B6007CF93B">
+					<value id="D34A84ED-8588-C59E-7245-A5B6007D114D" name="All"/>
+				</variable>
+				<variable name="Product" id="EC6D9C40-34B8-0A27-CC49-A3EF00799968">
+					<value id="244079F4-3AA8-4CFA-8C34-7EF4AB800C0B" name="Air heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="4EE53E21-27B7-4DDD-B27E-78945129E56C" name="Welded plate-and-shell heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="FB9BF5BB-7D7F-01B3-F788-A8A300FEB74C" name="Exhaust gas scrubber solutions"/>
+					<value id="D49B5AB1-0E9A-4B4D-BEFC-0CDF0C11DA1E" name="Welded spiral heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="3C5E803E-CEF0-48F6-BA02-F547E612B6D3" name="Disc stack separators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="863CACC7-9E93-42C3-96B3-9868782F39FF" name="Welded plate-and-block heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="411B9241-B5BC-4DD3-8D3D-0F7F868C7865" name="Tank equipment" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="4553E2BC-AFA2-4F30-865F-75E0E32443F7" name="Pumps" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="AC00B420-46A5-450B-94D9-DD430AC4AE87" name="Freshwater generators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="DE89B94E-B5E3-45F0-B77C-4E9E9F481209" name="Valves" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="AB4D5B43-86D2-4094-81E1-BE3EEC5157D7" name="Finned coil condensers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="D92E6E4D-45CE-4FD6-A27A-02E07A72CB01" name="Welded plate-and-frame heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="DBB36FA0-5846-9A31-1117-A48E008419F2" name="Inert gas system"/>
+					<value id="A26BC4AA-B180-D4F0-A057-A252009498B8" name="Belt press" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="472421D3-12BF-4367-9817-77139584DCF6" name="Scraped surface heat exchangers"/>
+					<value id="DA3EF4B1-235E-E2A0-D892-A4220090C7D2" name="Boilers"/>
+					<value id="834F796E-C790-48FB-8157-5C278FD3CC39" name="Decanters" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="FED97EA1-30F7-4AF2-811E-F3DAC88923ED" name="Finned coil gas coolers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="CCD37359-B98C-4510-B400-0EE7C25A5060" name="Finned coil liquid coolers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="129822EF-89EF-634E-F074-A28B00EBE320" name="Belt thickener" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="434982B6-886C-07A0-954D-A26800A02D97" name="Finned tube air heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="EE6E166C-70D8-40FB-B423-99D322942F2E" name="Gasketed plate-and-frame heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+				</variable>
+			</ServiceLevel2>
+			<ServiceLevel2 name="Service Kits" id="C0F12148-DB9B-310C-22EF-A5BD00CA276F">
+				<variable name="Service Visibility" id="C509BF0F-E6E9-7F48-0C3B-A5B6007CF93B">
+					<value id="D34A84ED-8588-C59E-7245-A5B6007D114D" name="All"/>
+				</variable>
+				<variable name="Product" id="EC6D9C40-34B8-0A27-CC49-A3EF00799968">
+					<value id="AC00B420-46A5-450B-94D9-DD430AC4AE87" name="Freshwater generators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="472421D3-12BF-4367-9817-77139584DCF6" name="Scraped surface heat exchangers"/>
+					<value id="4553E2BC-AFA2-4F30-865F-75E0E32443F7" name="Pumps" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="834F796E-C790-48FB-8157-5C278FD3CC39" name="Decanters" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="411B9241-B5BC-4DD3-8D3D-0F7F868C7865" name="Tank equipment" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="3C5E803E-CEF0-48F6-BA02-F547E612B6D3" name="Disc stack separators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="DE89B94E-B5E3-45F0-B77C-4E9E9F481209" name="Valves" statusname="Service available but executed by service partner" statusid="89524E91-D886-13AD-E5FA-A5BD00C8703F"/>
+					<value id="DA3EF4B1-235E-E2A0-D892-A4220090C7D2" name="Boilers"/>
+				</variable>
+			</ServiceLevel2>
+			<ServiceLevel2 name="Reconditioning" id="DDB0AE55-0599-A8FE-B0BE-A5BD00CA2771">
+				<variable name="Service Visibility" id="C509BF0F-E6E9-7F48-0C3B-A5B6007CF93B">
+					<value id="D34A84ED-8588-C59E-7245-A5B6007D114D" name="All"/>
+				</variable>
+				<variable name="Product" id="EC6D9C40-34B8-0A27-CC49-A3EF00799968">
+					<value id="EE6E166C-70D8-40FB-B423-99D322942F2E" name="Gasketed plate-and-frame heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="AC00B420-46A5-450B-94D9-DD430AC4AE87" name="Freshwater generators"/>
+					<value id="129822EF-89EF-634E-F074-A28B00EBE320" name="Belt thickener" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="D49B5AB1-0E9A-4B4D-BEFC-0CDF0C11DA1E" name="Welded spiral heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="244079F4-3AA8-4CFA-8C34-7EF4AB800C0B" name="Air heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="863CACC7-9E93-42C3-96B3-9868782F39FF" name="Welded plate-and-block heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="FED97EA1-30F7-4AF2-811E-F3DAC88923ED" name="Finned coil gas coolers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="D92E6E4D-45CE-4FD6-A27A-02E07A72CB01" name="Welded plate-and-frame heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="CCD37359-B98C-4510-B400-0EE7C25A5060" name="Finned coil liquid coolers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="AB4D5B43-86D2-4094-81E1-BE3EEC5157D7" name="Finned coil condensers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="A26BC4AA-B180-D4F0-A057-A252009498B8" name="Belt press" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="434982B6-886C-07A0-954D-A26800A02D97" name="Finned tube air heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="4EE53E21-27B7-4DDD-B27E-78945129E56C" name="Welded plate-and-shell heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+				</variable>
+			</ServiceLevel2>
+		</ServiceLevel1>
+		<ServiceLevel1 name="Monitoring Services" id="9656373A-5B1E-3AF1-A417-A5BD00C8C854">
+			<variable name="Service Visibility" id="C509BF0F-E6E9-7F48-0C3B-A5B6007CF93B">
+				<value id="D34A84ED-8588-C59E-7245-A5B6007D114D" name="All"/>
+			</variable>
+			<ServiceLevel2 name="Performance Audit" id="70757203-44FC-0F86-67F7-A5BD00CA2771">
+				<variable name="Service Visibility" id="C509BF0F-E6E9-7F48-0C3B-A5B6007CF93B">
+					<value id="D34A84ED-8588-C59E-7245-A5B6007D114D" name="All"/>
+				</variable>
+				<variable name="Product" id="EC6D9C40-34B8-0A27-CC49-A3EF00799968">
+					<value id="472421D3-12BF-4367-9817-77139584DCF6" name="Scraped surface heat exchangers"/>
+					<value id="4EE53E21-27B7-4DDD-B27E-78945129E56C" name="Welded plate-and-shell heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="863CACC7-9E93-42C3-96B3-9868782F39FF" name="Welded plate-and-block heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="EE6E166C-70D8-40FB-B423-99D322942F2E" name="Gasketed plate-and-frame heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="DA3EF4B1-235E-E2A0-D892-A4220090C7D2" name="Boilers"/>
+					<value id="129822EF-89EF-634E-F074-A28B00EBE320" name="Belt thickener" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="FB9BF5BB-7D7F-01B3-F788-A8A300FEB74C" name="Exhaust gas scrubber solutions"/>
+					<value id="AC00B420-46A5-450B-94D9-DD430AC4AE87" name="Freshwater generators"/>
+					<value id="94CDC78C-4613-47E0-874B-C5AC6ACE5342" name="Ballast water treatment systems"/>
+					<value id="3C5E803E-CEF0-48F6-BA02-F547E612B6D3" name="Disc stack separators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="A26BC4AA-B180-D4F0-A057-A252009498B8" name="Belt press" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="D49B5AB1-0E9A-4B4D-BEFC-0CDF0C11DA1E" name="Welded spiral heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="834F796E-C790-48FB-8157-5C278FD3CC39" name="Decanters" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="D92E6E4D-45CE-4FD6-A27A-02E07A72CB01" name="Welded plate-and-frame heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+				</variable>
+			</ServiceLevel2>
+			<ServiceLevel2 name="Condition Monitoring" id="638D34F9-FA4D-AF8A-C866-A5BD00CA276F">
+				<variable name="Service Visibility" id="C509BF0F-E6E9-7F48-0C3B-A5B6007CF93B">
+					<value id="D34A84ED-8588-C59E-7245-A5B6007D114D" name="All"/>
+				</variable>
+				<variable name="Product" id="EC6D9C40-34B8-0A27-CC49-A3EF00799968">
+					<value id="834F796E-C790-48FB-8157-5C278FD3CC39" name="Decanters" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="3C5E803E-CEF0-48F6-BA02-F547E612B6D3" name="Disc stack separators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+				</variable>
+			</ServiceLevel2>
+			<ServiceLevel2 name="Condition Audit" id="03697FB4-C973-B1A3-7655-A5BD00CA276D">
+				<variable name="Service Visibility" id="C509BF0F-E6E9-7F48-0C3B-A5B6007CF93B">
+					<value id="D34A84ED-8588-C59E-7245-A5B6007D114D" name="All"/>
+				</variable>
+				<variable name="Product" id="EC6D9C40-34B8-0A27-CC49-A3EF00799968">
+					<value id="472421D3-12BF-4367-9817-77139584DCF6" name="Scraped surface heat exchangers"/>
+					<value id="DBB36FA0-5846-9A31-1117-A48E008419F2" name="Inert gas system"/>
+					<value id="863CACC7-9E93-42C3-96B3-9868782F39FF" name="Welded plate-and-block heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="AC00B420-46A5-450B-94D9-DD430AC4AE87" name="Freshwater generators" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="834F796E-C790-48FB-8157-5C278FD3CC39" name="Decanters" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="4EE53E21-27B7-4DDD-B27E-78945129E56C" name="Welded plate-and-shell heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="FB9BF5BB-7D7F-01B3-F788-A8A300FEB74C" name="Exhaust gas scrubber solutions"/>
+					<value id="D92E6E4D-45CE-4FD6-A27A-02E07A72CB01" name="Welded plate-and-frame heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="DA3EF4B1-235E-E2A0-D892-A4220090C7D2" name="Boilers"/>
+					<value id="A26BC4AA-B180-D4F0-A057-A252009498B8" name="Belt press" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="EE6E166C-70D8-40FB-B423-99D322942F2E" name="Gasketed plate-and-frame heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="94CDC78C-4613-47E0-874B-C5AC6ACE5342" name="Ballast water treatment systems"/>
+					<value id="D49B5AB1-0E9A-4B4D-BEFC-0CDF0C11DA1E" name="Welded spiral heat exchangers" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+					<value id="129822EF-89EF-634E-F074-A28B00EBE320" name="Belt thickener" statusname="Service available in the global portfolio" statusid="85CECA5B-5B29-18D5-486E-A5BD00C87043"/>
+				</variable>
+			</ServiceLevel2>
+		</ServiceLevel1>
+	</units>
+	<variableproperties>
+		<variable name="Service Visibility" mandatory="false" id="C509BF0F-E6E9-7F48-0C3B-A5B6007CF93B" readonly="true" visibleinproductcatalogue="false"/>
+	</variableproperties>
+	<variablevaluesets>
+		<variable name="Service Visibility" id="C509BF0F-E6E9-7F48-0C3B-A5B6007CF93B">
+			<valuesetvalue name="All" id="D34A84ED-8588-C59E-7245-A5B6007D114D"/>
+		</variable>
+	</variablevaluesets>
+</root>

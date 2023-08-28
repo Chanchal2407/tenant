@@ -1,0 +1,1080 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2021/03/ProvisioningSchema">
+  <pnp:Preferences Generator="PnP.Framework, Version=1.10.2.0, Culture=neutral, PublicKeyToken=0d501f89f11b748c" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-1FDAF884C98F40D8915759B0C6CF35FD">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-1FDAF884C98F40D8915759B0C6CF35FD" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:SiteSettings AllowDesigner="true" AllowCreateDeclarativeWorkflow="true" AllowSaveDeclarativeWorkflowAsTemplate="true" AllowSavePublishDeclarativeWorkflow="true" SearchBoxInNavBar="Inherit" SearchCenterUrl="" />
+      <pnp:RegionalSettings AdjustHijriDays="0" AlternateCalendarType="None" CalendarType="Gregorian" Collation="6" FirstDayOfWeek="Monday" FirstWeekOfYear="2" LocaleId="1033" ShowWeeks="false" Time24="true" TimeZone="4" WorkDayEndHour="5:00PM" WorkDays="62" WorkDayStartHour="8:00AM" />
+      <pnp:Security AssociatedOwnerGroup="Corporate News Owners" AssociatedMemberGroup="Corporate News Members" AssociatedVisitorGroup="Corporate News Members">
+        <pnp:AdditionalAdministrators>
+          <pnp:User Name="c:0t.c|tenant|4cf57f8e-6c70-4612-b8ca-1a88dbdb57e3" />
+          <pnp:User Name="i:0#.f|membership|Share.Integration@alfalaval.com" />
+        </pnp:AdditionalAdministrators>
+        <pnp:AdditionalOwners>
+          <pnp:User Name="i:0#.f|membership|olga.skantz@alfalaval.com"/>
+        </pnp:AdditionalOwners>
+        <pnp:AdditionalVisitors>
+          <pnp:User Name="c:0-.f|rolemanager|spo-grid-all-users/ed5d5f47-52dd-48af-90ca-f7bd83624eb9" />
+          <pnp:User Name="c:0t.c|tenant|9b3b7ebf-c66b-430c-96b6-1d05967eed06" />
+          <pnp:User Name="c:0t.c|tenant|5ba078f9-e9c6-414f-ab6d-acb34ad750aa" />
+        </pnp:AdditionalVisitors>
+        <pnp:SiteGroups>
+          <pnp:SiteGroup Title="Campaigns Owners" Description="" Owner="{associatedownergroup}" AllowMembersEditMembership="false" AllowRequestToJoinLeave="false" AutoAcceptRequestToJoinLeave="false" OnlyAllowMembersViewMembership="true" />
+          <pnp:SiteGroup Title="Campaigns Members" Description="" Owner="Campaigns Owners" AllowMembersEditMembership="false" AllowRequestToJoinLeave="false" AutoAcceptRequestToJoinLeave="false" OnlyAllowMembersViewMembership="true" />
+          <pnp:SiteGroup Title="Corporate News Owners" Description="" Owner="{associatedownergroup}" AllowMembersEditMembership="false" AllowRequestToJoinLeave="false" AutoAcceptRequestToJoinLeave="false" OnlyAllowMembersViewMembership="true" />
+          <pnp:SiteGroup Title="Corporate News Members" Description="" Owner="Corporate News Owners" AllowMembersEditMembership="false" AllowRequestToJoinLeave="false" AutoAcceptRequestToJoinLeave="false" OnlyAllowMembersViewMembership="true" />
+          <pnp:SiteGroup Title="News Owners" Description="" Owner="{associatedownergroup}" AllowMembersEditMembership="false" AllowRequestToJoinLeave="false" AutoAcceptRequestToJoinLeave="false" OnlyAllowMembersViewMembership="true" />
+          <pnp:SiteGroup Title="News Members" Description="" Owner="News Owners" AllowMembersEditMembership="false" AllowRequestToJoinLeave="false" AutoAcceptRequestToJoinLeave="false" OnlyAllowMembersViewMembership="true" />
+          <pnp:SiteGroup Title="Alerts Owners" Description="" Owner="{associatedownergroup}" AllowMembersEditMembership="false" AllowRequestToJoinLeave="false" AutoAcceptRequestToJoinLeave="false" OnlyAllowMembersViewMembership="true" />
+        </pnp:SiteGroups>	
+        <pnp:Permissions>
+          <pnp:RoleDefinitions>
+            <pnp:RoleDefinition Name="Edit only" Description="Just view and edit, without Delete and Add permissions">
+              <pnp:Permissions>
+                <pnp:Permission>EmptyMask</pnp:Permission>
+                <pnp:Permission>ViewListItems</pnp:Permission>
+                <pnp:Permission>EditListItems</pnp:Permission>
+                <pnp:Permission>OpenItems</pnp:Permission>
+                <pnp:Permission>ViewVersions</pnp:Permission>
+                <pnp:Permission>ManagePersonalViews</pnp:Permission>
+                <pnp:Permission>ViewFormPages</pnp:Permission>
+                <pnp:Permission>Open</pnp:Permission>
+                <pnp:Permission>ViewPages</pnp:Permission>
+                <pnp:Permission>BrowseDirectories</pnp:Permission>
+                <pnp:Permission>BrowseUserInfo</pnp:Permission>
+                <pnp:Permission>AddDelPrivateWebParts</pnp:Permission>
+                <pnp:Permission>UpdatePersonalWebParts</pnp:Permission>
+                <pnp:Permission>UseClientIntegration</pnp:Permission>
+                <pnp:Permission>UseRemoteAPIs</pnp:Permission>
+                <pnp:Permission>CreateAlerts</pnp:Permission>
+                <pnp:Permission>EditMyUserInfo</pnp:Permission>
+              </pnp:Permissions>
+            </pnp:RoleDefinition>
+            <pnp:RoleDefinition Name="Browse only" Description="">
+              <pnp:Permissions>
+                <pnp:Permission>EmptyMask</pnp:Permission>
+                <pnp:Permission>Open</pnp:Permission>
+                <pnp:Permission>ViewPages</pnp:Permission>
+                <pnp:Permission>BrowseDirectories</pnp:Permission>
+              </pnp:Permissions>
+            </pnp:RoleDefinition>
+            <pnp:RoleDefinition Name="Add Items (custom)" Description="Custom permission level used to ensure that Corporate and ordinary News Owners / Editors can send out News Digests">
+              <pnp:Permissions>
+                <pnp:Permission>EmptyMask</pnp:Permission>
+                <pnp:Permission>ViewListItems</pnp:Permission>
+                <pnp:Permission>AddListItems</pnp:Permission>
+                <pnp:Permission>Open</pnp:Permission>
+                <pnp:Permission>ViewPages</pnp:Permission>
+              </pnp:Permissions>
+            </pnp:RoleDefinition>
+            <pnp:RoleDefinition Name="Add and Edit Items (custom)" Description="Custom permission level used to ensure that Corporate and ordinary News Owners / Editors can send out News Digests">
+              <pnp:Permissions>
+                <pnp:Permission>EmptyMask</pnp:Permission>
+                <pnp:Permission>ViewListItems</pnp:Permission>
+                <pnp:Permission>AddListItems</pnp:Permission>
+                <pnp:Permission>EditListItems</pnp:Permission>
+                <pnp:Permission>Open</pnp:Permission>
+                <pnp:Permission>ViewPages</pnp:Permission>
+              </pnp:Permissions>
+            </pnp:RoleDefinition>
+            <pnp:RoleDefinition Name="Web Analytics Permissions" Description="Can view Web Analytics reports.">
+              <pnp:Permissions>
+                <pnp:Permission>EmptyMask</pnp:Permission>
+                <pnp:Permission>ViewUsageData</pnp:Permission>
+              </pnp:Permissions>
+            </pnp:RoleDefinition>
+            <pnp:RoleDefinition Name="Manage Hierarchy" Description="Can create sites and edit pages, list items, and documents.">
+              <pnp:Permissions>
+                <pnp:Permission>EmptyMask</pnp:Permission>
+                <pnp:Permission>ViewListItems</pnp:Permission>
+                <pnp:Permission>AddListItems</pnp:Permission>
+                <pnp:Permission>EditListItems</pnp:Permission>
+                <pnp:Permission>DeleteListItems</pnp:Permission>
+                <pnp:Permission>OpenItems</pnp:Permission>
+                <pnp:Permission>ViewVersions</pnp:Permission>
+                <pnp:Permission>DeleteVersions</pnp:Permission>
+                <pnp:Permission>CancelCheckout</pnp:Permission>
+                <pnp:Permission>ManagePersonalViews</pnp:Permission>
+                <pnp:Permission>ManageLists</pnp:Permission>
+                <pnp:Permission>ViewFormPages</pnp:Permission>
+                <pnp:Permission>Open</pnp:Permission>
+                <pnp:Permission>ViewPages</pnp:Permission>
+                <pnp:Permission>AddAndCustomizePages</pnp:Permission>
+                <pnp:Permission>ViewUsageData</pnp:Permission>
+                <pnp:Permission>CreateSSCSite</pnp:Permission>
+                <pnp:Permission>ManageSubwebs</pnp:Permission>
+                <pnp:Permission>ManagePermissions</pnp:Permission>
+                <pnp:Permission>BrowseDirectories</pnp:Permission>
+                <pnp:Permission>BrowseUserInfo</pnp:Permission>
+                <pnp:Permission>AddDelPrivateWebParts</pnp:Permission>
+                <pnp:Permission>UpdatePersonalWebParts</pnp:Permission>
+                <pnp:Permission>ManageWeb</pnp:Permission>
+                <pnp:Permission>UseClientIntegration</pnp:Permission>
+                <pnp:Permission>UseRemoteAPIs</pnp:Permission>
+                <pnp:Permission>ManageAlerts</pnp:Permission>
+                <pnp:Permission>CreateAlerts</pnp:Permission>
+                <pnp:Permission>EditMyUserInfo</pnp:Permission>
+                <pnp:Permission>EnumeratePermissions</pnp:Permission>
+              </pnp:Permissions>
+            </pnp:RoleDefinition>
+            <pnp:RoleDefinition Name="Restricted Read" Description="Can view pages and documents, but cannot view historical versions or user permissions.">
+              <pnp:Permissions>
+                <pnp:Permission>EmptyMask</pnp:Permission>
+                <pnp:Permission>ViewListItems</pnp:Permission>
+                <pnp:Permission>OpenItems</pnp:Permission>
+                <pnp:Permission>Open</pnp:Permission>
+                <pnp:Permission>ViewPages</pnp:Permission>
+              </pnp:Permissions>
+            </pnp:RoleDefinition>
+            <pnp:RoleDefinition Name="Approve" Description="Can edit and approve pages, list items, and documents.">
+              <pnp:Permissions>
+                <pnp:Permission>EmptyMask</pnp:Permission>
+                <pnp:Permission>ViewListItems</pnp:Permission>
+                <pnp:Permission>AddListItems</pnp:Permission>
+                <pnp:Permission>EditListItems</pnp:Permission>
+                <pnp:Permission>DeleteListItems</pnp:Permission>
+                <pnp:Permission>ApproveItems</pnp:Permission>
+                <pnp:Permission>OpenItems</pnp:Permission>
+                <pnp:Permission>ViewVersions</pnp:Permission>
+                <pnp:Permission>DeleteVersions</pnp:Permission>
+                <pnp:Permission>CancelCheckout</pnp:Permission>
+                <pnp:Permission>ManagePersonalViews</pnp:Permission>
+                <pnp:Permission>ViewFormPages</pnp:Permission>
+                <pnp:Permission>Open</pnp:Permission>
+                <pnp:Permission>ViewPages</pnp:Permission>
+                <pnp:Permission>CreateSSCSite</pnp:Permission>
+                <pnp:Permission>BrowseDirectories</pnp:Permission>
+                <pnp:Permission>BrowseUserInfo</pnp:Permission>
+                <pnp:Permission>AddDelPrivateWebParts</pnp:Permission>
+                <pnp:Permission>UpdatePersonalWebParts</pnp:Permission>
+                <pnp:Permission>UseClientIntegration</pnp:Permission>
+                <pnp:Permission>UseRemoteAPIs</pnp:Permission>
+                <pnp:Permission>CreateAlerts</pnp:Permission>
+                <pnp:Permission>EditMyUserInfo</pnp:Permission>
+              </pnp:Permissions>
+            </pnp:RoleDefinition>
+            <pnp:RoleDefinition Name="Portal Site Owner Permissions" Description="Can view, add, update, delete, approve, and customize.">
+              <pnp:Permissions>
+                <pnp:Permission>EmptyMask</pnp:Permission>
+                <pnp:Permission>ViewListItems</pnp:Permission>
+                <pnp:Permission>AddListItems</pnp:Permission>
+                <pnp:Permission>EditListItems</pnp:Permission>
+                <pnp:Permission>DeleteListItems</pnp:Permission>
+                <pnp:Permission>ApproveItems</pnp:Permission>
+                <pnp:Permission>OpenItems</pnp:Permission>
+                <pnp:Permission>ViewVersions</pnp:Permission>
+                <pnp:Permission>DeleteVersions</pnp:Permission>
+                <pnp:Permission>CancelCheckout</pnp:Permission>
+                <pnp:Permission>ManagePersonalViews</pnp:Permission>
+                <pnp:Permission>ManageLists</pnp:Permission>
+                <pnp:Permission>ViewFormPages</pnp:Permission>
+                <pnp:Permission>Open</pnp:Permission>
+                <pnp:Permission>ViewPages</pnp:Permission>
+                <pnp:Permission>AddAndCustomizePages</pnp:Permission>
+                <pnp:Permission>CreateSSCSite</pnp:Permission>
+                <pnp:Permission>ManageSubwebs</pnp:Permission>
+                <pnp:Permission>ManagePermissions</pnp:Permission>
+                <pnp:Permission>BrowseDirectories</pnp:Permission>
+                <pnp:Permission>BrowseUserInfo</pnp:Permission>
+                <pnp:Permission>AddDelPrivateWebParts</pnp:Permission>
+                <pnp:Permission>UpdatePersonalWebParts</pnp:Permission>
+                <pnp:Permission>UseClientIntegration</pnp:Permission>
+                <pnp:Permission>UseRemoteAPIs</pnp:Permission>
+                <pnp:Permission>CreateAlerts</pnp:Permission>
+                <pnp:Permission>EditMyUserInfo</pnp:Permission>
+                <pnp:Permission>EnumeratePermissions</pnp:Permission>
+              </pnp:Permissions>
+            </pnp:RoleDefinition>
+          </pnp:RoleDefinitions>
+          <pnp:RoleAssignments>
+            <pnp:RoleAssignment Principal="{associatedownergroup}" RoleDefinition="{roledefinition:Administrator}" />
+            <pnp:RoleAssignment Principal="{associatedvisitorgroup}" RoleDefinition="{roledefinition:Reader}" />
+            <pnp:RoleAssignment Principal="{associatedmembergroup}" RoleDefinition="{roledefinition:Editor}" />
+			      <pnp:RoleAssignment Principal="Corporate News Owners" RoleDefinition="Add and Edit Items (custom)" />
+            <pnp:RoleAssignment Principal="Corporate News Members" RoleDefinition="Add and Edit Items (custom)" />
+            <pnp:RoleAssignment Principal="News Owners" RoleDefinition="Add and Edit Items (custom)" />
+            <pnp:RoleAssignment Principal="News Members" RoleDefinition="Add and Edit Items (custom)" />
+          </pnp:RoleAssignments>
+        </pnp:Permissions>
+      </pnp:Security>
+      <pnp:SiteFields>
+        <Field Type="Note" DisplayName="ShareLocations_0" StaticName="b3eebddcc52c44a1806bfaf5e975dc3b" Name="b3eebddcc52c44a1806bfaf5e975dc3b" ID="{469ef2e9-e5a9-4992-9e51-440e833093f5}" ShowInViewForms="FALSE" Required="FALSE" CanToggleHidden="TRUE" SourceID="{36730c21-cd53-42f5-bb09-f67c44fe0a41}" AllowDeletion="TRUE" Hidden="TRUE" />
+        <Field Type="Note" DisplayName="Service Taxonomy_0" StaticName="oa230dbf1adb4d1a94ee0a2fc66109cf" Name="oa230dbf1adb4d1a94ee0a2fc66109cf" ID="{a93df48f-2e49-486d-b4b4-505215287a71}" ShowInViewForms="FALSE" Required="FALSE" CanToggleHidden="TRUE" SourceID="{dca9a2f7-2adf-4d75-8a9a-7220bfe7545f}" Hidden="TRUE" />
+        <Field Type="Note" DisplayName="Document Taxonomy_0" StaticName="c95cb5b10e8f4f85a6bca2a2b6b1add0" Name="c95cb5b10e8f4f85a6bca2a2b6b1add0" ID="{c6cbde8b-2439-4599-bbd9-1c79a3fea832}" ShowInViewForms="FALSE" Required="FALSE" CanToggleHidden="TRUE" SourceID="{36730c21-cd53-42f5-bb09-f67c44fe0a41}" Hidden="TRUE" />
+        <Field Type="Note" DisplayName="ShareCategories_0" StaticName="d1da478974a1451395ba47f5d994f760" Name="d1da478974a1451395ba47f5d994f760" ID="{f00bd707-f3ea-4066-828d-519f579c4bbe}" ShowInViewForms="FALSE" Required="FALSE" CanToggleHidden="TRUE" SourceID="{36730c21-cd53-42f5-bb09-f67c44fe0a41}" AllowDeletion="TRUE" Hidden="TRUE" />
+        <Field Type="Note" DisplayName="Industry Taxonomy_0" StaticName="f614216c9317475d815893103bb03ffd" Name="f614216c9317475d815893103bb03ffd" ID="{6757bf4d-4ca8-41e7-b0ff-247823888e80}" ShowInViewForms="FALSE" Required="FALSE" CanToggleHidden="TRUE" SourceID="{36730c21-cd53-42f5-bb09-f67c44fe0a41}" Hidden="TRUE" />
+        <Field Type="Note" DisplayName="Product Taxonomy_0" StaticName="e6f6fb49c8674573ac0d0f32d4d440c7" Name="e6f6fb49c8674573ac0d0f32d4d440c7" ID="{1cbbc09e-9bc5-4348-b806-3d775716e8bd}" ShowInViewForms="FALSE" Required="FALSE" CanToggleHidden="TRUE" SourceID="{36730c21-cd53-42f5-bb09-f67c44fe0a41}" Hidden="TRUE" />
+        <Field Type="Note" DisplayName="Organizations_0" StaticName="ac4ca612b48c45b899985d601cd7e7e8" Name="ac4ca612b48c45b899985d601cd7e7e8" ID="{57a10078-228a-41b8-9859-e8ddaa8686f4}" ShowInViewForms="FALSE" Required="FALSE" CanToggleHidden="TRUE" SourceID="{36730c21-cd53-42f5-bb09-f67c44fe0a41}" AllowDeletion="TRUE" Hidden="TRUE" />
+        <Field ID="{B8F74C00-78DD-4EE1-BD62-411DF2FF97D2}" Name="_ScheduledVersion" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="_ScheduledVersion" Type="Text" AllowDeletion="FALSE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInViewForms="FALSE" ShowInListSettings="FALSE" ShowInVersionHistory="FALSE" DisplayName="Scheduled Publish Version" />
+        <Field ID="{DEEEA303-6A25-4638-B9CA-EF6E120B4607}" Name="_BoostExpiryDate" StaticName="_BoostExpiryDate" DisplayName="Boost Expiry Date" Type="DateTime" SourceID="http://schemas.microsoft.com/sharepoint/v3" Group="_Hidden" ReadOnly="TRUE" AllowDeletion="FALSE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInViewForms="FALSE" ShowInListSettings="FALSE" ShowInVersionHistory="FALSE" />
+        <Field Type="Text" DisplayName="Url" Required="TRUE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="Share" ID="{2310e803-63e7-4963-aac7-065b85c8ced6}" StaticName="ShareUrlText" Name="ShareUrlText" CustomFormatter="{&#xD;&#xA;&quot;elmType&quot;:&quot;a&quot;,&#xD;&#xA;&quot;txtContent&quot;:&quot;@currentField&quot;,&#xD;&#xA;&quot;attributes&quot;:{&#xD;&#xA;&quot;target&quot;:&quot;_blank&quot;,&#xD;&#xA;&quot;href&quot;:&quot;@currentField&quot;&#xD;&#xA;}&#xD;&#xA;}" SourceID="{36730c21-cd53-42f5-bb09-f67c44fe0a41}" AllowDeletion="TRUE">
+          <Validation Message="Link URL must begin with http://, https:// or file://">=OR(LEN(Url)=0,LEFT(Url,7)="http://",LEFT(Url,8)="https://",LEFT(Url,7)="file://")</Validation>
+        </Field>
+        <Field Name="ShareMyLinkOrder" FromBaseType="FALSE" Type="Choice" DisplayName="Order in Startpage" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" Group="Share" ID="{2d67790f-e495-418d-bcd3-9c5f23b2bd70}" StaticName="ShareMyLinkOrder" SourceID="{f03d2bbb-e325-48ae-b9be-c0a5ccb320ea}" AllowDeletion="TRUE">
+          <Default>Not visible</Default>
+          <CHOICES>
+            <CHOICE>1</CHOICE>
+            <CHOICE>2</CHOICE>
+            <CHOICE>3</CHOICE>
+            <CHOICE>4</CHOICE>
+            <CHOICE>5</CHOICE>
+            <CHOICE>6</CHOICE>
+            <CHOICE>7</CHOICE>
+            <CHOICE>8</CHOICE>
+            <CHOICE>Not visible</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="TaxonomyFieldTypeMulti" DisplayName="Organizations" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Mult="TRUE" Sortable="FALSE" Group="Share" ID="{ac4ca612-b48c-45b8-9998-5d601cd7e7e8}" StaticName="ShareOrganizations" Name="ShareOrganizations" SourceID="{{siteid}}" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" AllowDeletion="TRUE">
+          <Default></Default>
+          <Customization>
+            <ArrayOfProperty>
+              <Property>
+                <Name>SspId</Name>
+                <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
+              </Property>
+              <Property>
+                <Name>GroupId</Name>
+              </Property>
+              <Property>
+                <Name>TermSetId</Name>
+                <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{termsetid:Share:Organizations}</Value>
+              </Property>
+              <Property>
+                <Name>AnchorId</Name>
+                <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">e9c88a9b-8cb2-48ee-8a6a-6c289b4549aa</Value>
+              </Property>
+              <Property>
+                <Name>UserCreated</Name>
+                <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>Open</Name>
+                <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TextField</Name>
+                <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{57a10078-228a-41b8-9859-e8ddaa8686f4}</Value>
+              </Property>
+              <Property>
+                <Name>IsPathRendered</Name>
+                <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsKeyword</Name>
+                <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TargetTemplate</Name>
+              </Property>
+              <Property>
+                <Name>CreateValuesInEditForm</Name>
+                <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>FilterAssemblyStrongName</Name>
+                <Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Value>
+              </Property>
+              <Property>
+                <Name>FilterClassName</Name>
+                <Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy.TaxonomyField</Value>
+              </Property>
+              <Property>
+                <Name>FilterMethodName</Name>
+                <Value xmlns:q12="http://www.w3.org/2001/XMLSchema" p4:type="q12:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">GetFilteringHtml</Value>
+              </Property>
+              <Property>
+                <Name>FilterJavascriptProperty</Name>
+                <Value xmlns:q13="http://www.w3.org/2001/XMLSchema" p4:type="q13:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">FilteringJavascript</Value>
+              </Property>
+            </ArrayOfProperty>
+          </Customization>
+        </Field>
+        <Field ID="{B0227F1A-B179-4D45-855B-A18F03706BCB}" Name="_dlc_Exempt" StaticName="_dlc_Exempt" DisplayName="Exempt from Policy" SourceID="http://schemas.microsoft.com/sharepoint/v3" Group="Document and Record Management Columns" Type="ExemptField" Indexed="FALSE" Hidden="TRUE" CanToggleHidden="TRUE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" ShowInFileDlg="FALSE" ShowInDisplayForm="FALSE" Required="FALSE" Sealed="TRUE" ReadOnly="TRUE" OverwriteInChildScopes="TRUE" />
+        <Field Name="ShareCriticalInfoType" FromBaseType="FALSE" Type="Choice" DisplayName="Message Type" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" Group="Share" ID="{d3e3262f-f6b4-4d8a-b0e0-4bfc9b3a9fcb}" StaticName="ShareCriticalInfoType" SourceID="{36730c21-cd53-42f5-bb09-f67c44fe0a41}" AllowDeletion="TRUE">
+          <Default>Information</Default>
+          <CHOICES>
+            <CHOICE>Information</CHOICE>
+            <CHOICE>Urgent</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field ID="{1488B62F-B70F-4F75-A384-7A04FBADA949}" Name="_PublishStartDate" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="_PublishStartDate" Type="DateTime" Format="DateTime" AllowDeletion="FALSE" DisplayName="Publish Start Date">
+          <Default>[today]</Default>
+        </Field>
+        <Field ID="{F9A44731-84EB-43a4-9973-CD2953AD8646}" Name="_vti_ItemDeclaredRecord" StaticName="_vti_ItemDeclaredRecord" DisplayName="Declared Record" SourceID="http://schemas.microsoft.com/sharepoint/v3" Group="Document and Record Management Columns" Type="DateTime" Indexed="FALSE" Hidden="FALSE" CanToggleHidden="TRUE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" ShowInFileDlg="FALSE" ShowInDisplayForm="TRUE" Required="FALSE" Sealed="TRUE" ReadOnly="TRUE" />
+        <Field Type="Text" DisplayName="Message Text" Required="TRUE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="Share" ID="{d51e9b3e-98ff-4f17-8a81-9baab12db203}" StaticName="ShareCriticalInfoMessage" Name="ShareCriticalInfoMessage" SourceID="{36730c21-cd53-42f5-bb09-f67c44fe0a41}" AllowDeletion="TRUE"></Field>
+        <Field Type="TaxonomyFieldTypeMulti" DisplayName="Product Taxonomy" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Group="Alfa Laval" ID="{e6f6fb49-c867-4573-ac0d-0f32d4d440c7}" SourceID="{{siteid}}" StaticName="Product_x0020_Taxonomy" Name="Product_x0020_Taxonomy" Mult="TRUE" Sortable="FALSE">
+          <Default></Default>
+          <Customization>
+            <ArrayOfProperty>
+              <Property>
+                <Name>SspId</Name>
+                <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
+              </Property>
+              <Property>
+                <Name>GroupId</Name>
+              </Property>
+              <Property>
+                <Name>TermSetId</Name>
+                <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{termsetid:Alfalaval Taxonomy:Products}</Value>
+              </Property>
+              <Property>
+                <Name>AnchorId</Name>
+                <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">00000000-0000-0000-0000-000000000000</Value>
+              </Property>
+              <Property>
+                <Name>UserCreated</Name>
+                <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>Open</Name>
+                <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TextField</Name>
+                <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{1cbbc09e-9bc5-4348-b806-3d775716e8bd}</Value>
+              </Property>
+              <Property>
+                <Name>IsPathRendered</Name>
+                <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsKeyword</Name>
+                <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TargetTemplate</Name>
+              </Property>
+              <Property>
+                <Name>CreateValuesInEditForm</Name>
+                <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>FilterAssemblyStrongName</Name>
+                <Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Value>
+              </Property>
+              <Property>
+                <Name>FilterClassName</Name>
+                <Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy.TaxonomyField</Value>
+              </Property>
+              <Property>
+                <Name>FilterMethodName</Name>
+                <Value xmlns:q12="http://www.w3.org/2001/XMLSchema" p4:type="q12:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">GetFilteringHtml</Value>
+              </Property>
+              <Property>
+                <Name>FilterJavascriptProperty</Name>
+                <Value xmlns:q13="http://www.w3.org/2001/XMLSchema" p4:type="q13:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">FilteringJavascript</Value>
+              </Property>
+            </ArrayOfProperty>
+          </Customization>
+        </Field>
+        <Field Type="Boolean" DisplayName="Archived" EnforceUniqueValues="FALSE" Indexed="FALSE" Group="Share" ID="{1cbc7553-2111-46c6-abdb-a828e34a3b5f}" StaticName="ShareArchived" Name="ShareArchived" SourceID="{36730c21-cd53-42f5-bb09-f67c44fe0a41}" AllowDeletion="TRUE">
+          <Default>0</Default>
+        </Field>
+        <Field ID="{5FC1A454-D3B1-4594-B4FF-7658E39D3088}" Name="_BoostOrderVersion" StaticName="_BoostOrderVersion" DisplayName="Boost Order Version" Type="Integer" SourceID="http://schemas.microsoft.com/sharepoint/v3" Group="_Hidden" ReadOnly="TRUE" AllowDeletion="FALSE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInViewForms="FALSE" ShowInListSettings="FALSE" ShowInVersionHistory="FALSE">
+          <Default>0</Default>
+        </Field>
+        <Field ID="{7B1C4C5E-3756-4280-8DB5-554D2D7B4D6B}" Name="_BoostUntilSeen" StaticName="_BoostUntilSeen" DisplayName="Boost Until Seen" Type="Boolean" SourceID="http://schemas.microsoft.com/sharepoint/v3" Group="_Hidden" ReadOnly="TRUE" AllowDeletion="FALSE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInViewForms="FALSE" ShowInListSettings="FALSE" ShowInVersionHistory="FALSE">
+          <Default>FALSE</Default>
+        </Field>
+        <Field Type="User" DisplayName="Alfa_ModifiedBy" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" Group="Share" ID="{5bd9ed5f-d2e5-4191-ad3b-9348bca2ce32}" SourceID="{{siteid}}" StaticName="Alfa_ModifiedBy" Name="Alfa_ModifiedBy" />
+        <Field ID="{E2563C65-4198-4D10-83F3-99D3EB30862D}" Name="_BoostUntilUsersViewedCount" StaticName="_BoostUntilUsersViewedCount" DisplayName="Boost Until Users Viewed Count" Type="Integer" SourceID="http://schemas.microsoft.com/sharepoint/v3" Group="_Hidden" ReadOnly="TRUE" AllowDeletion="FALSE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInViewForms="FALSE" ShowInListSettings="FALSE" ShowInVersionHistory="FALSE">
+          <Default>0</Default>
+        </Field>
+        <Field Type="TaxonomyFieldTypeMulti" DisplayName="Industry Taxonomy" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Group="Alfa Laval" ID="{f614216c-9317-475d-8158-93103bb03ffd}" SourceID="{{siteid}}" StaticName="Industry_x0020_Taxonomy" Name="Industry_x0020_Taxonomy" Mult="TRUE" Sortable="FALSE">
+          <Default></Default>
+          <Customization>
+            <ArrayOfProperty>
+              <Property>
+                <Name>SspId</Name>
+                <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
+              </Property>
+              <Property>
+                <Name>GroupId</Name>
+              </Property>
+              <Property>
+                <Name>TermSetId</Name>
+                <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{termsetid:Alfalaval Taxonomy:Industries}</Value>
+              </Property>
+              <Property>
+                <Name>AnchorId</Name>
+                <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">00000000-0000-0000-0000-000000000000</Value>
+              </Property>
+              <Property>
+                <Name>UserCreated</Name>
+                <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>Open</Name>
+                <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TextField</Name>
+                <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{6757bf4d-4ca8-41e7-b0ff-247823888e80}</Value>
+              </Property>
+              <Property>
+                <Name>IsPathRendered</Name>
+                <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsKeyword</Name>
+                <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TargetTemplate</Name>
+              </Property>
+              <Property>
+                <Name>CreateValuesInEditForm</Name>
+                <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>FilterAssemblyStrongName</Name>
+                <Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Value>
+              </Property>
+              <Property>
+                <Name>FilterClassName</Name>
+                <Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy.TaxonomyField</Value>
+              </Property>
+              <Property>
+                <Name>FilterMethodName</Name>
+                <Value xmlns:q12="http://www.w3.org/2001/XMLSchema" p4:type="q12:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">GetFilteringHtml</Value>
+              </Property>
+              <Property>
+                <Name>FilterJavascriptProperty</Name>
+                <Value xmlns:q13="http://www.w3.org/2001/XMLSchema" p4:type="q13:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">FilteringJavascript</Value>
+              </Property>
+            </ArrayOfProperty>
+          </Customization>
+        </Field>
+        <Field Type="Choice" DisplayName="News Template Type" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" Group="Share" ID="{3be55b6f-1829-4577-a648-8340f12f2977}" SourceID="{36730c21-cd53-42f5-bb09-f67c44fe0a41}" StaticName="ShareNewsTemplateType" Name="ShareNewsTemplateType" CustomFormatter="">
+          <Default>General</Default>
+          <CHOICES>
+            <CHOICE>General</CHOICE>
+            <CHOICE>Organization News</CHOICE>
+            <CHOICE>Quarterly Report</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="UserMulti" Mult="TRUE" DisplayName="Page Owners" StaticName="ALFA_PageOwners" Name="ALFA_PageOwners" Required="FALSE" EnforceUniqueValues="FALSE" UserSelectionMode="PeopleOnly" Group="AlfaLaval Portal" ID="{ff961d73-ea85-4ab5-a6e5-708ccab91902}" SourceID="{36730c21-cd53-42f5-bb09-f67c44fe0a41}" AllowDeletion="TRUE"></Field>
+        <Field Name="SharePublishingStartDate" DisplayName="Publishing Start Date" Type="DateTime" Format="DateTime" Required="TRUE" ID="{0f5d327d-c1ac-4962-9543-7ae4d1d95537}" Group="Share" SourceID="{36730c21-cd53-42f5-bb09-f67c44fe0a41}" StaticName="SharePublishingStartDate" AllowDeletion="TRUE">
+          <Default>[today]</Default>
+        </Field>
+        <Field ID="{ef991a83-108d-4407-8ee5-ccc0c3d836b9}" Type="UserMulti" DisplayName="Shared With" Mult="TRUE" Name="SharedWithUsers" StaticName="SharedWithUsers" Group="_Hidden" Sealed="TRUE" AllowDeletion="FALSE" ReadOnly="TRUE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInListSettings="FALSE" Viewable="FALSE" SourceID="{36730c21-cd53-42f5-bb09-f67c44fe0a41}" />
+        <Field Type="TaxonomyFieldTypeMulti" DisplayName="Categories" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Mult="TRUE" Sortable="FALSE" Group="Share" ID="{d1da4789-74a1-4513-95ba-47f5d994f760}" StaticName="ShareCategories" Name="ShareCategories" SourceID="{{siteid}}" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" AllowDeletion="TRUE">
+          <Default></Default>
+          <Customization>
+            <ArrayOfProperty>
+              <Property>
+                <Name>SspId</Name>
+                <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
+              </Property>
+              <Property>
+                <Name>GroupId</Name>
+              </Property>
+              <Property>
+                <Name>TermSetId</Name>
+                <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{termsetid:Share:Categories}</Value>
+              </Property>
+              <Property>
+                <Name>AnchorId</Name>
+                <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">2a44badc-8612-4184-b23a-3da0b774939d</Value>
+              </Property>
+              <Property>
+                <Name>UserCreated</Name>
+                <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>Open</Name>
+                <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TextField</Name>
+                <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{f00bd707-f3ea-4066-828d-519f579c4bbe}</Value>
+              </Property>
+              <Property>
+                <Name>IsPathRendered</Name>
+                <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsKeyword</Name>
+                <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TargetTemplate</Name>
+              </Property>
+              <Property>
+                <Name>CreateValuesInEditForm</Name>
+                <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>FilterAssemblyStrongName</Name>
+                <Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Value>
+              </Property>
+              <Property>
+                <Name>FilterClassName</Name>
+                <Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy.TaxonomyField</Value>
+              </Property>
+              <Property>
+                <Name>FilterMethodName</Name>
+                <Value xmlns:q12="http://www.w3.org/2001/XMLSchema" p4:type="q12:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">GetFilteringHtml</Value>
+              </Property>
+              <Property>
+                <Name>FilterJavascriptProperty</Name>
+                <Value xmlns:q13="http://www.w3.org/2001/XMLSchema" p4:type="q13:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">FilteringJavascript</Value>
+              </Property>
+            </ArrayOfProperty>
+          </Customization>
+        </Field>
+        <Field ID="{1CA2A289-B9CA-4E00-93AD-E2A735C4517D}" Name="_BoostOrder" StaticName="_BoostOrder" DisplayName="Boost Order" Type="Number" SourceID="http://schemas.microsoft.com/sharepoint/v3" Group="_Hidden" ReadOnly="TRUE" AllowDeletion="FALSE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInViewForms="FALSE" ShowInListSettings="FALSE" ShowInVersionHistory="FALSE" />
+        <Field ID="{74E6AE8A-0E3E-4DCB-BBFF-B5A016D74D64}" Name="_dlc_ExpireDateSaved" StaticName="_dlc_ExpireDateSaved" DisplayName="Original Expiration Date" SourceID="http://schemas.microsoft.com/sharepoint/v3" Group="Document and Record Management Columns" Type="DateTime" Indexed="FALSE" Hidden="TRUE" CanToggleHidden="TRUE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" ShowInFileDlg="FALSE" ShowInDisplayForm="FALSE" Required="FALSE" Sealed="TRUE" ReadOnly="TRUE" OverwriteInChildScopes="TRUE" />
+        <Field Type="UserMulti" Mult="TRUE" DisplayName="Page Editors" StaticName="ALFA_PageEditors" Name="ALFA_PageEditors" Required="FALSE" EnforceUniqueValues="FALSE" UserSelectionMode="PeopleOnly" Group="AlfaLaval Portal" ID="{82ba738e-07a4-4028-8aad-920d43dd4cf6}" SourceID="{36730c21-cd53-42f5-bb09-f67c44fe0a41}" AllowDeletion="TRUE"></Field>
+        <Field Name="SharePublishingEndDate" DisplayName="Publishing End Date" Type="DateTime" Format="DateTime" Required="TRUE" ID="{c9f206a0-0e2f-49af-a06e-52ff18cfb617}" Group="Share" SourceID="{36730c21-cd53-42f5-bb09-f67c44fe0a41}" StaticName="SharePublishingEndDate" AllowDeletion="TRUE"></Field>
+        <Field Type="TaxonomyFieldTypeMulti" DisplayName="Document Taxonomy" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Mult="TRUE" Sortable="FALSE" Group="Alfa Laval" ID="{c95cb5b1-0e8f-4f85-a6bc-a2a2b6b1add0}" SourceID="{{siteid}}" StaticName="Document_x0020_Taxonomy" Name="Document_x0020_Taxonomy">
+          <Default></Default>
+          <Customization>
+            <ArrayOfProperty>
+              <Property>
+                <Name>SspId</Name>
+                <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
+              </Property>
+              <Property>
+                <Name>GroupId</Name>
+              </Property>
+              <Property>
+                <Name>TermSetId</Name>
+                <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{termsetid:Alfalaval Taxonomy:Document Taxonomy}</Value>
+              </Property>
+              <Property>
+                <Name>AnchorId</Name>
+                <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">00000000-0000-0000-0000-000000000000</Value>
+              </Property>
+              <Property>
+                <Name>UserCreated</Name>
+                <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>Open</Name>
+                <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TextField</Name>
+                <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{c6cbde8b-2439-4599-bbd9-1c79a3fea832}</Value>
+              </Property>
+              <Property>
+                <Name>IsPathRendered</Name>
+                <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsKeyword</Name>
+                <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TargetTemplate</Name>
+              </Property>
+              <Property>
+                <Name>CreateValuesInEditForm</Name>
+                <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>FilterAssemblyStrongName</Name>
+                <Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Value>
+              </Property>
+              <Property>
+                <Name>FilterClassName</Name>
+                <Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy.TaxonomyField</Value>
+              </Property>
+              <Property>
+                <Name>FilterMethodName</Name>
+                <Value xmlns:q12="http://www.w3.org/2001/XMLSchema" p4:type="q12:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">GetFilteringHtml</Value>
+              </Property>
+              <Property>
+                <Name>FilterJavascriptProperty</Name>
+                <Value xmlns:q13="http://www.w3.org/2001/XMLSchema" p4:type="q13:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">FilteringJavascript</Value>
+              </Property>
+            </ArrayOfProperty>
+          </Customization>
+        </Field>
+        <Field Type="TaxonomyFieldTypeMulti" DisplayName="Service Taxonomy" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Mult="TRUE" Sortable="FALSE" Group="Alfa Laval" ID="{8a230dbf-1adb-4d1a-94ee-0a2fc66109cf}" SourceID="{{siteid}}" StaticName="Service_x0020_Taxonomy" Name="Service_x0020_Taxonomy">
+          <Default></Default>
+          <Customization>
+            <ArrayOfProperty>
+              <Property>
+                <Name>SspId</Name>
+                <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
+              </Property>
+              <Property>
+                <Name>GroupId</Name>
+              </Property>
+              <Property>
+                <Name>TermSetId</Name>
+                <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{termsetid:Alfalaval Taxonomy:Service}</Value>
+              </Property>
+              <Property>
+                <Name>AnchorId</Name>
+                <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">00000000-0000-0000-0000-000000000000</Value>
+              </Property>
+              <Property>
+                <Name>UserCreated</Name>
+                <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>Open</Name>
+                <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TextField</Name>
+                <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{a93df48f-2e49-486d-b4b4-505215287a71}</Value>
+              </Property>
+              <Property>
+                <Name>IsPathRendered</Name>
+                <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsKeyword</Name>
+                <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TargetTemplate</Name>
+              </Property>
+              <Property>
+                <Name>CreateValuesInEditForm</Name>
+                <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>FilterAssemblyStrongName</Name>
+                <Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Value>
+              </Property>
+              <Property>
+                <Name>FilterClassName</Name>
+                <Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy.TaxonomyField</Value>
+              </Property>
+              <Property>
+                <Name>FilterMethodName</Name>
+                <Value xmlns:q12="http://www.w3.org/2001/XMLSchema" p4:type="q12:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">GetFilteringHtml</Value>
+              </Property>
+              <Property>
+                <Name>FilterJavascriptProperty</Name>
+                <Value xmlns:q13="http://www.w3.org/2001/XMLSchema" p4:type="q13:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">FilteringJavascript</Value>
+              </Property>
+            </ArrayOfProperty>
+          </Customization>
+        </Field>
+        <Field ID="{3AFCC5C7-C6EF-44f8-9479-3561D72F9E8E}" Name="_vti_ItemHoldRecordStatus" StaticName="_vti_ItemHoldRecordStatus" DisplayName="Hold and Record Status" SourceID="http://schemas.microsoft.com/sharepoint/v3" Group="Document and Record Management Columns" Type="Integer" Min="0" Max="32" Decimals="0" Indexed="FALSE" Hidden="TRUE" CanToggleHidden="FALSE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" ShowInFileDlg="FALSE" ShowInDisplayForm="FALSE" Required="FALSE" Sealed="TRUE" ReadOnly="TRUE" />
+        <Field Type="TaxonomyFieldTypeMulti" DisplayName="Locations" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Mult="TRUE" Sortable="FALSE" Group="Share" ID="{b3eebddc-c52c-44a1-806b-faf5e975dc3b}" StaticName="ShareLocations" Name="ShareLocations" SourceID="{{siteid}}" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" AllowDeletion="TRUE">
+          <Default></Default>
+          <Customization>
+            <ArrayOfProperty>
+              <Property>
+                <Name>SspId</Name>
+                <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
+              </Property>
+              <Property>
+                <Name>GroupId</Name>
+              </Property>
+              <Property>
+                <Name>TermSetId</Name>
+                <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{termsetid:Share:Locations}</Value>
+              </Property>
+              <Property>
+                <Name>AnchorId</Name>
+                <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">23a62b61-e110-4eff-8ba1-d0c39f16e48d</Value>
+              </Property>
+              <Property>
+                <Name>UserCreated</Name>
+                <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>Open</Name>
+                <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TextField</Name>
+                <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{469ef2e9-e5a9-4992-9e51-440e833093f5}</Value>
+              </Property>
+              <Property>
+                <Name>IsPathRendered</Name>
+                <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsKeyword</Name>
+                <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TargetTemplate</Name>
+              </Property>
+              <Property>
+                <Name>CreateValuesInEditForm</Name>
+                <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>FilterAssemblyStrongName</Name>
+                <Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Value>
+              </Property>
+              <Property>
+                <Name>FilterClassName</Name>
+                <Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy.TaxonomyField</Value>
+              </Property>
+              <Property>
+                <Name>FilterMethodName</Name>
+                <Value xmlns:q12="http://www.w3.org/2001/XMLSchema" p4:type="q12:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">GetFilteringHtml</Value>
+              </Property>
+              <Property>
+                <Name>FilterJavascriptProperty</Name>
+                <Value xmlns:q13="http://www.w3.org/2001/XMLSchema" p4:type="q13:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">FilteringJavascript</Value>
+              </Property>
+            </ArrayOfProperty>
+          </Customization>
+        </Field>
+        <Field ID="{ACD16FDF-052F-40F7-BB7E-564C269C9FBC}" Name="_dlc_ExpireDate" StaticName="_dlc_ExpireDate" DisplayName="Expiration Date" SourceID="http://schemas.microsoft.com/sharepoint/v3" Group="Document and Record Management Columns" Type="DateTime" Indexed="FALSE" Hidden="FALSE" CanToggleHidden="TRUE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" ShowInFileDlg="FALSE" ShowInDisplayForm="FALSE" Required="FALSE" Sealed="TRUE" ReadOnly="TRUE" OverwriteInChildScopes="TRUE" />
+        <Field ID="{740931E6-D79E-44a6-A752-A06EB23C11B0}" Name="_vti_ItemIsLocked" StaticName="_vti_ItemIsLocked" DisplayName="Is Locked For Edit" SourceID="http://schemas.microsoft.com/sharepoint/v3" Group="Document and Record Management Columns" Type="Boolean" Indexed="FALSE" Hidden="TRUE" CanToggleHidden="TRUE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" ShowInFileDlg="FALSE" ShowInDisplayForm="TRUE" Required="FALSE" Sealed="TRUE" ReadOnly="TRUE" />
+        <Field ID="{d3c9caf7-044c-4c71-ae64-092981e54b33}" Type="Note" DisplayName="Shared With Details" Name="SharedWithDetails" StaticName="SharedWithDetails" Group="_Hidden" Sealed="TRUE" AllowDeletion="FALSE" ReadOnly="TRUE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInListSettings="FALSE" Viewable="FALSE" SourceID="{36730c21-cd53-42f5-bb09-f67c44fe0a41}" />
+        
+      </pnp:SiteFields>
+      <pnp:ContentTypes>
+       <pnp:ContentType ID="0x0101009D1CB255DA76424F860D91F20E6C4118001D97D517C2F6D844A59632814F3E9EA3" Name="News" Description="Share News" Group="Share" NewFormUrl="" EditFormUrl="" DisplayFormUrl="" UpdateChildren="false">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" UpdateChildren="true" />
+            <pnp:FieldRef ID="5f47e085-2150-41dc-b661-442f3027f552" Name="SelectFilename" UpdateChildren="true" />
+            <pnp:FieldRef ID="8553196d-ec8d-4564-9861-3dbe931050c8" Name="FileLeafRef" Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="8c06beca-0777-48f7-91c7-6da68bc07b69" Name="Created" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" UpdateChildren="true" />
+            <pnp:FieldRef ID="28cf69c5-fa48-462a-b5cd-27b6f9d2bd5f" Name="Modified" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="822c78e3-1ea9-4943-b449-57863ad33ca9" Name="Modified_x0020_By" UpdateChildren="true" />
+            <pnp:FieldRef ID="4dd7e525-8d6b-4cb4-9d3e-44ee25f973eb" Name="Created_x0020_By" UpdateChildren="true" />
+            <pnp:FieldRef ID="82642ec8-ef9b-478f-acf9-31f7d45fbc31" Name="LinkTitle" UpdateChildren="true" />
+            <pnp:FieldRef ID="7efc33c1-b56b-490e-9c9b-1097e971ba96" Name="ClientSideApplicationId" UpdateChildren="true" />
+            <pnp:FieldRef ID="daef58d7-ccfd-43fc-b776-2e292cc66bba" Name="PageLayoutType" UpdateChildren="true" />
+            <pnp:FieldRef ID="4966388e-6e12-4bc6-8990-5b5b66153eae" Name="CanvasContent1" UpdateChildren="true" />
+            <pnp:FieldRef ID="5baf6db5-9d25-4738-b15e-db5789298e82" Name="BannerImageUrl" UpdateChildren="true" />
+            <pnp:FieldRef ID="fb3259ac-bd07-4397-b7aa-03e885b0838e" Name="BannerImageOffset" UpdateChildren="true" />
+            <pnp:FieldRef ID="3f155110-a6a2-4d70-926c-94648101f0e8" Name="Description" UpdateChildren="true" />
+            <pnp:FieldRef ID="f5ad16a2-85be-46b2-b5f0-2bb8b4a5074a" Name="PromotedState" UpdateChildren="true" />
+            <pnp:FieldRef ID="c84f8697-331e-457d-884a-c4fb8f30ea74" Name="FirstPublishedDate" UpdateChildren="true" />
+            <pnp:FieldRef ID="261075db-0525-4fb8-a6ea-772014186599" Name="LayoutWebpartsContent" UpdateChildren="true" />
+            <pnp:FieldRef ID="469ef2e9-e5a9-4992-9e51-440e833093f5" Name="b3eebddcc52c44a1806bfaf5e975dc3b" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="f3b0adf9-c1a2-4b02-920d-943fba4b3611" Name="TaxCatchAll" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="8f6b6dd8-9357-4019-8172-966fcd502ed2" Name="TaxCatchAllLabel" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="b3eebddc-c52c-44a1-806b-faf5e975dc3b" Name="ShareLocations" UpdateChildren="true" />
+            <pnp:FieldRef ID="57a10078-228a-41b8-9859-e8ddaa8686f4" Name="ac4ca612b48c45b899985d601cd7e7e8" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="ac4ca612-b48c-45b8-9998-5d601cd7e7e8" Name="ShareOrganizations" UpdateChildren="true" />
+            <pnp:FieldRef ID="f00bd707-f3ea-4066-828d-519f579c4bbe" Name="d1da478974a1451395ba47f5d994f760" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="d1da4789-74a1-4513-95ba-47f5d994f760" Name="ShareCategories" UpdateChildren="true" />
+            <pnp:FieldRef ID="0f5d327d-c1ac-4962-9543-7ae4d1d95537" Name="SharePublishingStartDate" Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="c9f206a0-0e2f-49af-a06e-52ff18cfb617" Name="SharePublishingEndDate" Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="1a7348e7-1bb7-4a47-9790-088e7cb20b58" Name="_AuthorByline" UpdateChildren="true" />
+            <pnp:FieldRef ID="5bd9ed5f-d2e5-4191-ad3b-9348bca2ce32" Name="Alfa_ModifiedBy" UpdateChildren="true" />
+            
+            <pnp:FieldRef ID="d60d65ff-ff42-4044-a684-ac3f7a5e598c" Name="_TopicHeader" UpdateChildren="true" />
+            <pnp:FieldRef ID="9de685c5-fdf5-4319-b987-3edf55efb36f" Name="_SPSitePageFlags" UpdateChildren="true" />
+            <pnp:FieldRef ID="3be55b6f-1829-4577-a648-8340f12f2977" Name="ShareNewsTemplateType" UpdateChildren="true" />
+            <pnp:FieldRef ID="b8f74c00-78dd-4ee1-bd62-411df2ff97d2" Name="_ScheduledVersion" UpdateChildren="true" />
+            <pnp:FieldRef ID="1488b62f-b70f-4f75-a384-7a04fbada949" Name="_PublishStartDate" UpdateChildren="true" />
+            <pnp:FieldRef ID="ff41708b-e251-4237-a060-bea44657e8dc" Name="_SPAssetFolderId" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="9889a80f-c9ec-41d8-a359-ac5fb5c4cfa2" Name="_SPCallToAction" UpdateChildren="true" />
+            <pnp:FieldRef ID="e2563c65-4198-4d10-83f3-99d3eb30862d" Name="_BoostUntilUsersViewedCount" UpdateChildren="true" />
+            <pnp:FieldRef ID="deeea303-6a25-4638-b9ca-ef6e120b4607" Name="_BoostExpiryDate" UpdateChildren="true" />
+            <pnp:FieldRef ID="7b1c4c5e-3756-4280-8db5-554d2d7b4d6b" Name="_BoostUntilSeen" UpdateChildren="true" />
+            <pnp:FieldRef ID="1ca2a289-b9ca-4e00-93ad-e2a735c4517d" Name="_BoostOrder" UpdateChildren="true" />
+            <pnp:FieldRef ID="5fc1a454-d3b1-4594-b4ff-7658e39d3088" Name="_BoostOrderVersion" UpdateChildren="true" />
+          </pnp:FieldRefs>
+          <pnp:DocumentTemplate TargetName="/_layouts/15/CreateSitePage.aspx" />
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x0101009D1CB255DA76424F860D91F20E6C411800C0E54B39129A4FB6B71E908D1C98831E" Name="Dashboard" Description="Content type for a Dashboard." Group="_Hidden" Hidden="true" NewFormUrl="" EditFormUrl="" DisplayFormUrl="" UpdateChildren="false">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" UpdateChildren="true" />
+            <pnp:FieldRef ID="5f47e085-2150-41dc-b661-442f3027f552" Name="SelectFilename" UpdateChildren="true" />
+            <pnp:FieldRef ID="8553196d-ec8d-4564-9861-3dbe931050c8" Name="FileLeafRef" Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="8c06beca-0777-48f7-91c7-6da68bc07b69" Name="Created" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" UpdateChildren="true" />
+            <pnp:FieldRef ID="28cf69c5-fa48-462a-b5cd-27b6f9d2bd5f" Name="Modified" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="822c78e3-1ea9-4943-b449-57863ad33ca9" Name="Modified_x0020_By" UpdateChildren="true" />
+            <pnp:FieldRef ID="4dd7e525-8d6b-4cb4-9d3e-44ee25f973eb" Name="Created_x0020_By" UpdateChildren="true" />
+            <pnp:FieldRef ID="82642ec8-ef9b-478f-acf9-31f7d45fbc31" Name="LinkTitle" UpdateChildren="true" />
+            <pnp:FieldRef ID="7efc33c1-b56b-490e-9c9b-1097e971ba96" Name="ClientSideApplicationId" UpdateChildren="true" />
+            <pnp:FieldRef ID="daef58d7-ccfd-43fc-b776-2e292cc66bba" Name="PageLayoutType" UpdateChildren="true" />
+            <pnp:FieldRef ID="4966388e-6e12-4bc6-8990-5b5b66153eae" Name="CanvasContent1" UpdateChildren="true" />
+            <pnp:FieldRef ID="5baf6db5-9d25-4738-b15e-db5789298e82" Name="BannerImageUrl" UpdateChildren="true" />
+            <pnp:FieldRef ID="fb3259ac-bd07-4397-b7aa-03e885b0838e" Name="BannerImageOffset" UpdateChildren="true" />
+            <pnp:FieldRef ID="3f155110-a6a2-4d70-926c-94648101f0e8" Name="Description" UpdateChildren="true" />
+            <pnp:FieldRef ID="f5ad16a2-85be-46b2-b5f0-2bb8b4a5074a" Name="PromotedState" UpdateChildren="true" />
+            <pnp:FieldRef ID="c84f8697-331e-457d-884a-c4fb8f30ea74" Name="FirstPublishedDate" UpdateChildren="true" />
+            <pnp:FieldRef ID="261075db-0525-4fb8-a6ea-772014186599" Name="LayoutWebpartsContent" UpdateChildren="true" />
+            
+            
+            <pnp:FieldRef ID="1a7348e7-1bb7-4a47-9790-088e7cb20b58" Name="_AuthorByline" UpdateChildren="true" />
+            <pnp:FieldRef ID="d60d65ff-ff42-4044-a684-ac3f7a5e598c" Name="_TopicHeader" UpdateChildren="true" />
+            <pnp:FieldRef ID="9de685c5-fdf5-4319-b987-3edf55efb36f" Name="_SPSitePageFlags" UpdateChildren="true" />
+            <pnp:FieldRef ID="b8f74c00-78dd-4ee1-bd62-411df2ff97d2" Name="_ScheduledVersion" UpdateChildren="true" />
+            <pnp:FieldRef ID="1488b62f-b70f-4f75-a384-7a04fbada949" Name="_PublishStartDate" UpdateChildren="true" />
+            <pnp:FieldRef ID="ff41708b-e251-4237-a060-bea44657e8dc" Name="_SPAssetFolderId" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="9889a80f-c9ec-41d8-a359-ac5fb5c4cfa2" Name="_SPCallToAction" UpdateChildren="true" />
+            <pnp:FieldRef ID="e2563c65-4198-4d10-83f3-99d3eb30862d" Name="_BoostUntilUsersViewedCount" UpdateChildren="true" />
+            <pnp:FieldRef ID="deeea303-6a25-4638-b9ca-ef6e120b4607" Name="_BoostExpiryDate" UpdateChildren="true" />
+            <pnp:FieldRef ID="7b1c4c5e-3756-4280-8db5-554d2d7b4d6b" Name="_BoostUntilSeen" UpdateChildren="true" />
+            <pnp:FieldRef ID="1ca2a289-b9ca-4e00-93ad-e2a735c4517d" Name="_BoostOrder" UpdateChildren="true" />
+            <pnp:FieldRef ID="5fc1a454-d3b1-4594-b4ff-7658e39d3088" Name="_BoostOrderVersion" UpdateChildren="true" />
+          </pnp:FieldRefs>
+          <pnp:DocumentTemplate TargetName="/_layouts/15/CreateSitePage.aspx" />
+        </pnp:ContentType>
+      </pnp:ContentTypes>
+      <pnp:Lists>
+        <pnp:ListInstance Title="Site Pages" Description="" DocumentTemplate="" TemplateType="119" Url="SitePages" EnableVersioning="true" EnableMinorVersions="true" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="1" TemplateFeatureID="00bfea71-c796-4402-9f2f-0eb9a6e71b18" ContentTypesEnabled="true" EnableAttachments="false" EnableFolderCreation="true" DefaultDisplayFormUrl="{site}/SitePages/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/SitePages/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/SitePages/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itwp.png?rev=44" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+		        <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+		        <pnp:ContentTypeBinding ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C4118" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C4118001D97D517C2F6D844A59632814F3E9EA3" Hidden="true" />         
+          </pnp:ContentTypeBindings>
+          <pnp:Fields>
+            <Field Type="Text" DisplayName="Old View Count" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="Share" ID="{FC73B4DE-9481-41CB-ADAD-8EA8A10A117A}" StaticName="ShareOldViewCount" Name="ShareOldViewCount"  AllowDeletion="TRUE"></Field>
+            <Field Type="Text" DisplayName="Old Like Count" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="Share" ID="{4A51EBE3-2B74-424A-A816-B01352AFB60A}" StaticName="ShareOldLikeCount" Name="ShareOldLikeCount"  AllowDeletion="TRUE"></Field>
+          </pnp:Fields>
+          <pnp:Views>
+            <View Name="{B14F8F6C-AC87-4ECA-AB3C-5ABFE45AA8AD}" DefaultView="TRUE" MobileView="TRUE"
+                  MobileDefaultView="TRUE" Type="HTML" DisplayName="By Author"
+                  Url="/sites/Share/SitePages/Forms/ByAuthor.aspx" Level="1" BaseViewID="4" ContentTypeID="0x"
+                  ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=44">
+              <Query>
+                <GroupBy Collapse="FALSE">
+                  <FieldRef Name="Author"/>
+                </GroupBy>
+                <OrderBy>
+                  <FieldRef Name="Modified"/>
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkTitle"/>
+                <FieldRef Name="LinkFilename"/>
+                <FieldRef Name="Editor"/>
+                <FieldRef Name="Modified"/>
+                <FieldRef Name="Created"/>
+                <FieldRef Name="_UIVersionString"/>
+                <FieldRef Name="CheckoutUser"/>
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{D8D63820-F909-4F85-BE21-BA42C415ABD1}" Type="HTML" DisplayName="Recent Changes"
+                  Url="/sites/Share/SitePages/Forms/RecentChanges.aspx" Level="1" BaseViewID="2" ContentTypeID="0x"
+                  ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=44">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="Modified" Ascending="FALSE"/>
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkTitle"/>
+                <FieldRef Name="LinkFilename"/>
+                <FieldRef Name="Editor"/>
+                <FieldRef Name="Modified"/>
+                <FieldRef Name="Author"/>
+                <FieldRef Name="Created"/>
+                <FieldRef Name="_UIVersionString"/>
+                <FieldRef Name="CheckoutUser"/>
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{0AED39B6-26C5-4285-B5AB-3A65BAEDD5C2}" Type="HTML" DisplayName="All Pages"
+                  Url="/sites/Share/SitePages/Forms/AllPages.aspx" Level="1" BaseViewID="1" ContentTypeID="0x"
+                  ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=44">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="Modified" Ascending="FALSE"/>
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkTitle"/>
+                <FieldRef Name="LinkFilename"/>
+                <FieldRef Name="Editor"/>
+                <FieldRef Name="Modified"/>
+                <FieldRef Name="Author"/>
+                <FieldRef Name="Created"/>
+                <FieldRef Name="_UIVersionString"/>
+                <FieldRef Name="CheckoutUser"/>
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off"/>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{A77560EB-E518-46B6-8FA0-1707BE1C15ED}" Type="HTML" DisplayName="By Editor"
+                  Url="/sites/Share/SitePages/Forms/ByEditor.aspx" Level="1" BaseViewID="5" ContentTypeID="0x"
+                  ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=44">
+              <Query>
+                <GroupBy Collapse="FALSE">
+                  <FieldRef Name="Editor"/>
+                </GroupBy>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef"/>
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkTitle"/>
+                <FieldRef Name="LinkFilename"/>
+                <FieldRef Name="Editor"/>
+                <FieldRef Name="Modified"/>
+                <FieldRef Name="Author"/>
+                <FieldRef Name="Created"/>
+                <FieldRef Name="_UIVersionString"/>
+                <FieldRef Name="CheckoutUser"/>
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{2E911576-797D-47C4-A4DD-36CC6E2A0B80}" Type="HTML" DisplayName="Created By Me"
+                  Url="/sites/Share/SitePages/Forms/CreatedByMe.aspx" Level="1" BaseViewID="3" ContentTypeID="0x"
+                  ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=44">
+              <Query>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="Author"/>
+                    <Value Type="Integer">
+                      <UserID/>
+                    </Value>
+                  </Eq>
+                </Where>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef"/>
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkTitle"/>
+                <FieldRef Name="LinkFilename"/>
+                <FieldRef Name="Editor"/>
+                <FieldRef Name="Modified"/>
+                <FieldRef Name="Author"/>
+                <FieldRef Name="Created"/>
+                <FieldRef Name="_UIVersionString"/>
+                <FieldRef Name="CheckoutUser"/>
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Folders>
+            <pnp:Folder Name="Templates">
+              <pnp:Security>
+                <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false">
+                  <pnp:RoleAssignment Principal="{associatedownergroup}" RoleDefinition="Full Control"/>
+                  <pnp:RoleAssignment Principal="{associatedmembergroup}" RoleDefinition="Edit only"/>
+                  <pnp:RoleAssignment Principal="News Owners" RoleDefinition="Add and Edit Items (custom)"/>
+                  <pnp:RoleAssignment Principal="News Members" RoleDefinition="Add and Edit Items (custom)"/>
+                </pnp:BreakRoleInheritance>
+              </pnp:Security>
+            </pnp:Folder>
+            
+          </pnp:Folders>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Site Assets" Description="Use this library to store files which are included on pages within this site, such as images on Wiki pages." DocumentTemplate="{site}/SiteAssets/Forms/template.doc" TemplateType="101" Url="SiteAssets" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/SiteAssets/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/SiteAssets/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/SiteAssets/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=44" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+		      <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="true">
+              <pnp:RoleAssignment Principal="{associatedownergroup}" RoleDefinition="Full Control" />
+              <pnp:RoleAssignment Principal="{associatedvisitorgroup}" RoleDefinition="Read" />
+              <pnp:RoleAssignment Principal="{associatedmembergroup}" RoleDefinition="Contribute" />
+              <pnp:RoleAssignment Principal="News Owners" RoleDefinition="Contribute" />
+              <pnp:RoleAssignment Principal="News Members" RoleDefinition="Contribute" />
+              <pnp:RoleAssignment Principal="Corporate News Owners" RoleDefinition="Contribute" />
+              <pnp:RoleAssignment Principal="Corporate News Members" RoleDefinition="Contribute" />
+            </pnp:BreakRoleInheritance>
+          </pnp:Security>
+        </pnp:ListInstance>
+      </pnp:Lists>
+      <pnp:Footer Enabled="true" Name="@2023,ALFA LAVAL" RemoveExistingNodes="false">
+        <pnp:FooterLinks>
+          <pnp:FooterLink DisplayName="Share Online Help" Url="https://alfalavalonline.sharepoint.com/sites/ShareUserGuides" />
+          <pnp:FooterLink DisplayName="www.alfalaval.com" Url="http://www.alfalaval.com/" />
+        </pnp:FooterLinks>
+      </pnp:Footer>
+      <pnp:ApplicationLifecycleManagement>
+          <pnp:Apps>
+              <pnp:App AppId="1a609e8b-c684-4bbb-8a83-abdd7345f015" Action="Install" />
+              <pnp:App AppId="20665363-c703-4ede-aa8b-76ed8cd7f5f4" Action="Install" />
+              
+          </pnp:Apps>
+      </pnp:ApplicationLifecycleManagement>
+      <pnp:ClientSidePages>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="true" Overwrite="true" EnableComments="false" Title="Organization News" ThumbnailUrl="{hosturl}/sites/OrganizationAssets/OrganizationAssets/OrgNewsThumbnail.jpg" PageName="OrganizationNewsTemplate.aspx">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{hosturl}/sites/OrganizationAssets/OrganizationAssets/OrgNewsHeader.jpg" TranslateX="49.2938802958978" TranslateY="53.5087719298246" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="2df9ff36-cf6e-4d22-9848-96a935969e62" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Write your text here" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;d8f01946-5352-4a54-a449-b26670a19fbf&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Image&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:0,&quot;imageSource&quot;:&quot;&quot;,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;&quot;,&quot;webId&quot;:&quot;&quot;,&quot;listId&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;&quot;,&quot;imgWidth&quot;:&quot;&quot;,&quot;imgHeight&quot;:&quot;&quot;,&quot;alignment&quot;:&quot;Center&quot;,&quot;isFullWidth&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="2" Column="1" />
+                <pnp:CanvasControl WebPartType="People" JsonControlData="{&quot;id&quot;: &quot;7f718435-ee4d-431c-bdbf-9c4ff326f46e&quot;, &quot;instanceId&quot;: &quot;527ba55c-d6f3-4029-beab-4d899c5001de&quot;, &quot;title&quot;: &quot;People&quot;, &quot;description&quot;: &quot;People&quot;, &quot;dataVersion&quot;: &quot;1.3&quot;, &quot;properties&quot;: {&quot;layout&quot;:1,&quot;persons&quot;:[]}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Editor&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="7f718435-ee4d-431c-bdbf-9c4ff326f46e" Order="3" Column="1" />
+                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;id&quot;: &quot;cf91cf5d-ac23-4a7a-9dbc-cd9ea2a4e859&quot;, &quot;instanceId&quot;: &quot;61de31bc-0ccd-4dbe-b56e-915f487b834c&quot;, &quot;title&quot;: &quot;Page properties&quot;, &quot;description&quot;: &quot;Page properties&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;selectedFieldIds&quot;:[&quot;0f5d327d-c1ac-4962-9543-7ae4d1d95537&quot;],&quot;availableFields&quot;:[]}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Publishing Date&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="cf91cf5d-ac23-4a7a-9dbc-cd9ea2a4e859" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="Divider" JsonControlData="{&quot;id&quot;: &quot;2161a1c6-db61-4731-b97c-3cdb303f7cbb&quot;, &quot;instanceId&quot;: &quot;134c50d6-9c37-4afb-beef-732d0a8d5771&quot;, &quot;title&quot;: &quot;Divider&quot;, &quot;description&quot;: &quot;Divider&quot;, &quot;dataVersion&quot;: &quot;1.1&quot;, &quot;properties&quot;: {&quot;length&quot;:100,&quot;weight&quot;:1}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="2161a1c6-db61-4731-b97c-3cdb303f7cbb" Order="2" Column="2" />
+                <pnp:CanvasControl WebPartType="People" JsonControlData="{&quot;id&quot;: &quot;7f718435-ee4d-431c-bdbf-9c4ff326f46e&quot;, &quot;instanceId&quot;: &quot;1cda2441-fe9d-4836-b232-98441b16beee&quot;, &quot;title&quot;: &quot;People&quot;, &quot;description&quot;: &quot;People&quot;, &quot;dataVersion&quot;: &quot;1.3&quot;, &quot;properties&quot;: {&quot;layout&quot;:1,&quot;persons&quot;:[]}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Information owner&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="7f718435-ee4d-431c-bdbf-9c4ff326f46e" Order="3" Column="2" />
+                <pnp:CanvasControl WebPartType="Divider" JsonControlData="{&quot;id&quot;: &quot;2161a1c6-db61-4731-b97c-3cdb303f7cbb&quot;, &quot;instanceId&quot;: &quot;95f272b0-f012-48c9-9af8-6d5be8d9f279&quot;, &quot;title&quot;: &quot;Divider&quot;, &quot;description&quot;: &quot;Divider&quot;, &quot;dataVersion&quot;: &quot;1.1&quot;, &quot;properties&quot;: {&quot;length&quot;:100,&quot;weight&quot;:1}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="2161a1c6-db61-4731-b97c-3cdb303f7cbb" Order="4" Column="2" />
+                <pnp:CanvasControl WebPartType="People" JsonControlData="{&quot;id&quot;: &quot;7f718435-ee4d-431c-bdbf-9c4ff326f46e&quot;, &quot;instanceId&quot;: &quot;e6a7d097-b0b3-47a3-8632-e99f371eace1&quot;, &quot;title&quot;: &quot;People&quot;, &quot;description&quot;: &quot;People&quot;, &quot;dataVersion&quot;: &quot;1.3&quot;, &quot;properties&quot;: {&quot;layout&quot;:1,&quot;persons&quot;:[]}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Type in relevant position&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="7f718435-ee4d-431c-bdbf-9c4ff326f46e" Order="5" Column="2" />
+                <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{&quot;id&quot;: &quot;c70391ea-0b10-4ee9-b2b4-006d3fcad0cd&quot;, &quot;instanceId&quot;: &quot;3aa27f9a-e949-46d2-bafc-042b39237bb2&quot;, &quot;title&quot;: &quot;Quick links&quot;, &quot;description&quot;: &quot;Quick links&quot;, &quot;dataVersion&quot;: &quot;2.2&quot;, &quot;properties&quot;: {&quot;items&quot;:[],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;CompactCard&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;imageWidth&quot;:100,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:2,&quot;iconPositionType&quot;:2,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:2},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="6" Column="2" />
+                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{ &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;properties&quot;: {&quot;listName&quot;:&quot;some list&quot;,&quot;viewName&quot;:&quot;All items&quot;,&quot;headerText&quot;:&quot;Some header&quot;}}" ControlId="1f23782d-4cf2-48f1-a469-f88ca6cfee68" Order="7" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="true" Overwrite="true" Title="News title" ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C4118001D97D517C2F6D844A59632814F3E9EA3" ThumbnailUrl="" PageName="NewsTemplate.aspx">
+          <pnp:Header Type="Default" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
+          <pnp:Sections>
+          <pnp:Section Order="1" Type="TwoColumnLeft">
+            <pnp:Controls>
+            <pnp:CanvasControl WebPartType="Text" ControlId="5f89b7b9-2fc6-422f-98e6-2844d932af8c" Order="1" Column="1">
+              <pnp:CanvasControlProperties>
+              <pnp:CanvasControlProperty Key="Text" Value="Write your text here" />
+              </pnp:CanvasControlProperties>
+            </pnp:CanvasControl>
+            <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;id&quot;: &quot;cf91cf5d-ac23-4a7a-9dbc-cd9ea2a4e859&quot;, &quot;instanceId&quot;: &quot;36612080-0b85-4570-8c01-5f5215e2111e&quot;, &quot;title&quot;: &quot;Page properties&quot;, &quot;description&quot;: &quot;Show details about your page like date, content type, or custom properties.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;selectedFieldIds&quot;:[&quot;0f5d327d-c1ac-4962-9543-7ae4d1d95537&quot;],&quot;availableFields&quot;:[]}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Publishing Date&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="cf91cf5d-ac23-4a7a-9dbc-cd9ea2a4e859" Order="1" Column="2" />
+            <pnp:CanvasControl WebPartType="People" JsonControlData="{&quot;id&quot;: &quot;7f718435-ee4d-431c-bdbf-9c4ff326f46e&quot;, &quot;instanceId&quot;: &quot;32fff656-e8d8-4e31-b90a-18c5e5925889&quot;, &quot;title&quot;: &quot;People&quot;, &quot;description&quot;: &quot;Display selected people and their profiles&quot;, &quot;dataVersion&quot;: &quot;1.2&quot;, &quot;properties&quot;: {&quot;layout&quot;:1,&quot;persons&quot;:[]}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="7f718435-ee4d-431c-bdbf-9c4ff326f46e" Order="2" Column="2" />	
+            <pnp:CanvasControl WebPartType="Custom" JsonControlData="{ &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;properties&quot;: {&quot;listName&quot;:&quot;some list&quot;,&quot;viewName&quot;:&quot;All items&quot;,&quot;headerText&quot;:&quot;Some header&quot;}}" ControlId="1f23782d-4cf2-48f1-a469-f88ca6cfee68" Order="3" Column="2" />
+            </pnp:Controls>
+          </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>		
+        
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="true" Overwrite="true" Title="Quarterly Report" ThumbnailUrl="{hosturl}/sites/OrganizationAssets/OrganizationAssets/QuarterlyReportThumbnail.jpg" PageName="QuarterlyReportTemplate.aspx">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{hosturl}/sites/OrganizationAssets/OrganizationAssets/QuarterlyReportHeader.jpg" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="651138b3-da66-4ea5-b082-7cc07d5819c9" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Write your text here" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;id&quot;: &quot;cf91cf5d-ac23-4a7a-9dbc-cd9ea2a4e859&quot;, &quot;instanceId&quot;: &quot;144a863d-9a3e-46b3-9fcb-a5a532651944&quot;, &quot;title&quot;: &quot;Page properties&quot;, &quot;description&quot;: &quot;Show details about your page like date, content type, or custom properties.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;selectedFieldIds&quot;:[&quot;0f5d327d-c1ac-4962-9543-7ae4d1d95537&quot;],&quot;availableFields&quot;:[]}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Publishing Date&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="cf91cf5d-ac23-4a7a-9dbc-cd9ea2a4e859" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="People" JsonControlData="{&quot;id&quot;: &quot;7f718435-ee4d-431c-bdbf-9c4ff326f46e&quot;, &quot;instanceId&quot;: &quot;9c52bda5-88c3-4a37-b062-b3121337ea2b&quot;, &quot;title&quot;: &quot;People&quot;, &quot;description&quot;: &quot;Display selected people and their profiles&quot;, &quot;dataVersion&quot;: &quot;1.3&quot;, &quot;properties&quot;: {&quot;layout&quot;:1,&quot;persons&quot;:[]}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Information owner&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="7f718435-ee4d-431c-bdbf-9c4ff326f46e" Order="2" Column="2" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;cfa3ab77-dd99-45a1-9c14-73c1ded47792&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Add an image, picture or photo to your page including text overlays and ability to crop and resize images.&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:0,&quot;imageSource&quot;:&quot;&quot;,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;&quot;,&quot;webId&quot;:&quot;&quot;,&quot;listId&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;&quot;,&quot;imgWidth&quot;:&quot;&quot;,&quot;imgHeight&quot;:&quot;&quot;,&quot;alignment&quot;:&quot;Center&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="3" Column="2" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="9bf0f725-9fb2-443c-8a8a-ffaca46e0890" Order="4" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Write your text here" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>				
+                <pnp:CanvasControl WebPartType="ContentEmbed" JsonControlData="{&quot;id&quot;: &quot;490d7c76-1824-45b2-9de3-676421c997fa&quot;, &quot;instanceId&quot;: &quot;cda304f3-7b36-4f8b-8312-a3406cd6b444&quot;, &quot;title&quot;: &quot;Embed&quot;, &quot;description&quot;: &quot;Embed content from other sites such as Sway, YouTube, Vimeo, and more&quot;, &quot;dataVersion&quot;: &quot;1.2&quot;, &quot;properties&quot;: {&quot;embedCode&quot;:&quot;&quot;,&quot;cachedEmbedCode&quot;:&quot;&quot;,&quot;shouldScaleWidth&quot;:true,&quot;tempState&quot;:{},&quot;thumbnailUrl&quot;:&quot;&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="490d7c76-1824-45b2-9de3-676421c997fa" Order="5" Column="2" />                
+				<pnp:CanvasControl WebPartType="Text" ControlId="96f31f9c-f0fb-4069-9b95-583dc985c695" Order="6" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Write your text here" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{ &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;properties&quot;: {&quot;listName&quot;:&quot;some list&quot;,&quot;viewName&quot;:&quot;All items&quot;,&quot;headerText&quot;:&quot;Some header&quot;}}" ControlId="1f23782d-4cf2-48f1-a469-f88ca6cfee68" Order="7" Column="2" />
+			  </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="People" JsonControlData="{&quot;id&quot;: &quot;7f718435-ee4d-431c-bdbf-9c4ff326f46e&quot;, &quot;instanceId&quot;: &quot;e8f5d735-ee9a-4baa-9929-512191a65664&quot;, &quot;title&quot;: &quot;People&quot;, &quot;description&quot;: &quot;Display selected people and their profiles&quot;, &quot;dataVersion&quot;: &quot;1.3&quot;, &quot;properties&quot;: {&quot;layout&quot;:1,&quot;persons&quot;:[]}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Editor&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="7f718435-ee4d-431c-bdbf-9c4ff326f46e" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+      </pnp:ClientSidePages>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

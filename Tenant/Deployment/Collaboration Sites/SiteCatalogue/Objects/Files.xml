@@ -1,0 +1,5 @@
+<pnp:Files 
+          xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema">
+    <pnp:File Src="fail-mail-en.txt" Folder="{site}/Shared%20Documents/MailTemplates" Overwrite="true"/>
+    <pnp:File Src="welcome-mail-en.txt" Folder="{site}/Shared%20Documents/MailTemplates" Overwrite="true"/>
+</pnp:Files>

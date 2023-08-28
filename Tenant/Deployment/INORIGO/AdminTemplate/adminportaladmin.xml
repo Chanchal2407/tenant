@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.18.2002.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-INORIGOINTEGRATION">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-INORIGOINTEGRATION" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:SiteFields>
+        <Field Type="Text" DisplayName="Time Taken" Group="AlfaLaval Admin" EnforceUniqueValues="FALSE" Required="FALSE" Hidden="FALSE" ReadOnly="FALSE" CanToggleHidden="FALSE" ID="{2c8d1a42-e9a3-422a-9e1e-c9d79a27e17b}" Name="ShareTimeTaken" StaticName="ShareTimeTaken" MaxLength="255" />
+        <Field Type="Choice" DisplayName="File Type" Group="AlfaLaval Admin" EnforceUniqueValues="FALSE" Required="FALSE" Hidden="FALSE" ReadOnly="FALSE" CanToggleHidden="FALSE" ID="{17019761-3d32-4cea-9f00-2d2622d4ee07}" Name="ShareInorigoFileType" StaticName="ShareInorigoFileType" Format="Dropdown" FillInChoice="FALSE" >
+          <CHOICES>
+            <CHOICE>Products</CHOICE>
+            <CHOICE>Documents</CHOICE>
+            <CHOICE>Industries</CHOICE>
+			<CHOICE>Services</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="Number" DisplayName="Year" Group="AlfaLaval Admin" EnforceUniqueValues="FALSE" Required="FALSE" Hidden="FALSE" ReadOnly="FALSE" CanToggleHidden="FALSE" ID="{a0cab7d7-05ff-406b-ae60-032a5c663a40}" Name="ShareYear" StaticName="ShareYear" Min="2019" Max="2030" Decimals="0" Percentage="FALSE" SourceID="{f384970e-bc34-4079-9b17-aaddd0368b65}" />
+        <Field Type="Choice" DisplayName="Change Type" Group="AlfaLaval Admin" EnforceUniqueValues="FALSE" Required="FALSE" Hidden="FALSE" ReadOnly="FALSE" CanToggleHidden="FALSE" ID="{74f8e8e7-cc07-4c5d-9aa1-a505f3f96963}" Name="ShareChangeType" StaticName="ShareChangeType" Format="Dropdown" FillInChoice="FALSE" SourceID="{f384970e-bc34-4079-9b17-aaddd0368b65}">
+          <Default>New</Default>
+          <CHOICES>
+            <CHOICE>New</CHOICE>
+            <CHOICE>Deprecate</CHOICE>
+            <CHOICE>Minor Change</CHOICE>
+            <CHOICE>Major Change</CHOICE>
+            <CHOICE>Full Sync</CHOICE>
+            <CHOICE>Delta Sync</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="Note" DisplayName="Change Comments" Group="AlfaLaval Admin" EnforceUniqueValues="FALSE" Required="FALSE" Hidden="FALSE" ReadOnly="FALSE" CanToggleHidden="FALSE" Sortable="FALSE" ID="{e9641bec-bcaa-4401-afc1-f989c77cefa7}" Name="ShareChangeComments" StaticName="ShareChangeComments" RichText="FALSE" RichTextMode="Compatible" IsolateStyles="FALSE" AppendOnly="FALSE" NumLines="6" UnlimitedLengthInDocumentLibrary="FALSE" SourceID="{f384970e-bc34-4079-9b17-aaddd0368b65}" />
+        <Field Type="Choice" DisplayName="Change Status" Group="AlfaLaval Admin" EnforceUniqueValues="FALSE" Required="FALSE" Hidden="FALSE" ReadOnly="FALSE" CanToggleHidden="FALSE" ID="{d7526cf5-0acf-4204-b82b-209f795b0185}" Name="ShareChangeStatus" StaticName="ShareChangeStatus" Format="Dropdown" FillInChoice="FALSE" SourceID="{f384970e-bc34-4079-9b17-aaddd0368b65}">
+          <CHOICES>
+            <CHOICE>Auto Applied</CHOICE>
+            <CHOICE>Needs to be applied</CHOICE>
+          </CHOICES>
+        </Field>
+      </pnp:SiteFields>
+      <pnp:ContentTypes>
+        <pnp:ContentType ID="0x0100042753797C5E40B889D986E0FFDE1D88" Name="INORIGO Change log" Description="" Group="Alfa Laval Admin" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="17019761-3d32-4cea-9f00-2d2622d4ee07" Name="ShareInorigoFileType" UpdateChildren="true" />
+            <pnp:FieldRef ID="74f8e8e7-cc07-4c5d-9aa1-a505f3f96963" Name="ShareChangeType" UpdateChildren="true" />
+            <pnp:FieldRef ID="d7526cf5-0acf-4204-b82b-209f795b0185" Name="ShareChangeStatus" UpdateChildren="true" />
+            <pnp:FieldRef ID="a0cab7d7-05ff-406b-ae60-032a5c663a40" Name="ShareYear" UpdateChildren="true" />
+            <pnp:FieldRef ID="e9641bec-bcaa-4401-afc1-f989c77cefa7" Name="ShareChangeComments" UpdateChildren="true" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+      </pnp:ContentTypes>
+      <pnp:Lists>
+        <pnp:ListInstance Title="INORIGO Change log" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/INORIGO Change log" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/INORIGO Change log/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/INORIGO Change log/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/INORIGO Change log/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0100042753797C5E40B889D986E0FFDE1D88" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x01" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{4A886014-E2EC-4808-B351-735612472189}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/INORIGO Change log/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="Created" Ascending="FALSE" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="ShareInorigoFileType" />
+                <FieldRef Name="ShareChangeType" />
+                <FieldRef Name="ShareChangeStatus" />
+                <FieldRef Name="ShareYear" />
+                <FieldRef Name="Created" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="e9641bec-bcaa-4401-afc1-f989c77cefa7" Name="ShareChangeComments" DisplayName="Change Comments" />
+            <pnp:FieldRef ID="a0cab7d7-05ff-406b-ae60-032a5c663a40" Name="ShareYear" DisplayName="Year" />
+            <pnp:FieldRef ID="d7526cf5-0acf-4204-b82b-209f795b0185" Name="ShareChangeStatus" DisplayName="Change Status" />
+            <pnp:FieldRef ID="17019761-3d32-4cea-9f00-2d2622d4ee07" Name="ShareInorigoFileType" DisplayName="INORIGO File Type" />
+            <pnp:FieldRef ID="74f8e8e7-cc07-4c5d-9aa1-a505f3f96963" Name="ShareChangeType" DisplayName="Change Type" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+      </pnp:Lists>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

@@ -1,0 +1,15 @@
+{
+    "$schema": "schema.json",
+    "actions": [
+      {
+        "verb": "associateExtension",
+        "title": "Critical Information Extension-uat",
+        "location": "ClientSideExtension.ApplicationCustomizer",
+        "clientSideComponentId": "84e650e8-59a2-4a16-aae8-4f32b9bb2e0a",
+        "clientSideComponentProperties":"{\"AlertSiteUrl\":\"/sites/ShareUAT\"}",
+        "scope": "Site"
+      }
+    ],
+    "bindata": {},
+    "version": 1
+  }

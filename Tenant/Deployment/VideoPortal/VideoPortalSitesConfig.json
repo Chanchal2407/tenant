@@ -1,0 +1,12 @@
+[
+	{
+		"OrganizationSettings": {
+			"askCredentials": false,
+			"username": "user@tenant.onmicrosoft.com",
+			"password": "pass",
+			"tenantUrl": "https://tenant.sharepoint.com",
+			"sharePointAdminUrl": "https://tenant-admin.sharepoint.com",
+			"environment": "PROD"
+		}
+	}
+]

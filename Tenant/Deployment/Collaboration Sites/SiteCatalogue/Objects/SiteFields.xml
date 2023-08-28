@@ -1,0 +1,181 @@
+<pnp:SiteFields xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema">
+        <Field Type="Note" DisplayName="{parameter:GenericFieldsPrefix}Organization_0" StaticName="bc3223b6d50f417796d40d354a373d3c" Name="bc3223b6d50f417796d40d354a373d3c" ID="{dd24580f-ed10-46b9-89ff-9e0ff3aed672}" ShowInViewForms="FALSE" Required="FALSE" CanToggleHidden="TRUE" SourceID="{4a613e8e-1515-43e3-93a3-eb848e35657b}" AllowDeletion="TRUE" Hidden="TRUE" />
+        <Field Type="Note" DisplayName="{parameter:GenericFieldsPrefix}Category_0" StaticName="l3c5e6a03d4045b2835be37777b58aff" Name="l3c5e6a03d4045b2835be37777b58aff" ID="{a22ab39c-8454-4fd7-8dbe-5577f3a3090c}" ShowInViewForms="FALSE" Required="FALSE" Hidden="TRUE" CanToggleHidden="TRUE" SourceID="{3ed91f83-d511-403c-9b46-d8d55a76953a}" />
+        <Field Type="Choice" DisplayName="How sensitive is your data?" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" Group="{parameter:TemplateSpecificFieldsGroup}" ID="{571fab00-bdfd-43fa-bac0-82fed9647844}" SourceID="{4a613e8e-1515-43e3-93a3-eb848e35657b}" StaticName="{parameter:GenericFieldsPrefix}InformationClassification" Name="{parameter:GenericFieldsPrefix}InformationClassification" Description="Internal — No access restrictions for Alfa Laval employees. Internal information requires information owner/system owner approval before being distributed externally.Confidential — Confidential information is subject to access restrictions. These restrictions may apply to all or part of the content to the intended audience for the information.Strictly Confidential   — Strictly Confidential information should not be stored on Share and is subject to strong access restrictions. Information must always be stored in the designated encryption folders that can be requested from Corporate IT" CustomFormatter="" AllowDeletion="TRUE">
+          <Default>Business</Default>
+          <CHOICES>
+            <CHOICE>Public</CHOICE>
+            <CHOICE>Business</CHOICE>
+            <CHOICE>Confidential</CHOICE>
+            <CHOICE>Strictly Confidential</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="Lookup" DisplayName="Template" EnforceUniqueValues="FALSE" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE" RelationshipDeleteBehavior="None" ID="{b6819305-b14d-4110-8854-bb3633ced4b8}" StaticName="{parameter:GenericFieldsPrefix}TemplateConfig" Name="{parameter:GenericFieldsPrefix}TemplateConfig" Required="TRUE" SourceID="{4a613e8e-1515-43e3-93a3-eb848e35657b}" AllowDeletion="TRUE" />
+        <Field Type="Note" DisplayName="Site description" Required="TRUE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="3" RichText="FALSE" Sortable="FALSE" Group="{parameter:TemplateSpecificFieldsGroup}" ID="{0cedaa12-9d11-45d9-8847-8a88fa282ec4}" SourceID="{f6ab4eb6-15c0-4ce8-8391-390509c99744}" StaticName="{parameter:GenericFieldsPrefix}ProjectDescription" Name="{parameter:GenericFieldsPrefix}ProjectDescription" Description="Please enter a short description of the site. This could include the purpose of the site, what information is stored and who will be using it" AllowDeletion="TRUE">
+        </Field>
+        <Field Type="UserMulti" DisplayName="Site Editor" Required="FALSE" EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" Mult="TRUE" Sortable="FALSE" Group="{parameter:TemplateSpecificFieldsGroup}" ID="{98259539-f47c-4e90-9533-bb4693a73aea}" SourceID="{4a613e8e-1515-43e3-93a3-eb848e35657b}" StaticName="{parameter:GenericFieldsPrefix}SiteEditor" Name="{parameter:GenericFieldsPrefix}SiteEditor" AllowDeletion="TRUE" Description="An Editor is responsible for writing, editing and publishing the content" />
+        <Field Type="UserMulti" DisplayName="Site Owners" Required="TRUE" EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" Mult="TRUE" Sortable="FALSE" Group="{parameter:TemplateSpecificFieldsGroup}" ID="{c5d84c7b-8fed-4823-9e00-4077770b4f51}" SourceID="{f6ab4eb6-15c0-4ce8-8391-390509c99744}" StaticName="{parameter:GenericFieldsPrefix}SiteOwners" Name="{parameter:GenericFieldsPrefix}SiteOwners" Description="The Site Owner is responsible for the relevance of the content and has full control of the site. The Site Owner is responsible for permissions within a site." AllowDeletion="TRUE" />
+        <Field Type="DateTime" DisplayName="Project start date" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" Group="{parameter:TemplateSpecificFieldsGroup}" FriendlyDisplayFormat="Disabled" ID="{33ccd999-c980-4fa4-b872-4a44bfe8e8f6}" SourceID="{4a613e8e-1515-43e3-93a3-eb848e35657b}" StaticName="{parameter:GenericFieldsPrefix}ProjectStartDate" Name="{parameter:GenericFieldsPrefix}ProjectStartDate" CustomFormatter="" CalType="0" AllowDeletion="TRUE">
+        </Field>
+        <Field Type="URL" DisplayName="Site URL" ShowInNewForm="FALSE" ShowInEditForm="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Hyperlink" ID="{7d6e9eb3-6120-4f7c-b462-d8b068773769}" StaticName="{parameter:GenericFieldsPrefix}SiteURL" Name="{parameter:GenericFieldsPrefix}SiteURL" Group="{parameter:TemplateSpecificFieldsGroup}" SourceID="{4a613e8e-1515-43e3-93a3-eb848e35657b}" AllowDeletion="TRUE" />
+        <Field Type="TaxonomyFieldTypeMulti" DisplayName="Organization" WebId="4a613e8e-1515-43e3-93a3-eb848e35657b" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Mult="TRUE" Sortable="FALSE" Group="{parameter:TemplateSpecificFieldsGroup}" ID="{bc3223b6-d50f-4177-96d4-0d354a373d3c}" SourceID="{4a613e8e-1515-43e3-93a3-eb848e35657b}" StaticName="{parameter:GenericFieldsPrefix}Organization" Name="{parameter:GenericFieldsPrefix}Organization" List="{{listid:TaxonomyHiddenList}}" AllowDeletion="TRUE" Description="Site owner will receive email about site creation progress">
+          <Default>
+          </Default>
+          <Customization>
+            <ArrayOfProperty>
+              <Property>
+                <Name>SspId</Name>
+                <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
+              </Property>
+              <Property>
+                <Name>GroupId</Name>
+              </Property>
+              <Property>
+                <Name>TermSetId</Name>
+                <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{termsetid:Share:Organizations}</Value>
+              </Property>
+              <Property>
+                <Name>AnchorId</Name>
+                <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">00000000-0000-0000-0000-000000000000</Value>
+              </Property>
+              <Property>
+                <Name>UserCreated</Name>
+                <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>Open</Name>
+                <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TextField</Name>
+                <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{dd24580f-ed10-46b9-89ff-9e0ff3aed672}</Value>
+              </Property>
+              <Property>
+                <Name>IsPathRendered</Name>
+                <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsKeyword</Name>
+                <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TargetTemplate</Name>
+              </Property>
+              <Property>
+                <Name>CreateValuesInEditForm</Name>
+                <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>FilterAssemblyStrongName</Name>
+                <Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Value>
+              </Property>
+              <Property>
+                <Name>FilterClassName</Name>
+                <Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy.TaxonomyField</Value>
+              </Property>
+              <Property>
+                <Name>FilterMethodName</Name>
+                <Value xmlns:q12="http://www.w3.org/2001/XMLSchema" p4:type="q12:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">GetFilteringHtml</Value>
+              </Property>
+              <Property>
+                <Name>FilterJavascriptProperty</Name>
+                <Value xmlns:q13="http://www.w3.org/2001/XMLSchema" p4:type="q13:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">FilteringJavascript</Value>
+              </Property>
+            </ArrayOfProperty>
+          </Customization>
+        </Field>
+        <Field Type="Choice" DisplayName="Access level" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" Group="{parameter:TemplateSpecificFieldsGroup}" ID="{7d3a4cb8-31a9-44b2-8c1e-bed15c9f0d8e}" SourceID="{4a613e8e-1515-43e3-93a3-eb848e35657b}" StaticName="{parameter:GenericFieldsPrefix}AccessLevel" Name="{parameter:GenericFieldsPrefix}AccessLevel" CustomFormatter="" AllowDeletion="TRUE">
+          <Default>Public</Default>
+          <CHOICES>
+            <CHOICE>Public</CHOICE>
+            <CHOICE>Private</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="Boolean" DisplayName="Compliant" EnforceUniqueValues="FALSE" Indexed="FALSE" Group="{parameter:TemplateSpecificFieldsGroup}" ID="{bc3e0ac1-3aab-4e22-a6e3-89385cd7b353}" SourceID="{f6ab4eb6-15c0-4ce8-8391-390509c99744}" StaticName="{parameter:GenericFieldsPrefix}Compliant" Name="{parameter:GenericFieldsPrefix}Compliant" ShowInEditForm="FALSE" ShowInNewForm="FALSE" AllowDeletion="TRUE">
+          <Default>0</Default>
+        </Field>
+        <Field Type="Choice" DisplayName="Provision Status" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" Group="{parameter:TemplateSpecificFieldsGroup}" ID="{465ba4e9-aa5d-480f-b83a-2be27f472bea}" SourceID="{f6ab4eb6-15c0-4ce8-8391-390509c99744}" StaticName="{parameter:GenericFieldsPrefix}SiteStatus" Name="{parameter:GenericFieldsPrefix}SiteStatus" ShowInNewForm="FALSE" ShowInEditForm="FALSE" AllowDeletion="TRUE">
+          <Default>Requested</Default>
+          <CHOICES>
+            <CHOICE>Requested</CHOICE>
+            <CHOICE>Provisioned</CHOICE>
+            <CHOICE>Available</CHOICE>
+            <CHOICE>Failed</CHOICE>
+            <CHOICE>Draft</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="Text" DisplayName="Comment" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="{parameter:TemplateSpecificFieldsGroup}" ID="{3db864ea-0134-4024-bb5f-22d7d4cd1123}" SourceID="{f6ab4eb6-15c0-4ce8-8391-390509c99744}" StaticName="{parameter:GenericFieldsPrefix}Comment" Name="{parameter:GenericFieldsPrefix}Comment" ShowInEditForm="FALSE" ShowInNewForm="FALSE" AllowDeletion="TRUE" />
+        <Field Type="Boolean" DisplayName="Create Teams" EnforceUniqueValues="FALSE" Indexed="FALSE" Group="{parameter:TemplateSpecificFieldsGroup}" ID="{7b351bfb-904b-446d-9aa1-fcb63a8a1cd0}" SourceID="{3ed91f83-d511-403c-9b46-d8d55a76953a}" StaticName="{parameter:GenericFieldsPrefix}CreateTeams" Name="{parameter:GenericFieldsPrefix}CreateTeams">
+          <Default>0</Default>
+        </Field>
+        <Field Type="TaxonomyFieldType" DisplayName="Category" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Group="{parameter:TemplateSpecificFieldsGroup}" ID="{53c5e6a0-3d40-45b2-835b-e37777b58aff}" SourceID="{{siteid}}" StaticName="{parameter:GenericFieldsPrefix}Category" Name="{parameter:GenericFieldsPrefix}Category">
+          <Default>
+          </Default>
+          <Customization>
+            <ArrayOfProperty>
+              <Property>
+                <Name>SspId</Name>
+                <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
+              </Property>
+              <Property>
+                <Name>GroupId</Name>
+              </Property>
+              <Property>
+                <Name>TermSetId</Name>
+                <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{termsetid:Share:Categories}</Value>
+              </Property>
+              <Property>
+                <Name>AnchorId</Name>
+                <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">2a44badc-8612-4184-b23a-3da0b774939d</Value>
+              </Property>
+              <Property>
+                <Name>UserCreated</Name>
+                <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>Open</Name>
+                <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TextField</Name>
+                <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{a22ab39c-8454-4fd7-8dbe-5577f3a3090c}</Value>
+              </Property>
+              <Property>
+                <Name>IsPathRendered</Name>
+                <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsKeyword</Name>
+                <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TargetTemplate</Name>
+              </Property>
+              <Property>
+                <Name>CreateValuesInEditForm</Name>
+                <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsDocTagsEnabled</Name>
+              </Property>
+              <Property>
+                <Name>FilterAssemblyStrongName</Name>
+                <Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Value>
+              </Property>
+              <Property>
+                <Name>FilterClassName</Name>
+                <Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy.TaxonomyField</Value>
+              </Property>
+              <Property>
+                <Name>FilterMethodName</Name>
+                <Value xmlns:q12="http://www.w3.org/2001/XMLSchema" p4:type="q12:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">GetFilteringHtml</Value>
+              </Property>
+              <Property>
+                <Name>FilterJavascriptProperty</Name>
+                <Value xmlns:q13="http://www.w3.org/2001/XMLSchema" p4:type="q13:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">FilteringJavascript</Value>
+              </Property>
+            </ArrayOfProperty>
+          </Customization>
+        </Field>
+        <Field Name="{parameter:GenericFieldsPrefix}SiteType" StaticName="{parameter:GenericFieldsPrefix}SiteType" Name="{parameter:GenericFieldsPrefix}SiteType" ID="{65841A11-8C10-4913-8234-7C25DCF1FCAA}" Type="Text" DisplayName="Site Type" Group="{parameter:TemplateSpecificFieldsGroup}" ShowInEditForm="FALSE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+</pnp:SiteFields>

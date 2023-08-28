@@ -1,0 +1,15 @@
+{
+    "$schema": "schema.json",
+    "actions": [
+      {
+        "verb": "associateExtension",
+        "title": "Share global extension",
+        "location": "ClientSideExtension.ApplicationCustomizer",
+        "clientSideComponentId": "1fd0ff15-3c75-4da4-8e4f-f4ab92adece3",
+        "clientSideComponentProperties":"{\"TopMenuTermSet\":\"Top Navigation\"}",
+        "scope": "Site"
+      }
+    ],
+    "bindata": {},
+    "version": 1
+  }

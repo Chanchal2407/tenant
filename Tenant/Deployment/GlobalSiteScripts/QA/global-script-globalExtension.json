@@ -1,0 +1,15 @@
+{
+    "$schema": "schema.json",
+    "actions": [
+      {
+        "verb": "associateExtension",
+        "title": "Share global extension-qa",
+        "location": "ClientSideExtension.ApplicationCustomizer",
+        "clientSideComponentId": "a7494c80-0681-4e03-bdb2-29a38122105e",
+        "clientSideComponentProperties":"{\"TopMenuTermSet\":\"Top Navigation-qa\"}",
+        "scope": "Site"
+      }
+    ],
+    "bindata": {},
+    "version": 1
+  }

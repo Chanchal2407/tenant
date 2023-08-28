@@ -1,0 +1,4 @@
+<pnp:CustomActions xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema">
+        <pnp:SiteCustomActions>
+        </pnp:SiteCustomActions>
+</pnp:CustomActions>

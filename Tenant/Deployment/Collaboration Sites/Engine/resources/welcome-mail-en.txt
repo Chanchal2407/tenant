@@ -1,0 +1,10 @@
+Site {0} Created|<p>Dear requestor,
+</p><p>
+Your request for the SharePoint Site {0} has been created.
+</p><p>
+The Site is available at the following URL: <a href="{1}">{1}</a>
+</p><p>
+Thank you.
+</p><p>
+Application team
+</p>

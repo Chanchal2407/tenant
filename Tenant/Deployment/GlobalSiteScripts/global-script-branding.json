@@ -1,0 +1,13 @@
+{
+	"$schema": "schema.json",
+	"actions": [
+		{
+			"verb": "setSiteBranding",
+			"navigationLayout": "Cascade",
+			"headerLayout": "Standard",
+    		"headerBackground": "None"
+		}
+	],
+	"bindata": {},
+	"version": 1
+ }

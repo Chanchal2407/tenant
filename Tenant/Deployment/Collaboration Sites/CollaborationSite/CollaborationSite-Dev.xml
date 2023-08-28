@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/01/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=2.22.1801.0, Culture=neutral, PublicKeyToken=5e633289e95c321a">
+  <pnp:Parameters>
+      <pnp:Parameter Key="PerformCleanup">True</pnp:Parameter>
+      <pnp:Parameter Key="GenericFieldsPrefix">ALFA_</pnp:Parameter>
+      <pnp:Parameter Key="TemplateSpecificFieldsPrefix">ALFA_</pnp:Parameter>
+      <pnp:Parameter Key="TemplateSpecificFieldsGroup">Alfalaval Collaboration Site Columns</pnp:Parameter>
+      <pnp:Parameter Key="GenericContentTypesGroup">AlfaLaval Collaboration Content Types</pnp:Parameter>
+      <pnp:Parameter Key="TemplateSpecificContentTypesGroup">AlfaLaval Collaboration Content Types</pnp:Parameter>
+      <pnp:Parameter Key="LogoUrl">/sites/cdn/SiteAssets/Collaboration/logo/Team-sites.png</pnp:Parameter>
+    </pnp:Parameters>
+    </pnp:Preferences>
+  <pnp:Templates ID="CONTAINER-TEMPLATE-ALFA-COLLABORATION-TEMPLATE">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-ALFA-COLLABORATION-TEMPLATE" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">
+      <pnp:RegionalSettings AdjustHijriDays="0" AlternateCalendarType="None" CalendarType="Gregorian" Collation="25" FirstDayOfWeek="Monday" FirstWeekOfYear="0" LocaleId="2057" ShowWeeks="false" Time24="true" TimeZone="4" WorkDayEndHour="5:00PM" WorkDays="62" WorkDayStartHour="8:00AM" />
+      <pnp:SupportedUILanguages>
+				<pnp:SupportedUILanguage LCID="1033"/>
+      </pnp:SupportedUILanguages>
+      <xi:include 
+        xmlns:xi="http://www.w3.org/2001/XInclude" href="Objects/Fields.xml" /> 
+	   <xi:include 
+        xmlns:xi="http://www.w3.org/2001/XInclude" href="Objects/Lists.xml" /> 
+      <xi:include 
+        xmlns:xi="http://www.w3.org/2001/XInclude" href="Objects/Dev/CustomActions.xml" />
+       <xi:include 
+        xmlns:xi="http://www.w3.org/2001/XInclude" href="Objects/Pages.xml" />
+        <xi:include 
+        xmlns:xi="http://www.w3.org/2001/XInclude" href="Objects/Navigation.xml" /> 
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

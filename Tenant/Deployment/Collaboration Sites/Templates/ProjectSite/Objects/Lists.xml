@@ -1,0 +1,35 @@
+<pnp:Lists xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema">
+        <pnp:ListInstance Title="PropertyBagAlternatives" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/PropertyBagAlternatives" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" Hidden="true">
+          <pnp:Views>
+            <View Name="{42FC3AB2-CDAB-4053-A51E-1234B3F71EB2}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/teams/Webjobfirstsite/Lists/PropertyBagAlternatives/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=44">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="PropertyBagValuesJSON" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Note" DisplayName="PropertyBagValuesJSON" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="FALSE" Sortable="FALSE" ID="{bf4350a2-1931-4780-bfe9-ae7d5b7443b4}" SourceID="{{listid:PropertyBagAlternatives}}" StaticName="PropertyBagValuesJSON" Name="PropertyBagValuesJSON" ColName="ntext2" RowOrdinal="0" />
+          </pnp:Fields>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Documents" Description="" DocumentTemplate="{site}/Shared Documents/Forms/template.dotx" OnQuickLaunch="true" TemplateType="101" Url="Shared Documents" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50" DraftVersionVisibility="0" EnableAttachments="false" IsApplicationList="false">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="88e59e90-a79b-40e5-babf-5f63e0ff7557" Name="fe65fb5c4061427e97623500bb18b7cd" Hidden="true" DisplayName="ALFA_Site_ProductTaxonomy_0" />
+            <pnp:FieldRef ID="f506f658-e52e-468c-82a8-8e8c4dac7c90" Name="n5eb8f2f9ce048fd96a1bd7d83f6eb88" Hidden="true" DisplayName="ALFA_Site_IndustryTaxonomy_0" />
+            <pnp:FieldRef ID="5398ffaa-a9f3-4b26-bd41-74da98e99556" Name="p635e3d2fdb342248da0b7156f6ec8c0" Hidden="true" DisplayName="ALFA_Site_DocumentTaxonomy_0" />
+			      <pnp:FieldRef ID="a93df48f-2e49-486d-b4b4-505215287a71" Name="oa230dbf1adb4d1a94ee0a2fc66109cf" Hidden="true" DisplayName="ALFA_Site_ServiceTaxonomy_0" />
+            <pnp:FieldRef ID="9635e3d2-fdb3-4224-8da0-b7156f6ec8c0" Name="{parameter:GenericFieldsPrefix}Site_DocumentTaxonomy" DisplayName="Document Taxonomy" />
+            <pnp:FieldRef ID="75eb8f2f-9ce0-48fd-96a1-bd7d83f6eb88" Name="{parameter:GenericFieldsPrefix}Site_IndustryTaxonomy" DisplayName="Industry Taxonomy" />
+            <pnp:FieldRef ID="fe65fb5c-4061-427e-9762-3500bb18b7cd" Name="{parameter:GenericFieldsPrefix}Site_ProductTaxonomy" DisplayName="Product Taxonomy" />
+			      <pnp:FieldRef ID="8a230dbf-1adb-4d1a-94ee-0a2fc66109cf" Name="{parameter:GenericFieldsPrefix}Site_ServiceTaxonomy" DisplayName="Service Taxonomy" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+</pnp:Lists>
+   

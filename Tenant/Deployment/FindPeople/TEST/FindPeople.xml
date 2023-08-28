@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema">
+  <pnp:Preferences Author="Gurudatt bhat (gurudatt.bhat@alfalaval.com)" Version="1.0" Generator="Manual">
+        <pnp:Parameters>
+            <pnp:Parameter Key="TenantName">alfalavalonline</pnp:Parameter>
+            <pnp:Parameter Key="SitePath">SearchPilot</pnp:Parameter>
+            <pnp:Parameter Key="Lcid">1033</pnp:Parameter>
+        </pnp:Parameters>
+    </pnp:Preferences>
+  <pnp:Tenant>
+        <pnp:AppCatalog>
+            <pnp:Package Src="..\package\pnp-modern-search-parts.sppkg" Action="UploadAndPublish" SkipFeatureDeployment="false" Overwrite="true"/>
+            <pnp:Package Src="..\package\share-search-extensibility-library.sppkg" Action="UploadAndPublish" SkipFeatureDeployment="true" Overwrite="true"/>
+        </pnp:AppCatalog>
+    </pnp:Tenant>
+  <pnp:Templates ID="CONTAINER-TEMPLATE-FINDPEOPLE">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-FINDPEOPLE" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:ClientSidePages>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Title="Find People New" ThumbnailUrl="" PageName="Find-People-New.aspx">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="CutInShape" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;id&quot;: &quot;096b96cc-8a44-41fa-9b4d-c0ab2ab2a779&quot;, &quot;instanceId&quot;: &quot;587494a5-0034-4fe1-87d2-14f610d0235d&quot;, &quot;title&quot;: &quot;Search Box&quot;, &quot;description&quot;: &quot;Allows users to enter query keywords&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;searchInNewPage&quot;:false,&quot;pageUrl&quot;:&quot;&quot;,&quot;queryPathBehavior&quot;:0,&quot;queryStringParameter&quot;:&quot;q&quot;,&quot;openBehavior&quot;:0,&quot;enableQuerySuggestions&quot;:true,&quot;useDynamicDataSource&quot;:false,&quot;NlpServiceUrl&quot;:&quot;&quot;,&quot;enableNlpService&quot;:false,&quot;enableDebugMode&quot;:false,&quot;isStaging&quot;:true,&quot;placeholderText&quot;:&quot;Find Collegues here&quot;,&quot;suggestionProviders&quot;:[{&quot;providerName&quot;:&quot;default&quot;,&quot;providerDisplayName&quot;:&quot;SharePoint Query Suggestions&quot;,&quot;providerDescription&quot;:&quot;Default SharePoint query suggestions.&quot;,&quot;providerEnabled&quot;:true}]}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {&quot;defaultQueryKeywords&quot;:&quot;&quot;}}" ControlId="096b96cc-8a44-41fa-9b4d-c0ab2ab2a779" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;id&quot;: &quot;e899ac12-9256-4c8d-a8ad-dbd20fc459c3&quot;, &quot;instanceId&quot;: &quot;a33fd344-cbdf-42bb-a30a-4b953b4c3201&quot;, &quot;title&quot;: &quot;Search Refiners&quot;, &quot;description&quot;: &quot;Displays the customizable dynamic refiners&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;webPartTitle&quot;:&quot;Filters&quot;,&quot;showBlank&quot;:true,&quot;refinersConfiguration&quot;:[{&quot;uniqueId&quot;:&quot;a5643a02-9d68-4575-8ec8-17d227b9d415&quot;,&quot;refinerName&quot;:&quot;RefinableString41&quot;,&quot;displayValue&quot;:&quot;Location&quot;,&quot;template&quot;:2,&quot;refinerSortType&quot;:1,&quot;refinerSortDirection&quot;:1,&quot;showExpanded&quot;:true,&quot;showValueFilter&quot;:true,&quot;sortIdx&quot;:1},{&quot;refinerName&quot;:&quot;RefinableString43&quot;,&quot;displayValue&quot;:&quot;Organization&quot;,&quot;refinerSortType&quot;:1,&quot;template&quot;:2,&quot;refinerSortDirection&quot;:1,&quot;sortIdx&quot;:2,&quot;showValueFilter&quot;:true,&quot;showExpanded&quot;:true},{&quot;refinerName&quot;:&quot;JobTitle&quot;,&quot;displayValue&quot;:&quot;Job Title&quot;,&quot;refinerSortType&quot;:1,&quot;refinerSortDirection&quot;:1,&quot;template&quot;:2,&quot;sortIdx&quot;:3,&quot;showExpanded&quot;:true,&quot;showValueFilter&quot;:true},{&quot;refinerName&quot;:&quot;RefinableString45&quot;,&quot;displayValue&quot;:&quot;Topics&quot;,&quot;refinerSortType&quot;:1,&quot;refinerSortDirection&quot;:1,&quot;template&quot;:2,&quot;sortIdx&quot;:4,&quot;showValueFilter&quot;:true,&quot;showExpanded&quot;:true},{&quot;refinerName&quot;:&quot;BaseOfficeLocation&quot;,&quot;displayValue&quot;:&quot;Office Location&quot;,&quot;refinerSortType&quot;:1,&quot;refinerSortDirection&quot;:1,&quot;template&quot;:2,&quot;sortIdx&quot;:5,&quot;showValueFilter&quot;:false,&quot;showExpanded&quot;:false}],&quot;searchQuery&quot;:&quot;&quot;,&quot;availableRefiners&quot;:[],&quot;selectedLayout&quot;:2,&quot;searchResultsDataSourceReference&quot;:&quot;WebPart.42ad2740-3c60-49cf-971a-c44e33511b93.6e555f05-69ce-4e6e-8578-e49b56c6ef3c:searchResultsWebPart&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="e899ac12-9256-4c8d-a8ad-dbd20fc459c3" Order="2" Column="1" />
+                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;id&quot;: &quot;42ad2740-3c60-49cf-971a-c44e33511b93&quot;, &quot;instanceId&quot;: &quot;6e555f05-69ce-4e6e-8578-e49b56c6ef3c&quot;, &quot;title&quot;: &quot;Search Results&quot;, &quot;description&quot;: &quot;Displays search results&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;queryTemplate&quot;:&quot;{searchTerms} -accountname:#ext# -accountname:spofarm -accountname:spoapp -accountname:spocrawler -accountname:spocrwl  -accountname:_A\n-accountname:leaver_ \n-accountname:onmicrosoft -accountname:share -accountname:Test -accountname:Service -accountname:room -PreferredName:\&quot;Foreign Principal\&quot; -accountname:selu&quot;,&quot;sortList&quot;:[{&quot;sortField&quot;:&quot;Created&quot;,&quot;sortDirection&quot;:1},{&quot;sortField&quot;:&quot;Size&quot;,&quot;sortDirection&quot;:2}],&quot;selectedProperties&quot;:&quot;Title,Path,Created,Filename,SiteLogo,PreviewUrl,PictureThumbnailURL,ServerRedirectedPreviewURL,ServerRedirectedURL,HitHighlightedSummary,FileType,contentclass,ServerRedirectedEmbedURL,ParentLink,DefaultEncodingURL,owstaxidmetadataalltagsinfo,Author,AuthorOWSUSER,SPSiteUrl,SiteTitle,IsContainer,IsListItem,HtmlFileType,SiteId,WebId,UniqueID,OriginalPath,FileExtension,IsDocument,NormSiteID,NormWebID,NormListID,NormUniqueID,AccountName,FirstName,LastName,Department,JobTitle,WorkPhone,Location,RefinableString43,RefinableString41,BaseOfficeLocation,RefinableString45,WorkEmail&quot;,&quot;enableQueryRules&quot;:false,&quot;includeOneDriveResults&quot;:true,&quot;showBlank&quot;:true,&quot;showResultsCount&quot;:true,&quot;webPartTitle&quot;:&quot;&quot;,&quot;enableLocalization&quot;:false,&quot;useDefaultSearchQuery&quot;:false,&quot;resultTypes&quot;:[],&quot;useExternalRefinersDisplay&quot;:false,&quot;useExternalPaginationDisplay&quot;:false,&quot;appliedRefiners&quot;:[],&quot;refinersConfiguration&quot;:[],&quot;sortableFields&quot;:[],&quot;synonymList&quot;:[],&quot;searchQueryLanguage&quot;:-1,&quot;templateParameters&quot;:{&quot;detailsListColumns&quot;:[{&quot;name&quot;:&quot;Title&quot;,&quot;value&quot;:&quot;Title&quot;,&quot;useHandlebarsExpr&quot;:false,&quot;minWidth&quot;:&quot;80&quot;,&quot;maxWidth&quot;:&quot;300&quot;,&quot;enableSorting&quot;:true,&quot;isMultiline&quot;:false,&quot;isResizable&quot;:true,&quot;isResultItemLink&quot;:true},{&quot;name&quot;:&quot;Created&quot;,&quot;value&quot;:&quot;{{getDate Created 'LL'}}&quot;,&quot;useHandlebarsExpr&quot;:true,&quot;minWidth&quot;:&quot;80&quot;,&quot;maxWidth&quot;:&quot;120&quot;,&quot;enableSorting&quot;:false,&quot;isMultiline&quot;:false,&quot;isResizable&quot;:false,&quot;isResultItemLink&quot;:false},{&quot;name&quot;:&quot;Summary&quot;,&quot;value&quot;:&quot;{{getSummary HitHighlightedSummary}}&quot;,&quot;useHandlebarsExpr&quot;:true,&quot;minWidth&quot;:&quot;80&quot;,&quot;maxWidth&quot;:&quot;300&quot;,&quot;enableSorting&quot;:false,&quot;isMultiline&quot;:true,&quot;isResizable&quot;:false,&quot;isResultItemLink&quot;:false}],&quot;showFileIcon&quot;:true,&quot;peopleFields&quot;:[{&quot;name&quot;:&quot;Image Url&quot;,&quot;field&quot;:&quot;imageUrl&quot;,&quot;value&quot;:&quot;{{#with (split AccountName '|')}}/_layouts/15/userphoto.aspx?size=L&amp;username={{[2]}}{{/with}}&quot;,&quot;useHandlebarsExpr&quot;:true,&quot;supportHtml&quot;:false},{&quot;name&quot;:&quot;Primary Text&quot;,&quot;field&quot;:&quot;text&quot;,&quot;value&quot;:&quot;{{FirstName}} {{LastName}}&quot;,&quot;useHandlebarsExpr&quot;:true,&quot;supportHtml&quot;:false},{&quot;name&quot;:&quot;Secondary Text&quot;,&quot;field&quot;:&quot;secondaryText&quot;,&quot;value&quot;:&quot;JobTitle&quot;,&quot;useHandlebarsExpr&quot;:false,&quot;supportHtml&quot;:false},{&quot;name&quot;:&quot;Tertiary Text&quot;,&quot;field&quot;:&quot;tertiaryText&quot;,&quot;value&quot;:&quot;{{#with (split AccountName '|')}}{{[2]}}{{/with}}&quot;,&quot;useHandlebarsExpr&quot;:true,&quot;supportHtml&quot;:false},{&quot;name&quot;:&quot;Optional Text&quot;,&quot;field&quot;:&quot;optionalText&quot;,&quot;value&quot;:&quot;WorkPhone&quot;,&quot;useHandlebarsExpr&quot;:false,&quot;supportHtml&quot;:false}],&quot;personaSize&quot;:14},&quot;queryModifiers&quot;:[],&quot;refinementFilters&quot;:&quot;&quot;,&quot;paging&quot;:{&quot;itemsCountPerPage&quot;:&quot;9&quot;,&quot;pagingRange&quot;:5,&quot;showPaging&quot;:true,&quot;hideDisabled&quot;:true,&quot;hideFirstLastPages&quot;:false,&quot;hideNavigation&quot;:false},&quot;selectedQueryModifierDisplayName&quot;:null,&quot;selectedLayout&quot;:2,&quot;resultSourceId&quot;:&quot;b09a7990-05ea-4af9-81ef-edfab16c4e31&quot;,&quot;defaultSearchQuery&quot;:&quot;&quot;,&quot;useRefiners&quot;:true,&quot;refinerDataSourceReference&quot;:&quot;WebPart.e899ac12-9256-4c8d-a8ad-dbd20fc459c3.a33fd344-cbdf-42bb-a30a-4b953b4c3201:refinersWebPart&quot;,&quot;inlineTemplateText&quot;:&quot;&lt;content id=\&quot;template\&quot;&gt;\r\n\r\n    &lt;style&gt;\r\n        .personaCard {\r\n            margin: 10px;\r\n        }\r\n\r\n.ms-Grid {\r\n    display: grid;\r\n  grid-gap: 1px;\r\n  grid-template-columns: repeat(3, 1fr);\r\n}\r\n.ms-SPLegacyFabricBlock .ms-Grid:after, .ms-SPLegacyFabricBlock .ms-Grid:before{\r\n    display:none !important;\r\n}\r\n        .card {\r\n  width:300px;\r\n  max-width: 300px;\r\n  margin: auto;\r\n  text-align: center;\r\n  font-family: arial;\r\n  display: inline-block;\r\n  margin-bottom:20px;\r\n  box-sizing: border-box;\r\n  margin-right: 5em;\r\n}\r\n\r\n.title {\r\n  color: grey;\r\n\r\n}\r\n.designation{\r\ncolor: grey;\r\nfont-size: 14px;\r\n}\r\n.profilepros {\r\nfont-size: 12px;\r\nclear: left;\r\n}\r\n\r\nbutton {\r\n  border: none;\r\n  outline: 0;\r\n  display: inline-block;\r\n  padding: 8px;\r\n  color: white;\r\n  background-color: #000;\r\n  text-align: center;\r\n  cursor: pointer;\r\n  width: 100%;\r\n  font-size: 18px;\r\n}\r\n\r\na {\r\n  text-decoration: none;\r\n  color: black;\r\n}\r\n\r\n#rcorners3 {\r\n  border-radius: 25px;\r\n  background: url(paper.gif);\r\n  background-position: left top;\r\n  background-repeat: repeat;\r\n  padding: 20px;\r\n  width: 200px;\r\n  height: 150px;\r\n  float:left;\r\n}\r\n.ms-Persona-primaryText{\r\n  font-weight: 600;\r\n  font-size: 16px;\r\n}\r\n.ms-Icon{\r\n    font-size:12pt;\r\n}\r\n\r\n    &lt;/style&gt;\r\n\t&lt;link rel=\&quot;stylesheet\&quot; href=\&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\&quot;&gt;\r\n    &lt;div class=\&quot;template_root\&quot;&gt;\r\n        {{#if @root.hasPrimaryOrSecondaryResults}} \r\n            &lt;div class=\&quot;template_defaultCard\&quot;&gt;\r\n                {{#if showResultsCount}}\r\n                &lt;div class=\&quot;template_resultCount\&quot;&gt;\r\n                    &lt;label class=\&quot;ms-fontWeight-semibold\&quot;&gt;{{getCountMessage @root.paging.totalItemsCount keywords}}&lt;/label&gt;\r\n                &lt;/div&gt;\r\n                {{/if}}\r\n                &lt;div class=\&quot;ms-Grid\&quot;&gt;\r\n                        {{#each items as |item|}}\r\n                        &lt;div class=\&quot;ms-Grid-col ms-sm12 ms-md12 ms-lg12\&quot;&gt;\r\n                            {{#&gt; resultTypes item=item}}\r\n                                &lt;div class=\&quot;card\&quot;&gt;\r\n                                    {{#with (split AccountName '|')}}\r\n                                        &lt;my-alpeoplecard-component item=\&quot;{{JSONstringify item}}\&quot; data-persona-size=\&quot;{{../../../personaSize}}\&quot; /&gt;\r\n                                    {{/with}}\r\n                                &lt;/div&gt;\r\n                            {{/resultTypes}}\r\n                        &lt;/div&gt;\r\n                        {{/each}}\r\n                    &lt;/div&gt;\r\n            {{#if @root.paging.showPaging}}\r\n                &lt;pnp-pagination \r\n                    data-total-items=\&quot;{{@root.paging.totalItemsCount}}\&quot; \r\n                    data-hide-first-last-pages=\&quot;{{@root.paging.hideFirstLastPages}}\&quot;\r\n                    data-hide-disabled=\&quot;{{@root.paging.hideDisabled}}\&quot;\r\n                    data-hide-navigation=\&quot;{{@root.paging.hideNavigation}}\&quot;\r\n                    data-range=\&quot;{{@root.paging.pagingRange}}\&quot; \r\n                    data-items-count-per-page=\&quot;{{@root.paging.itemsCountPerPage}}\&quot; \r\n                    data-current-page-number=\&quot;{{@root.paging.currentPageNumber}}\&quot;\r\n                &gt;\r\n                &lt;/pnp-pagination&gt;\r\n            {{/if}}\r\n        {{else}}\r\n            {{#unless showBlank}}\r\n                &lt;div class=\&quot;template_noResults\&quot;&gt;{{@root.strings.NoResultMessage}}&lt;/div&gt;\r\n            {{/unless }}\r\n        {{/if}}\r\n    &lt;/div&gt;\r\n&lt;/content&gt;&quot;,&quot;useSearchVerticals&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {&quot;queryKeywords&quot;:&quot;WebPart.096b96cc-8a44-41fa-9b4d-c0ab2ab2a779.587494a5-0034-4fe1-87d2-14f610d0235d:searchQuery&quot;}, &quot;dynamicDataValues&quot;: {}}" ControlId="42ad2740-3c60-49cf-971a-c44e33511b93" Order="3" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+      </pnp:ClientSidePages>
+      <pnp:Lists>
+        <pnp:ListInstance Title="Hints" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Hints" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Hints/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Hints/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Hints/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{AFAF86AD-83B8-41C2-97B8-DAFC03D4C275}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Hints/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Answer" />
+                <FieldRef Name="Description" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter />
+              <ColumnWidth>
+                <FieldRef Name="Answer" width="920" />
+              </ColumnWidth>
+            </View>
+            <View Name="{A9012EAC-921D-4ED6-8212-1C6D6338E983}" Type="HTML" DisplayName="FAQView" Url="{site}/Lists/Hints/FAQView.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Answer" />
+                <FieldRef Name="Description" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter>{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json",
+  "hideListHeader": true,
+  "hideSelection": true,
+  "rowFormatter": {
+    "elmType": "div",
+    "style": {
+      "display": "flex",
+      "flex-direction": "column",
+      "align-items": "flex-start"
+    },
+    "children": [
+      {
+        "elmType": "div",
+        "attributes": {
+          "class": "ms-bgColor-themePrimary ms-borderColor-themeDark ms-fontColor-white"
+        },
+        "style": {
+          "font-size": "24px",
+          "border-width": "2px",
+          "border-style": "solid",
+          "width": "100%",
+          "padding": "4px"
+        },
+        "children": [
+          {
+            "elmType": "span",
+            "txtContent": "Q",
+            "attributes": {
+              "class": "ms-fontColor-themeTertiary"
+            },
+            "style": {
+              "padding-right": "10px",
+              "padding-left": "6px",
+              "font-weight": "bold"
+            }
+          },
+          {
+            "elmType": "span",
+            "txtContent": "[$Title]"
+          }
+        ]
+      },
+      {
+        "elmType": "div",
+        "attributes": {
+          "class": "ms-borderColor-themeDark"
+        },
+        "style": {
+          "padding-left": "40px",
+          "width": "100%",
+          "border-width": "2px",
+          "border-style": "solid",
+          "padding": "4px",
+          "font-size": "14px",
+          "border-top-width": "0",
+          "margin-bottom": "20px"
+        },
+        "children": [
+          {
+            "elmType": "span",
+            "txtContent": "[$Answer]"
+          }
+        ]
+      }
+    ]
+  }
+}</CustomFormatter>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field AppendOnly="FALSE" DisplayName="Description" Format="Dropdown" IsModern="TRUE" IsolateStyles="FALSE" Name="Description" RichText="FALSE" RichTextMode="Compatible" Title="Description" Type="Note" ID="{51d199d4-b41a-4212-b555-65d5f9d524bb}" SourceID="{{listid:Hints}}" StaticName="Description" ColName="ntext2" RowOrdinal="0" />
+            <Field AppendOnly="FALSE" DisplayName="Answer" Format="Dropdown" IsModern="TRUE" IsolateStyles="FALSE" Name="Answer" RichText="FALSE" RichTextMode="Compatible" Title="Answer" Type="Note" ID="{58496cb3-9d54-4854-ba81-d216eabab83c}" SourceID="{{listid:Hints}}" StaticName="Answer" ColName="ntext3" RowOrdinal="0" CustomFormatter="" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RestrictedMode="TRUE" Version="4" />
+          </pnp:Fields>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://northeurope1.pushnp.svc.ms/notifications?token=4e48b08f-b412-4c70-9759-abe175a520f7" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+      </pnp:Lists>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+   <pnp:Sequence ID="MAIN-SEQUENCE">
+        <pnp:SiteCollections>
+            <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="SDSV2.SITE" Url="https://{parameter:TenantName}.sharepoint.com/sites/{SitePath}" Title="Search Dev" Owner="{currentuserloginname}" Description="This is a special site hosting the Site Designs Studio V2" Language="{parameter:Lcid}">
+                <pnp:Templates>
+                    <pnp:ProvisioningTemplateReference ID="TEMPLATE-FINDPEOPLE"/>
+                </pnp:Templates>
+            </pnp:SiteCollection>
+        </pnp:SiteCollections>
+    </pnp:Sequence>
+</pnp:Provisioning>

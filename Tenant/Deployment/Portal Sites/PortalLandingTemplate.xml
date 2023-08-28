@@ -1,0 +1,233 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.10.1906.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-PORTALSITELANDING">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-PORTALSITELANDING" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:RegionalSettings AdjustHijriDays="0" AlternateCalendarType="None" CalendarType="Gregorian" Collation="25" FirstDayOfWeek="Monday" FirstWeekOfYear="2" LocaleId="2057" ShowWeeks="false" Time24="true" TimeZone="4" WorkDayEndHour="5:00PM" WorkDays="62" WorkDayStartHour="8:00AM" />
+      <pnp:SupportedUILanguages>
+        <pnp:SupportedUILanguage LCID="1033" />
+      </pnp:SupportedUILanguages>
+      <pnp:SiteFields>
+        <Field Type="Note" DisplayName="Target Group_0" StaticName="f9f9dead213c47838bcc933f05b32f67" Name="f9f9dead213c47838bcc933f05b32f67" ID="{ec477155-cc47-4f2e-a359-abce457e6e9e}" ShowInViewForms="FALSE" Required="FALSE" CanToggleHidden="TRUE" SourceID="{d2ab2f55-f8c5-407a-ae1d-2ad91d052cc8}" Hidden="TRUE" />
+        <Field Type="Note" DisplayName="TaxKeywordTaxHTField" StaticName="TaxKeywordTaxHTField" Name="TaxKeywordTaxHTField" ID="{1390a86a-23da-45f0-8efe-ef36edadfb39}" ShowInViewForms="FALSE" Required="FALSE" Hidden="TRUE" CanToggleHidden="TRUE" SourceID="{d2ab2f55-f8c5-407a-ae1d-2ad91d052cc8}" />
+        <Field Type="TaxonomyFieldTypeMulti" DisplayName="Enterprise Keywords" StaticName="TaxKeyword" Name="TaxKeyword" ID="{23f27201-bee3-471e-b2e7-b64fd8b7ca38}" ShowInViewForms="TRUE" DefaultListField="TRUE" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" Required="FALSE" Hidden="FALSE" CanToggleHidden="TRUE" ShowField="Term1033" SourceID="{{siteid}}" Mult="TRUE" Sortable="FALSE" Group="Enterprise Keywords Group" Description="Enterprise Keywords are shared with other users and applications to allow for ease of search and filtering, as well as metadata consistency and reuse" Sealed="TRUE">
+          <Customization>
+            <ArrayOfProperty>
+              <Property>
+                <Name>SspId</Name>
+                <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
+              </Property>
+              <Property>
+                <Name>GroupId</Name>
+              </Property>
+              <Property>
+                <Name>TermSetId</Name>
+                <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">00000000-0000-0000-0000-000000000000</Value>
+              </Property>
+              <Property>
+                <Name>AnchorId</Name>
+                <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">00000000-0000-0000-0000-000000000000</Value>
+              </Property>
+              <Property>
+                <Name>UserCreated</Name>
+                <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>Open</Name>
+                <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+              </Property>
+              <Property>
+                <Name>TextField</Name>
+                <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{1390a86a-23da-45f0-8efe-ef36edadfb39}</Value>
+              </Property>
+              <Property>
+                <Name>IsPathRendered</Name>
+                <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsKeyword</Name>
+                <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+              </Property>
+              <Property>
+                <Name>TargetTemplate</Name>
+              </Property>
+              <Property>
+                <Name>CreateValuesInEditForm</Name>
+                <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>FilterAssemblyStrongName</Name>
+              </Property>
+              <Property>
+                <Name>FilterClassName</Name>
+              </Property>
+              <Property>
+                <Name>FilterMethodName</Name>
+              </Property>
+              <Property>
+                <Name>FilterJavascriptProperty</Name>
+              </Property>
+            </ArrayOfProperty>
+          </Customization>
+        </Field>
+        <Field Type="Choice" DisplayName="Choose the main area on Share" Required="TRUE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" Group="Alfa Laval" ID="{8cd41c36-4b9a-4427-a69b-fa3df50c2e47}" SourceID="{d2ab2f55-f8c5-407a-ae1d-2ad91d052cc8}" StaticName="SiteType" Name="SiteType" CustomFormatter="">
+          <Default>About Alfa Laval</Default>
+          <CHOICES>
+            <CHOICE>About Alfa Laval</CHOICE>
+            <CHOICE>Key Initiatives and Global Programs</CHOICE>
+            <CHOICE>How We Work</CHOICE>
+            <CHOICE>Other</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="URL" DisplayName="Site URL" Description="Enter full URL, e.g. http://google.com" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Hyperlink" Group="Alfa Laval" ID="{09eae77a-8d26-4f85-bde3-5eefb5a75ecd}" SourceID="{d2ab2f55-f8c5-407a-ae1d-2ad91d052cc8}" StaticName="SiteURL" Name="SiteURL" CustomFormatter="">
+        </Field>
+        <Field Type="Choice" DisplayName="Site Status" Description="Site creation status" Required="TRUE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" Group="Alfa Laval" ID="{2db6537f-1cbd-4cc5-a2dc-8b079876cc3e}" SourceID="{d2ab2f55-f8c5-407a-ae1d-2ad91d052cc8}" StaticName="SiteStatus" Name="SiteStatus" CustomFormatter="">
+          <Default>Requested</Default>
+          <CHOICES>
+            <CHOICE>Requested</CHOICE>
+            <CHOICE>Approved</CHOICE>
+            <CHOICE>Rejected</CHOICE>
+            <CHOICE>Available</CHOICE>
+            <CHOICE>Error</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="UserMulti" DisplayName="Site Editor" List="UserInfo" Required="TRUE" EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" Mult="TRUE" Sortable="FALSE" Group="Alfa Laval" ID="{3c3005a6-3234-4e78-9226-32ab470d97d8}" SourceID="{{siteid}}" StaticName="SiteEditor" Name="SiteEditor" Description="An Editor is responsible for writing, editing and publishing the content" />
+        <Field Type="TaxonomyFieldTypeMulti" DisplayName="Primary Target group for your information" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Group="Alfa Laval" ID="{f9f9dead-213c-4783-8bcc-933f05b32f67}" SourceID="{{siteid}}" StaticName="TargetGroup" Name="TargetGroup" Mult="TRUE" Sortable="FALSE" Description="Choose one or several options.&#xD;&#xA;Please note that all Alfa Laval co-workers will have read access">
+          <Default>
+          </Default>
+          <Customization>
+            <ArrayOfProperty>
+              <Property>
+                <Name>SspId</Name>
+                <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
+              </Property>
+              <Property>
+                <Name>GroupId</Name>
+              </Property>
+              <Property>
+                <Name>TermSetId</Name>
+                <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{termsetid:Share:Organizations}</Value>
+              </Property>
+              <Property>
+                <Name>AnchorId</Name>
+                <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">e9c88a9b-8cb2-48ee-8a6a-6c289b4549aa</Value>
+              </Property>
+              <Property>
+                <Name>UserCreated</Name>
+                <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>Open</Name>
+                <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TextField</Name>
+                <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{ec477155-cc47-4f2e-a359-abce457e6e9e}</Value>
+              </Property>
+              <Property>
+                <Name>IsPathRendered</Name>
+                <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsKeyword</Name>
+                <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TargetTemplate</Name>
+              </Property>
+              <Property>
+                <Name>CreateValuesInEditForm</Name>
+                <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>FilterAssemblyStrongName</Name>
+                <Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Value>
+              </Property>
+              <Property>
+                <Name>FilterClassName</Name>
+                <Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy.TaxonomyField</Value>
+              </Property>
+              <Property>
+                <Name>FilterMethodName</Name>
+                <Value xmlns:q12="http://www.w3.org/2001/XMLSchema" p4:type="q12:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">GetFilteringHtml</Value>
+              </Property>
+              <Property>
+                <Name>FilterJavascriptProperty</Name>
+                <Value xmlns:q13="http://www.w3.org/2001/XMLSchema" p4:type="q13:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">FilteringJavascript</Value>
+              </Property>
+            </ArrayOfProperty>
+          </Customization>
+        </Field>
+        <Field Type="UserMulti" DisplayName="Site Owner" List="UserInfo" Description="The Site Owner is responsible for the relevance of the content and has full control of the site" Required="TRUE" EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" Mult="TRUE" Sortable="FALSE" Group="Alfa Laval" ID="{3a660fbf-f6fc-47e3-97b2-727e2184eee1}" SourceID="{{siteid}}" StaticName="SiteOwner" Name="SiteOwner" />
+        <Field Type="Note" DisplayName="Short Description" Description="Please describe the main purpose of the Portal site; explain why the information needed" Required="TRUE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="FALSE" Sortable="FALSE" Group="Alfa Laval" ID="{9cf256da-b782-40ff-b72b-33e212743141}" SourceID="{d2ab2f55-f8c5-407a-ae1d-2ad91d052cc8}" StaticName="ShortDescription" Name="ShortDescription" CustomFormatter="" RestrictedMode="TRUE" RichTextMode="Compatible" IsolateStyles="FALSE" AppendOnly="FALSE" UnlimitedLengthInDocumentLibrary="FALSE">
+        </Field>
+      </pnp:SiteFields>
+      <pnp:ContentTypes>
+        <pnp:ContentType ID="0x0100EB9AFF640C8EA1458A344BAB32A6070E" Name="Portal Site" Description="" Group="Alfa Laval" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" UpdateChildren="false" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" UpdateChildren="false" />
+            <pnp:FieldRef ID="9cf256da-b782-40ff-b72b-33e212743141" Name="ShortDescription" Required="true" UpdateChildren="false" />
+            <pnp:FieldRef ID="3a660fbf-f6fc-47e3-97b2-727e2184eee1" Name="SiteOwner" Required="true" UpdateChildren="false" />
+            <pnp:FieldRef ID="3c3005a6-3234-4e78-9226-32ab470d97d8" Name="SiteEditor" Required="true" UpdateChildren="false" />
+            <pnp:FieldRef ID="8cd41c36-4b9a-4427-a69b-fa3df50c2e47" Name="SiteType" Required="true" UpdateChildren="false" />
+            <pnp:FieldRef ID="ec477155-cc47-4f2e-a359-abce457e6e9e" Name="f9f9dead213c47838bcc933f05b32f67" Hidden="true" UpdateChildren="false" />
+            <pnp:FieldRef ID="f3b0adf9-c1a2-4b02-920d-943fba4b3611" Name="TaxCatchAll" Hidden="true" UpdateChildren="false" />
+            <pnp:FieldRef ID="8f6b6dd8-9357-4019-8172-966fcd502ed2" Name="TaxCatchAllLabel" Hidden="true" UpdateChildren="false" />
+            <pnp:FieldRef ID="f9f9dead-213c-4783-8bcc-933f05b32f67" Name="TargetGroup" UpdateChildren="false" />
+            <pnp:FieldRef ID="2db6537f-1cbd-4cc5-a2dc-8b079876cc3e" Name="SiteStatus" UpdateChildren="false" />
+            <pnp:FieldRef ID="09eae77a-8d26-4f85-bde3-5eefb5a75ecd" Name="SiteURL" UpdateChildren="false" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+      </pnp:ContentTypes>
+      <pnp:Lists>
+        <pnp:ListInstance Title="Site Requests" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/SiteRequests" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableAttachments="false" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/SiteRequests/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/SiteRequests/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/SiteRequests/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0100EB9AFF640C8EA1458A344BAB32A6070E" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{E03F0ADF-03BF-4963-98AE-BB3F53277721}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/SiteRequests/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="SiteType" />
+                <FieldRef Name="SiteStatus" />
+                <FieldRef Name="SiteURL" />
+                <FieldRef Name="SiteOwner" />
+                <FieldRef Name="SiteEditor" />
+                <FieldRef Name="Created" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="1390a86a-23da-45f0-8efe-ef36edadfb39" Name="TaxKeywordTaxHTField" Hidden="true" DisplayName="TaxKeywordTaxHTField" />
+            <pnp:FieldRef ID="ec477155-cc47-4f2e-a359-abce457e6e9e" Name="f9f9dead213c47838bcc933f05b32f67" Hidden="true" DisplayName="TargetGroup_0" />
+            <pnp:FieldRef ID="9cf256da-b782-40ff-b72b-33e212743141" Name="ShortDescription" Required="true" DisplayName="Short Description" />
+            <pnp:FieldRef ID="3a660fbf-f6fc-47e3-97b2-727e2184eee1" Name="SiteOwner" Required="true" DisplayName="Site Owner" />
+            <pnp:FieldRef ID="3c3005a6-3234-4e78-9226-32ab470d97d8" Name="SiteEditor" Required="true" DisplayName="Site Editor" />
+            <pnp:FieldRef ID="8cd41c36-4b9a-4427-a69b-fa3df50c2e47" Name="SiteType" Required="true" DisplayName="Choose the main area on Share" />
+            <pnp:FieldRef ID="f9f9dead-213c-4783-8bcc-933f05b32f67" Name="TargetGroup" DisplayName="Primary Target group for your information" />
+            <pnp:FieldRef ID="23f27201-bee3-471e-b2e7-b64fd8b7ca38" Name="TaxKeyword" DisplayName="Enterprise Keywords" />
+            <pnp:FieldRef ID="2db6537f-1cbd-4cc5-a2dc-8b079876cc3e" Name="SiteStatus" Hidden="true" DisplayName="Site Status"/>
+            <pnp:FieldRef ID="09eae77a-8d26-4f85-bde3-5eefb5a75ecd" Name="SiteURL" Hidden="true" DisplayName="Site URL"/>
+          </pnp:FieldRefs>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://9-westeurope1.pushp.svc.ms/notifications?token=w2-aed6a337-46ff-48bb-b6f0-f78fd107fd77" ExpiresInDays="1" />
+            <pnp:Webhook ServerNotificationUrl="https://15-westeurope1.pushp.svc.ms/notifications?token=w3-e93aa8bb-beeb-42a3-affd-5aff876f24cf" ExpiresInDays="1" />
+            <pnp:Webhook ServerNotificationUrl="https://15-westeurope1.pushp.svc.ms/notifications?token=w2-e15c281e-e51c-41be-9c55-04ecd3d8f56d" ExpiresInDays="1" />
+            <pnp:Webhook ServerNotificationUrl="https://4-westeurope1.pushp.svc.ms/notifications?token=w3-aec2ab56-492b-4761-beac-d729166d761b" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+      </pnp:Lists>
+      <pnp:Footer Enabled="false" RemoveExistingNodes="false" />
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

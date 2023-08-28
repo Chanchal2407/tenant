@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=2.23.1802.0, Culture=neutral, PublicKeyToken=5e633289e95c321a">
+  <pnp:Parameters>
+      <pnp:Parameter Key="PerformCleanup">True</pnp:Parameter>
+      <pnp:Parameter Key="GenericFieldsPrefix">ALFA_</pnp:Parameter>
+      <pnp:Parameter Key="TemplateSpecificFieldsPrefix">ALFA_</pnp:Parameter>
+      <pnp:Parameter Key="TemplateSpecificFieldsGroup">Alfalaval Site Catalogue Site Columns</pnp:Parameter>
+      <pnp:Parameter Key="GenericContentTypesGroup">AlfaLaval Content Types</pnp:Parameter>
+      <pnp:Parameter Key="TemplateSpecificContentTypesGroup">AlfaLaval Site Catalogue Content Types</pnp:Parameter>
+      <pnp:Parameter Key="WebpartCollaborationsites">8b5d39ca-d34c-46d2-b9e9-bdc4a64a69db</pnp:Parameter>
+      <pnp:Parameter Key="WebpartSitesIFollow">49f07023-672e-4b20-b24c-e9e5fc57459c</pnp:Parameter>
+      <pnp:Parameter Key="TenantName">techgurudatt</pnp:Parameter>
+    </pnp:Parameters>
+  </pnp:Preferences>
+  <pnp:Templates ID="CONTAINER-TEMPLATE-ALFA-PROJECTPORTAL-SITEDIRECTORY">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-ALFA-PROJECTPORTAL-SITEDIRECTORY" Version="1" BaseSiteTemplate="STS#0">
+      <pnp:RegionalSettings AdjustHijriDays="0" AlternateCalendarType="None" CalendarType="Gregorian" Collation="25" FirstDayOfWeek="Monday" FirstWeekOfYear="0" LocaleId="2057" ShowWeeks="false" Time24="true" TimeZone="4" WorkDayEndHour="5:00PM" WorkDays="62" WorkDayStartHour="8:00AM" />
+	   <pnp:SupportedUILanguages>
+        <pnp:SupportedUILanguage LCID="1033" />
+       </pnp:SupportedUILanguages>
+	    <xi:include 
+        xmlns:xi="http://www.w3.org/2001/XInclude" href="Objects/SiteFields.xml" />
+      <xi:include 
+        xmlns:xi="http://www.w3.org/2001/XInclude" href="Objects/ContentTypes.xml" />
+      <xi:include 
+        xmlns:xi="http://www.w3.org/2001/XInclude" href="Objects/RootNavigation.xml" />
+      <xi:include 
+        xmlns:xi="http://www.w3.org/2001/XInclude" href="Objects/Dev/Pages.xml" />
+      <xi:include 
+        xmlns:xi="http://www.w3.org/2001/XInclude" href="Objects/Lists.xml" />
+      <xi:include 
+        xmlns:xi="http://www.w3.org/2001/XInclude" href="Objects/Files.xml" />
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

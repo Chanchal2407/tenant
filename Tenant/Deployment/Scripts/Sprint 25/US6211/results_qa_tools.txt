@@ -1,0 +1,522 @@
+PS C:\Users\Administrator> C:\Users\Administrator\Desktop\test_trash\Untitled17_CLC_tool-local-sites.ps1
+- - - - - - - Script started - - - - - - -
+Landing site:  https://alfalavalonline.sharepoint.com/sites/toolsitelandingqa/
+Request list [ All Tool sites ] with [ 85 ] items
+
+   Request [ Dma QA test site X ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-dmaqatestsite]
+    Owner [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Editor [2] -- [liene.konajeva@alfalavalonline.onmicrosoft.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDR Tst 1 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-qakdrtst1]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ DMa QA Flow test ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-dmaqaflowtest]
+    Owner [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Editor [2] -- [Kristine.Dreimane@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDT Tool site tst 05.03.2019_v2 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-qakdttoolsitetst05.03.2019_v2]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDR Tool site test 05.03.2019_v3 ]
+  ..skipped URL empty
+
+   Request [ QA KDT Tool site test 06.03.2019_v1 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-qakdttoolsitetest06.03.2019_v1]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [2] -- [mihails.sotnicoks@alfalavalonline.onmicrosoft.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDR Tool site test 06.03.2019_v2 ]
+  ..skipped Rejected
+
+   Request [ QA KDR Tool site test 06.03.2019_v3 ]
+  ..skipped URL empty
+
+   Request [ QA KDR Tool site test 06.03.2019_v4 just makeing title a litle bit larger to perform some tests ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-qakdrtoolsitetest06.03.2019_v4]
+    Owner [1] -- [mihails.sotnicoks@alfalavalonline.onmicrosoft.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDR Tool site test 06.03.2019_v5 ]
+  ..skipped Rejected
+
+   Request [ QA KDR Tool site test 06.03.2019_v6 ]
+  ..skipped URL empty
+
+   Request [ QA KDR Tool site test 06.03.2019_v6 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-qakdrtoolsitetest06.03.2019_v6]
+    Owner [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDR Tool site test 06.03.2019_v7 ]
+  ..skipped URL empty
+
+   Request [ QA KDR Tool site test 06.03.2019_v7 ]
+  ..skipped URL empty
+
+   Request [ QA KDR Tool site test 06.03.2019_v8 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-qakdrtoolsitetest06.03.2019_v8]
+    Owner [1] -- [mihails.sotnicoks@alfalavalonline.onmicrosoft.com]
+    Editor [1] -- [Kristine.Dreimane@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ Mobile ]
+  ..skipped URL empty
+
+   Request [ QA KDR Tool site test 07.03.2019_v1 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-qakdrtoolsitetest07.03.2019_v1]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDR Tool site test 07.03.2019_v2 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-qakdrtoolsitetest07.03.2019_v2]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ MIH Test TOOL LINK ]
+  ..skipped CT [Tool Link]
+
+   Request [ KDr Test  ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-kdrtest]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDR Tool without site test v1_14.03.2019. ]
+  ..skipped CT [Tool Link]
+
+   Request [ KDR QA Tool wi.thout site test v2_14.03.2019 ]
+  ..skipped CT [Tool Link]
+
+   Request [ QA KDR Tool without site don't need Tool Card = No v3_14.03.2019. ]
+  ..skipped CT [Tool Link]
+
+   Request [ QA KDR Tool without site not Owner v4_14.03.2019. ]
+  ..skipped CT [Tool Link]
+
+   Request [ QA KDR Tool without site has setting Tool Card needed = No ]
+  ..skipped CT [Tool Link]
+
+   Request [ QA KDR Tool without site has Site URL display text ]
+  ..skipped CT [Tool Link]
+
+   Request [ QA KDR Tool site request v1_14.03.2019. ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-qakdrtoolsiterequestv1_14.03.2019.1]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDR Tool site test v1_19.03.2019. ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-qakdrtoolsitetestv1_19.03.2019.1]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDr Tool site test v2_19.03.2019. ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-qakdrtoolsitetestv2_19.03.2019.1]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ DMa QA tool test 19.03.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-dmaqatooltest19.03.2019]
+    Owner [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDr Tool site test v1_1.03.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-qakdrtoolsitetestv1_1.03.2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---]
+			Set-PnPListItem : The file "https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-qakdrtoolsitetestv1_1.03.2019/SitePages/Home.aspx" is checked out for editing by i:0#.f|membership|kristine.dreimane@alfa
+
+   Request [ QA KDR Tool site v1_03.04.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-qakdrtoolsitev1_03.04.2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDr Tool site v2)03.04.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-qakdrtoolsitev2)03.04.2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDR Tool link v1_03.04.2019 ]
+  ..skipped CT [Tool Link]
+
+   Request [ QA KDR Tool link v2_03.04.2019 ]
+  ..skipped CT [Tool Link]
+
+   Request [ QA KDR  Tool site Edge v1_03.04.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-qakdrtoolsiteedgev1_03.04.2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDR  Tool site Edge v2_03.04.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-qakdrtoolsiteedgev2_03.04.2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDR Tool link Edge  ]
+  ..skipped CT [Tool Link]
+
+   Request [ QA KDR Tool link Edge v2_03.04.2019 ]
+  ..skipped CT [Tool Link]
+
+   Request [ QA KDR  Tool site Edge v3_03.04.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-qakdrtoolsiteedgev3_03.04.2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDR Tool site Edge v4_03.04.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-qakdrtoolsiteedgev4_03.04.2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDR Tool site IPhone v1_03.04.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-qakdrtoolsiteiphonev1_03.04.2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDR Tool site IPhone v2_03.04.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-qakdrtoolsiteiphonev2_03.04.2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDR Tool site IE v1_03.04.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-qakdrtoolsiteiev1_03.04.2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDR Tool site IE v2_03.04.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-qakdrtoolsiteiev2_03.04.2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDR Tool link IE v1_03.04.2019 ]
+  ..skipped CT [Tool Link]
+
+   Request [ QA KDR Tool link IE v2_03.04.2019 ]
+  ..skipped CT [Tool Link]
+
+   Request [ QA KDR Tool link IE v3_03.04.2019 ]
+  ..skipped CT [Tool Link]
+
+   Request [ QA KDR Tool link IE v4_03.04.2019 ]
+  ..skipped CT [Tool Link]
+
+   Request [ Qa Kdr Tool site Samsung v1_03.04.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-qakdrtoolsitesamsungv1_03.04.2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ Qa Kdr Tool link Samsung v1_03.04.2019 ]
+  ..skipped CT [Tool Link]
+
+   Request [ QA KDR Tool site IE v1_04.04.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-qakdrtoolsiteiev1_04.04.2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDR Tool site IE v2_04.04.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-qakdrtoolsiteiev2_04.04.2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDR Tool site Edge v1_04.04.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-qakdrtoolsiteedgev1_04.04.2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDR Tool site Edge v2_04.04.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-qakdrtoolsiteedgev2_04.04.2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDR Tool link Edge v1_04.04.2019 ]
+  ..skipped CT [Tool Link]
+
+   Request [ QA KDR Tool link Edge v2_04.04.2019 ]
+  ..skipped CT [Tool Link]
+
+   Request [ QA KDR Tool link v3_04.04.2019 ]
+  ..skipped CT [Tool Link]
+
+   Request [ Super long Tool link title to check whether it becomes truncated on all mobile phones ]
+  ..skipped CT [Tool Link]
+
+   Request [ QA KDR Tool site v1_10.05.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-qakdrtoolsitev1_10.05.2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDR Tool, site v2_10-04-2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-qakdrtool,sitev2_10-04-2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDR Tool site v1_17.04.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-qakdrtoolsitev1_17.04.2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ Kristine, comma, test ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-kristine,comma,test]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [Kristine.Dreimane@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ Comma, comma, comma,, commas,,, ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-comma,comma,comma,,commas,,]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [Kristine.Dreimane@alfalaval.com]
+    Connecting subweb:  OK 
+  ..skipped field ALFA_PageOwners does not exists
+
+   Request [ KDR_Unique Tool site ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-kdr_uniquetoolsite]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR_Unique Tool site ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-kdr_uniquetoolsite1]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR_Unique Tool site ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-kdr_uniquetoolsite2]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ DMa QA 2019-06-25 Flow check ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-dmaqa2019-06-25flowcheck]
+    Owner [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Editor [2] -- [ainars.vimanis@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR Tool ste 25.06.2019. 2 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-kdrtoolste25.06.2019.2]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR_01 Tool site cascading ]
+  ..skipped URL empty
+
+   Request [ KDR 04 Tool site cascading ]
+  ..skipped URL empty
+
+   Request [ KDR 05 Tool site cascading ]
+  ..skipped URL empty
+
+   Request [ KDR 06 Tool site cascading ]
+  ..skipped URL empty
+
+   Request [ KDR 07 Tool site cascading ]
+  ..skipped URL empty
+
+   Request [ KDR 10 Tool site cascading ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-kdr10toolsitecascading]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 4 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Test KDR] owner [---] and editor [---] --owner  --editor 
+       Page [Test KDR] owner [Kristine.Dreimane@alfalaval.com] and editor [dmitrijs.maslobojevs@alfalaval.com]       
+	   Page [test 2 KDR] owner [Kristine.Dreimane@alfalaval.com] and editor [dmitrijs.maslobojevs@alfalaval.com]
+   Request [ KDR 11 Tool site cascading ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-kdr11toolsitecascading]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR 12 Tool site cascading ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-kdr12toolsitecascading]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR Tool site footer ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-kdrtoolsitefooter]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR Tool site tes 09092019 1 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-kdrtoolsitetes090920191]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR Tool site tes 09092019 2 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-kdrtoolsitetes090920192]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR Tool site tes 09092019 3 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-kdrtoolsitetes090920193]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR Tool site test 17.09.2019. 01 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-kdrtoolsitetest17.09.2019.01]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 1 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR Tool site test 17.09.2019. 02 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-kdrtoolsitetest17.09.2019.02]
+    Owner [2] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 2 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Demo page 2] owner [Kristine.Dreimane@alfalaval.com] and editor [dmitrijs.maslobojevs@alfalaval.com]
+   Request [ KDR Tool site test 17.09.2019. 03 ]
+  ..skipped Rejected
+
+   Request [ KDr Test 1 30102019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/ToolSiteQA-kdrtest130102019]
+    Owner [2] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Editor [2] -- [Kristaps.Vilerts@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 3 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [KDr Tool test page] owner [dmitrijs.maslobojevs@alfalaval.com] and editor [Kristaps.Vilerts@alfalaval.com]       
+	   Page [Home] owner [Kristine.Dreimane@alfalaval.com] and editor [dmitrijs.maslobojevs@alfalaval.com]
+
+- - - - - - - Script ended - - - - - - -
+
+PS C:\Users\Administrator> 

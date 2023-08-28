@@ -1,0 +1,33 @@
+{
+   "$schema": "schema.json",
+   "actions": [
+       {
+           "verb": "removeNavLink",
+           "displayName": "Home",
+           "isWebRelative": true
+       },
+       {
+           "verb": "removeNavLink",
+           "displayName": "Pages",
+           "isWebRelative": true
+       },
+       {
+           "verb": "removeNavLink",
+           "displayName": "Documents",
+           "isWebRelative": true
+       },
+       {
+           "verb": "removeNavLink",
+           "displayName": "Site contents",
+           "isWebRelative": true
+       },
+       {
+           "verb": "addNavLink",
+           "url": "/Sitepages/Home.aspx",
+           "displayName": "Tool site home",
+           "isWebRelative": true
+        }
+   ],
+   "bindata": {},
+   "version": 1
+ }

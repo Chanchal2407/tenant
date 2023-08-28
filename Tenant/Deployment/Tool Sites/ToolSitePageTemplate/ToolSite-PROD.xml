@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.5.1901.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-ALFALAVAL_TOOLSITE">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-ALFALAVAL_TOOLSITE" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:WebSettings NoCrawl="false" WelcomePage="SitePages/Home.aspx" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="false" />
+      <pnp:RegionalSettings AdjustHijriDays="0" AlternateCalendarType="None" CalendarType="Gregorian" Collation="25" FirstDayOfWeek="Monday" FirstWeekOfYear="0" LocaleId="1033" ShowWeeks="false" Time24="false" TimeZone="13" WorkDayEndHour="5:00PM" WorkDays="62" WorkDayStartHour="8:00AM" />
+       <pnp:SupportedUILanguages>
+				<pnp:SupportedUILanguage LCID="1033"/>
+    </pnp:SupportedUILanguages>
+	<pnp:ClientSidePages>
+		<pnp:ClientSidePage PageName="Home.aspx" PromoteAsNewsArticle="false" Overwrite="true" EnableComments="false" Title="Home">
+		  <pnp:Sections>
+			<pnp:Section Order="1" Type="TwoColumnLeft">
+			  <pnp:Controls>
+				<pnp:CanvasControl WebPartType="Custom" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;properties&quot;: {&quot;description&quot;:&quot;Displays info from site catalog&quot;,&quot;hubsiteurl&quot;:&quot;/sites/toolsitelanding&quot;,&quot;title&quot;:&quot;Welcome to the new {sitename} page!&quot;,&quot;requestlistname&quot;:&quot;All Tool sites&quot;}}" ControlId="117322d2-3252-4a03-a8ea-a96b5df411eb" Order="1" Column="1" />
+			  </pnp:Controls>
+			</pnp:Section>
+			<pnp:Section Order="2" Type="TwoColumnLeft">
+			  <pnp:Controls>
+				<pnp:CanvasControl WebPartType="Text" ControlId="28ba3d5f-267c-4e11-8d91-5eb4a325dbab" Order="1" Column="1">
+				  <pnp:CanvasControlProperties>
+					<pnp:CanvasControlProperty Key="Text" Value="" />
+				  </pnp:CanvasControlProperties>
+				</pnp:CanvasControl>
+				<pnp:CanvasControl WebPartType="Text" ControlId="d1dd3bcd-3dee-41e8-843b-6ce4bdb9fa28" Order="1" Column="2">
+				  <pnp:CanvasControlProperties>
+					<pnp:CanvasControlProperty Key="Text" Value="" />
+				  </pnp:CanvasControlProperties>
+				</pnp:CanvasControl>
+			  </pnp:Controls>
+			</pnp:Section>
+		  </pnp:Sections>
+		  <pnp:Header Type="Default" />
+		</pnp:ClientSidePage>
+	</pnp:ClientSidePages>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

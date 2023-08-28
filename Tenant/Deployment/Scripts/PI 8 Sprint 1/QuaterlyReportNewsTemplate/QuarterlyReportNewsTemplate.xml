@@ -1,0 +1,42 @@
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.21.2005.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-QUARTERLY-REPORT">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-QUARTERLY-REPORT" Version="0" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:ClientSidePages>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="true" Overwrite="true" Title="Quarterly Report" ThumbnailUrl="{hosturl}/sites/OrganizationAssets/OrganizationAssets/QuarterlyReportThumbnail.jpg" PageName="QuarterlyReportTemplate.aspx">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{hosturl}/sites/OrganizationAssets/OrganizationAssets/QuarterlyReportHeader.jpg" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="651138b3-da66-4ea5-b082-7cc07d5819c9" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Write your text here" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;id&quot;: &quot;cf91cf5d-ac23-4a7a-9dbc-cd9ea2a4e859&quot;, &quot;instanceId&quot;: &quot;144a863d-9a3e-46b3-9fcb-a5a532651944&quot;, &quot;title&quot;: &quot;Page properties&quot;, &quot;description&quot;: &quot;Show details about your page like date, content type, or custom properties.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;selectedFieldIds&quot;:[&quot;0f5d327d-c1ac-4962-9543-7ae4d1d95537&quot;],&quot;availableFields&quot;:[]}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Publishing Date&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="cf91cf5d-ac23-4a7a-9dbc-cd9ea2a4e859" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="People" JsonControlData="{&quot;id&quot;: &quot;7f718435-ee4d-431c-bdbf-9c4ff326f46e&quot;, &quot;instanceId&quot;: &quot;9c52bda5-88c3-4a37-b062-b3121337ea2b&quot;, &quot;title&quot;: &quot;People&quot;, &quot;description&quot;: &quot;Display selected people and their profiles&quot;, &quot;dataVersion&quot;: &quot;1.3&quot;, &quot;properties&quot;: {&quot;layout&quot;:1,&quot;persons&quot;:[]}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Information owner&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="7f718435-ee4d-431c-bdbf-9c4ff326f46e" Order="2" Column="2" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;cfa3ab77-dd99-45a1-9c14-73c1ded47792&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Add an image, picture or photo to your page including text overlays and ability to crop and resize images.&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:0,&quot;imageSource&quot;:&quot;&quot;,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;&quot;,&quot;webId&quot;:&quot;&quot;,&quot;listId&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;&quot;,&quot;imgWidth&quot;:&quot;&quot;,&quot;imgHeight&quot;:&quot;&quot;,&quot;alignment&quot;:&quot;Center&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="3" Column="2" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="9bf0f725-9fb2-443c-8a8a-ffaca46e0890" Order="4" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Write your text here" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>				
+                <pnp:CanvasControl WebPartType="ContentEmbed" JsonControlData="{&quot;id&quot;: &quot;490d7c76-1824-45b2-9de3-676421c997fa&quot;, &quot;instanceId&quot;: &quot;cda304f3-7b36-4f8b-8312-a3406cd6b444&quot;, &quot;title&quot;: &quot;Embed&quot;, &quot;description&quot;: &quot;Embed content from other sites such as Sway, YouTube, Vimeo, and more&quot;, &quot;dataVersion&quot;: &quot;1.2&quot;, &quot;properties&quot;: {&quot;embedCode&quot;:&quot;&quot;,&quot;cachedEmbedCode&quot;:&quot;&quot;,&quot;shouldScaleWidth&quot;:true,&quot;tempState&quot;:{},&quot;thumbnailUrl&quot;:&quot;&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="490d7c76-1824-45b2-9de3-676421c997fa" Order="5" Column="2" />                
+				<pnp:CanvasControl WebPartType="Text" ControlId="96f31f9c-f0fb-4069-9b95-583dc985c695" Order="6" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Write your text here" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+			  </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="People" JsonControlData="{&quot;id&quot;: &quot;7f718435-ee4d-431c-bdbf-9c4ff326f46e&quot;, &quot;instanceId&quot;: &quot;e8f5d735-ee9a-4baa-9929-512191a65664&quot;, &quot;title&quot;: &quot;People&quot;, &quot;description&quot;: &quot;Display selected people and their profiles&quot;, &quot;dataVersion&quot;: &quot;1.3&quot;, &quot;properties&quot;: {&quot;layout&quot;:1,&quot;persons&quot;:[]}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Editor&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="7f718435-ee4d-431c-bdbf-9c4ff326f46e" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+      </pnp:ClientSidePages>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

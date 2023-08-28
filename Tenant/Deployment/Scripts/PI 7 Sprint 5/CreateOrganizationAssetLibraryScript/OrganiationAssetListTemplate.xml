@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.21.2005.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-ORGANIZATION-ASSET-LIST">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-ORGANIZATION-ASSET-LIST" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:Lists>
+        <pnp:ListInstance Title="Organization Assets" Description="Organization Assets" DocumentTemplate="{site}/OrganizationAssets/Forms/template.dotx" OnQuickLaunch="true" TemplateType="101" Url="OrganizationAssets" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/OrganizationAssets/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/OrganizationAssets/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/OrganizationAssets/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{684B5181-95A9-478F-8A36-A5C8C74F8729}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/OrganizationAssets/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="d307dff3-340f-44a2-9f4b-fbfe1ba07459" Name="_CommentCount" DisplayName="Comment count" />
+            <pnp:FieldRef ID="db8d9d6d-dc9a-4fbd-85f3-4a753bfdc58c" Name="_LikeCount" DisplayName="Like count" />
+          </pnp:FieldRefs>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://centralindia1.pushnp.svc.ms/notifications?token=c8b6d2ec-6dde-4c63-808a-76ed4b364faf" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+      </pnp:Lists>
+	  <pnp:Files>
+	  	<pnp:File Src="ALFA_LAVAL_LOGO_PRIMARY.jpg" Folder="{site}/OrganizationAssets" Overwrite="true" Level="Published"></pnp:File>
+		<pnp:File Src="OrgNewsHeader.jpg" Folder="{site}/OrganizationAssets" Overwrite="true" Level="Published"></pnp:File>
+		<pnp:File Src="OrgNewsThumbnail.jpg" Folder="{site}/OrganizationAssets" Overwrite="true" Level="Published"></pnp:File>
+	  </pnp:Files>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

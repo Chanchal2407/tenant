@@ -1,0 +1,9 @@
+<root>
+  <SPOServiceRootUrl>https://alfalavalonline.sharepoint.com</SPOServiceRootUrl>  
+  <SPOServiceUsername>***** USERNAME *******</SPOServiceUsername>
+  <SPOServicePassword>****** PASSWORD *******</SPOServicePassword>    
+  <CollaborationSitesUrl>https://alfalavalonline.sharepoint.com/sites/collaborationlanding/collaboration</CollaborationSitesUrl>      
+  <IsCSV>False</IsCSV>
+  <ReportOutput>************ Output Path - doesnt generate output - skip this *************</ReportOutput>
+  <inputSites>******** CSV input path ********\Sites-2021-06-24-Prod.csv</inputSites>  
+</root>

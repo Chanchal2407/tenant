@@ -1,0 +1,10 @@
+<root>
+  <AlfalavalTheme>Alfalaval theme</AlfalavalTheme>  
+  <ClientId>************ClientId*********</ClientId>
+  <CertificatePath>******Path*****</CertificatePath>
+  <CertificatePassword>******Password******</CertificatePassword>
+  <Tenant>alfalavalonline.onmicrosoft.com</Tenant>  
+  <TopNavTemplate>topnav_template\topnav-ShareProd.xml</TopNavTemplate>      
+  <ReportOutput>Output_SitesBranding-Prod.csv</ReportOutput>
+  <inputSites>Input_SitesBranding-Prod.csv</inputSites>
+</root>

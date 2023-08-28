@@ -1,0 +1,9 @@
+<root>
+  <username>rahul.cheke_a@alfalaval.com</username>
+  <password></password>  
+  <shareAdminUrl>https://alfalavalcg-admin.sharepoint.com</shareAdminUrl>
+  <AppId></AppId>
+  <AppSecret></AppSecret>
+  <AADDomain>alfalavalcg.onmicrosoft.com</AADDomain>
+  <ReportOutput>C:\Rahul\AlfaLaval\Scripts\Sprint 9\6848\UsageDetailsClassicSite_Prod.csv</ReportOutput>  
+</root>

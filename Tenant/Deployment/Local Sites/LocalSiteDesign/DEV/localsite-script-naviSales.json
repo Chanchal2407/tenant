@@ -1,0 +1,75 @@
+{
+    "$schema": "schema.json",
+    "actions": [
+        {
+            "verb": "removeNavLink",
+            "displayName": "Home",
+            "isWebRelative": true
+        },
+        {
+            "verb": "removeNavLink",
+            "displayName": "Pages",
+            "isWebRelative": true
+        },
+        {
+            "verb": "removeNavLink",
+            "displayName": "Documents",
+            "isWebRelative": true
+        },
+        {
+            "verb": "removeNavLink",
+            "displayName": "Site contents",
+            "isWebRelative": true
+        },
+         {
+            "verb": "addNavLink",
+            "url": "/Sitepages/Home.aspx",
+            "displayName": "Local site home",
+            "isWebRelative": true
+         },
+         {
+            "verb": "addNavLink",
+            "url": "/Sitepages/visiting-information.aspx",
+            "displayName": "Visiting information",
+            "isWebRelative": true
+         },
+         {
+            "verb": "addNavLink",
+            "url": "/Sitepages/health-and-safety.aspx",
+            "displayName": "Health and Safety",
+            "isWebRelative": true
+         },
+         {
+            "verb": "addNavLink",
+            "url": "/Sitepages/policies-and-guidelines.aspx",
+            "displayName": "Policies & Gudelines",
+            "isWebRelative": true
+         },
+         {
+            "verb": "addNavLink",
+            "url": "/Sitepages/local-information.aspx",
+            "displayName": "Local Information",
+            "isWebRelative": true
+         },
+         {
+            "verb": "addNavLink",
+            "url": "/Sitepages/economy-information.aspx",
+            "displayName": "Economy information",
+            "isWebRelative": true
+         },
+         {
+            "verb": "addNavLink",
+            "url": "/Sitepages/hr-information.aspx",
+            "displayName": "HR Information",
+            "isWebRelative": true
+         },
+		   {
+            "verb": "addNavLink",
+            "url": "/Sitepages/marketing-communication.aspx",
+            "displayName": "Marketing communication",
+            "isWebRelative": true
+         }
+    ],
+    "bindata": {},
+    "version": 1
+  }

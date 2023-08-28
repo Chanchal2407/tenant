@@ -1,0 +1,6 @@
+Something went wrong when trying to create the site|<p>Dear requestor,
+</p><p>
+Something went wrong when trying to create the site.Please contact  IT Service desk (Share Support team) for more information / fix.
+</p><p>
+Application team
+</p>

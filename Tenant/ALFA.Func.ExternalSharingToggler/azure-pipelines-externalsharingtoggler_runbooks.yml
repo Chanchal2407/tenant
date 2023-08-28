@@ -1,0 +1,95 @@
+trigger:
+- SprintsDev
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  branchName: $(Build.SourceBranchName)
+
+stages:  
+ - stage: "Deploy_To_Dev"
+   condition: eq(variables['Build.SourceBranch'], 'refs/heads/Dev')
+   jobs:
+      - deployment: Deploy_To_Dev
+        displayName: Deploy_To_Dev
+        condition: eq(variables['Build.SourceBranch'], 'refs/heads/Dev')
+        environment: Dev
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+              - checkout: self
+              - task: CopyFiles@2
+                displayName: 'Copy Files to: $(Build.SourcesDirectory)'
+                inputs:
+                  SourceFolder: '$(Build.SourcesDirectory)/ALFA.Func.ExternalSharingToggler/O365GroupSettings'
+                  Contents: 'run.ps1'
+                  TargetFolder: '$(Build.SourcesDirectory)'
+              - task: AzurePowerShell@5
+                inputs:
+                  azureSubscription: 'Visual Studio Enterprise Subscription(e60bcc2d-eb26-4ac9-86cf-406fcc666ff8)'
+                  ScriptType: 'FilePath'
+                  ScriptPath: './ALFA.Func.ExternalSharingToggler/O365GroupSettings/PublishRunbooks/Publish-AzureAutomationRunbookFromDevOps.ps1'
+                  ScriptArguments: -runbookname run ` -runbookfile ./O365GroupSettings/run.ps1
+                  
+                  # ScriptPath: './Deployment/SharedCDScripts/Publish-AzureAutomationRunbookFromDevOps.ps1'
+                  # ScriptArguments: -runbookname run ` -runbookfile ./O365GroupSettings/run.ps1
+                  azurePowerShellVersion: 'LatestVersion'
+                displayName: Deploy AA Runbook YAML
+
+#  - stage: "Deploy_To_PreProd"
+#    condition: eq(variables['Build.SourceBranch'], 'refs/heads/Dev')
+#    jobs:
+#       - deployment: Deploy_To_PreProd
+#         displayName: Deploy_To_PreProd
+#         condition: and(not(failed('Deploy_To_Dev')), eq(variables['Build.SourceBranch'], 'refs/heads/Dev'))
+#         environment: PreProd
+#         strategy:
+#           runOnce:
+#             deploy:
+#               steps:
+#               - checkout: self
+#               - task: CopyFiles@2
+#                 displayName: 'Copy Files to: $(Build.SourcesDirectory)'
+#                 inputs:
+#                   SourceFolder: '$(Build.SourcesDirectory)/ALFA.Func.ExternalSharingToggler/O365GroupSettings'
+#                   Contents: 'run.ps1'
+#                   TargetFolder: '$(Build.SourcesDirectory)'
+#               - task: AzurePowerShell@5
+#                 inputs:
+#                   azureSubscription: 'Visual Studio Enterprise Subscription(e60bcc2d-eb26-4ac9-86cf-406fcc666ff8)'
+#                   ScriptType: 'FilePath'
+#                   ScriptPath: './ALFA.Func.ExternalSharingToggler/O365GroupSettings/PublishRunbooks/Publish-RunbookFromDevOps.ps1'
+#                   ScriptArguments: -runbookname run ` -runbookfile ./O365GroupSettings/run.ps1
+#                   azurePowerShellVersion: 'LatestVersion'
+#                 displayName: Deploy AA Runbook YAML
+                  
+#  - stage: "Deploy_To_Prod"
+#    condition: eq(variables['Build.SourceBranch'], 'refs/heads/Dev')
+#    jobs:
+#       - deployment: Deploy_To_Prod
+#         displayName: Deploy_To_Prod
+#         condition: and(not(failed('Deploy_To_PreProd')), eq(variables['Build.SourceBranch'], 'refs/heads/Dev'))
+#         environment: Prod
+#         strategy:
+#           runOnce:
+#             deploy:
+#               steps:
+#               - checkout: self
+#               - task: CopyFiles@2
+#                 displayName: 'Copy Files to: $(Build.SourcesDirectory)'
+#                 inputs:
+#                   SourceFolder: '$(Build.SourcesDirectory)/ALFA.Func.ExternalSharingToggler/O365GroupSettings'
+#                   Contents: 'run.ps1'
+#                   TargetFolder: '$(Build.SourcesDirectory)'
+#               - task: AzurePowerShell@5
+#                 inputs:
+#                   azureSubscription: 'Visual Studio Enterprise Subscription(e60bcc2d-eb26-4ac9-86cf-406fcc666ff8)'
+#                   ScriptType: 'FilePath'
+#                   ScriptPath: './ALFA.Func.ExternalSharingToggler/O365GroupSettings/PublishRunbooks/Publish-RunbookFromDevOps.ps1'
+#                   ScriptArguments: -runbookname run ` -runbookfile ./O365GroupSettings/run.ps1
+#                   azurePowerShellVersion: 'LatestVersion'
+#                 displayName: Deploy AA Runbook YAML
+                  

@@ -1,0 +1,15 @@
+{
+    "$schema": "schema.json",
+    "actions": [
+      {
+        "verb": "associateExtension",
+        "title": "SharePageFooter-uat",
+        "location": "ClientSideExtension.ApplicationCustomizer",
+        "clientSideComponentId": "a29efd4f-3f67-4677-bf4e-2a8e1779b668",
+        "clientSideComponentProperties":"{\"OwnersInternalName\":\"ALFA_PageOwners\", \"EditorsInternalName\":\"ALFA_PageEditors\"}",
+        "scope": "Web"
+      }
+    ],
+    "bindata": {},
+    "version": 1
+}

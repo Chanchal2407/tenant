@@ -1,0 +1,15 @@
+{
+    "$schema": "schema.json",
+    "actions": [
+      {
+        "verb": "associateExtension",
+        "title": "Share global extension-uat",
+        "location": "ClientSideExtension.ApplicationCustomizer",
+        "clientSideComponentId": "e6e03d86-5104-49e8-8f1d-8bb471343e77",
+        "clientSideComponentProperties":"{\"TopMenuTermSet\":\"Top Navigation-uat\"}",
+        "scope": "Site"
+      }
+    ],
+    "bindata": {},
+    "version": 1
+  }

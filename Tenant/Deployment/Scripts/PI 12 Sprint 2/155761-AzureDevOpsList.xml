@@ -1,0 +1,865 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.18.2002.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-PlatformServiceVisualization">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-PlatformServiceVisualization" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:Lists>
+        <pnp:ListInstance Title="Azure DevOps" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/Azure DevOps" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Azure DevOps/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Azure DevOps/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Azure DevOps/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{64B094DC-7C53-42D3-B190-488CC4DC21BD}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Azure DevOps/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="WorkItemId" />
+                <FieldRef Name="WorkItemType" />
+                <FieldRef Name="WorkItemTitle" />
+                <FieldRef Name="AssignedTo" />
+                <FieldRef Name="State" />
+                <FieldRef Name="Tags" />
+                <FieldRef Name="IterationPath" />
+                <FieldRef Name="AreaPath" />
+                <FieldRef Name="Description" />
+                <FieldRef Name="PIDef" />
+                <FieldRef Name="PINumber" />
+                <FieldRef Name="ActivatedDate" />
+                <FieldRef Name="ClosedDate" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter />
+            </View>
+            <View Name="{234C7846-B3E6-431E-8EA0-76CB497E3800}" Type="HTML" DisplayName="Grouped By Title" Url="{site}/Lists/Azure DevOps/Grouped By Title.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <GroupBy />
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="WorkItemType" />
+                <FieldRef Name="State" />
+                <FieldRef Name="Tags" />
+                <FieldRef Name="Description" />
+                <FieldRef Name="IterationPath" />
+                <FieldRef Name="PIDef" />
+                <FieldRef Name="PINumber" />
+                <FieldRef Name="ActivatedDate" />
+                <FieldRef Name="ClosedDate" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter><![CDATA[{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/view-formatting.schema.json",
+  "schema": "https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json",
+  "hideSelection": true,
+  "hideColumnHeader": false,
+  "hideListHeader": false,
+  "groupProps": {
+    "headerFormatter": {
+      "elmType": "div",
+      "attributes": {
+        "class": "sp-row-card"
+      },
+      "style": {
+        "color": "black",
+        "background-color": "#FAF9F9",
+        "flex-grow": "1",
+        "display": "flex",
+        "flex-direction": "row",
+        "box-sizing": "border-box",
+        "padding": "4px 8px 5px 8px",
+        "border-radius": "6px",
+        "align-items": "center",
+        "flex-wrap": "nowrap",
+        "overflow": "auto",
+        "margin": "1px 4px 4px 1px",
+        "border-collapse": "seperate"
+      },
+      "children": [
+        {
+          "elmType": "img",
+          "style": {
+            "max-width": "24px",
+            "max-height": "24px",
+            "margin-top": "2px",
+            "border-radius": "2px"
+          }
+        },
+        {
+          "elmType": "div",
+          "children": [
+            {
+              "elmType": "span",
+              "style": {
+                "padding": "5px 535px 5px 5px",
+                "font-weight": "500",
+                "font-size": "15px"
+              },
+              "txtContent": "@group.fieldData.displayValue"
+            }
+          ]
+        },
+        {
+          "elmType": "div",
+          "txtContent": "[$PINumber]"
+        },
+        {
+          "elmType": "div",
+          "children": [
+            {
+              "elmType": "div",
+              "style": {
+                "display": "flex",
+                "flex-direction": "column",
+                "justify-content": "center"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rowFormatter": {
+    "elmType": "div",
+    "attributes": {
+      "class": "ms-bgColor-themeLighterAlt"
+    },
+    "style": {
+      "justify-content": "start",
+      "color": "ms-fontColor-Primary",
+      "display": "flex",
+      "padding": "1px 8px 5px 20px",
+      "border-radius": "6px",
+      "max-width": "905px",
+      "margin": "1px 4px 4px 60px"
+    },
+    "children": [
+      {
+        "elmType": "div",
+        "style": {
+          "text-align": "left",
+          "font-weight": "400",
+          "font-size": "15px"
+        },
+        "children": [
+          {
+            "elmType": "span",
+            "style": {
+              "margin-top": "8px",
+              "padding-left": "1px",
+              "color": "black"
+            },
+            "attributes": {
+              "class": "ms-fontSize-m",
+              "iconName": "Lightbulb"
+            }
+          },
+          {
+            "elmType": "span",
+            "attributes": {
+              "class": "sp-row-listPadding"
+            },
+            "txtContent": "Details",
+            "style": {
+              "font-weight": "500",
+              "color": "black",
+              "padding-left": "4px"
+            }
+          },
+          {
+            "elmType": "div",
+            "attributes": {
+              "class": "sp-row-listPadding"
+            },
+            "txtContent": {
+              "operator": "+",
+              "operands": [
+                "Release Plan  - ",
+                " ",
+                "[$PIDef]",
+                " ",
+                "[$PINumber]"
+              ]
+            },
+            "style": {
+              "flex-grow": "1",
+              "display": "flex",
+              "flex-direction": "column",
+              "flex-wrap": "nowrap",
+              "align-items": "end",
+              "max-width": "900px",
+              "min-width": "205px",
+              "margin-right": "10px",
+              "font-weight": "bold"
+            }
+          },
+          {
+            "elmType": "div",
+            "attributes": {
+              "class": "sp-row-listPadding"
+            },
+            "txtContent": "[$Description]",
+            "style": {
+              "flex-grow": "1",
+              "display": "flex",
+              "flex-direction": "column",
+              "flex-wrap": "nowrap",
+              "align-items": "center",
+              "max-width": "900px",
+              "min-width": "205px",
+              "margin-top": "8px",
+              "margin-bottom": "8px"
+            }
+          },
+          {
+            "elmType": "button",
+            "customRowAction": {
+              "action": "defaultClick"
+            },
+            "txtContent": "Show more",
+            "attributes": {
+              "class": "sp-row-button"
+            },
+            "style": {
+              "display": "=if([$ShowMore] == 'Yes', 'block', 'none')",
+              "margin-bottom": "8px",
+              "color": "white",
+              "background-color": "#0077DB"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}]]></CustomFormatter>
+            </View>
+            <View Name="{6E5E2F33-E715-41D1-AB46-D39DA2F793EA}" Type="HTML" DisplayName="Grouped By Title and PI" Url="{site}/Lists/Azure DevOps/Grouped By Title and PI.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <GroupBy Collapse="TRUE" GroupLimit="30">
+                  <FieldRef Name="IterationPath" />
+                  <FieldRef Name="WorkItemTitle" />
+                </GroupBy>
+                <OrderBy>
+                  <FieldRef Name="PINumber" Ascending="FALSE" />
+                </OrderBy>
+                <Where>
+                  <And>
+                    <Or>
+                      <And>
+                        <And>
+                          <Eq>
+                            <FieldRef Name="WorkItemType" />
+                            <Value Type="Text">Feature</Value>
+                          </Eq>
+                          <Eq>
+                            <FieldRef Name="AreaPath" />
+                            <Value Type="Text">Alfa Laval Portfolio\ART - Platform Services</Value>
+                          </Eq>
+                        </And>
+                        <Neq>
+                          <FieldRef Name="State" />
+                          <Value Type="Text">Removed</Value>
+                        </Neq>
+                      </And>
+                      <Contains>
+                        <FieldRef Name="IterationPath" />
+                        <Value Type="Text">PI</Value>
+                      </Contains>
+                    </Or>
+                    <Or>
+                      <Eq>
+                        <FieldRef Name="PINumber" />
+                        <Value Type="Text">10</Value>
+                      </Eq>
+                      <Eq>
+                        <FieldRef Name="PINumber" />
+                        <Value Type="Text">11</Value>
+                      </Eq>
+                    </Or>
+                  </And>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="WorkItemType" />
+                <FieldRef Name="WorkItemTitle" />
+                <FieldRef Name="State" />
+                <FieldRef Name="Tags" />
+                <FieldRef Name="Description" />
+                <FieldRef Name="IterationPath" />
+                <FieldRef Name="PINumber" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter><![CDATA[{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/view-formatting.schema.json",
+  "schema": "https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json",
+  "hideSelection": true,
+  "hideColumnHeader": false,
+  "hideListHeader": false,
+  "groupProps": {
+    "headerFormatter": {
+      "elmType": "div",
+      "attributes": {
+        "class": "sp-row-card"
+      },
+      "style": {
+        "color": "black",
+        "background-color": "#FAF9F9",
+        "flex-grow": "1",
+        "display": "flex",
+        "flex-direction": "row",
+        "box-sizing": "border-box",
+        "padding": "4px 8px 5px 8px",
+        "border-radius": "6px",
+        "align-items": "center",
+        "flex-wrap": "nowrap",
+        "overflow": "auto",
+        "margin": "1px 4px 4px 1px",
+        "border-collapse": "seperate"
+      },
+      "children": [
+        {
+          "elmType": "img",
+          "style": {
+            "max-width": "24px",
+            "max-height": "24px",
+            "margin-top": "2px",
+            "border-radius": "2px"
+          }
+        },
+        {
+          "elmType": "div",
+          "children": [
+            {
+              "elmType": "span",
+              "style": {
+                "padding": "5px 535px 5px 5px",
+                "font-weight": "500",
+                "font-size": "15px"
+              },
+              "txtContent": "@group.fieldData.displayValue"
+            }
+          ]
+        },
+        {
+          "elmType": "div",
+          "txtContent": "[$PINumber]"
+        },
+        {
+          "elmType": "div",
+          "children": [
+            {
+              "elmType": "div",
+              "style": {
+                "display": "flex",
+                "flex-direction": "column",
+                "justify-content": "center"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rowFormatter": {
+    "elmType": "div",
+    "attributes": {
+      "class": "ms-bgColor-themeLighterAlt"
+    },
+    "style": {
+      "justify-content": "start",
+      "color": "ms-fontColor-Primary",
+      "display": "flex",
+      "padding": "1px 8px 5px 20px",
+      "border-radius": "6px",
+      "max-width": "905px",
+      "margin": "1px 4px 4px 60px"
+    },
+    "children": [
+      {
+        "elmType": "div",
+        "style": {
+          "text-align": "left",
+          "font-weight": "400",
+          "font-size": "15px"
+        },
+        "children": [
+          {
+            "elmType": "span",
+            "style": {
+              "margin-top": "8px",
+              "padding-left": "1px",
+              "color": "black"
+            },
+            "attributes": {
+              "class": "ms-fontSize-m",
+              "iconName": "Lightbulb"
+            }
+          },
+          {
+            "elmType": "span",
+            "attributes": {
+              "class": "sp-row-listPadding"
+            },
+            "txtContent": {
+              "operator": "+",
+              "operands": [
+                "Feature ID",
+                " : ",
+                "[$WorkItemId]"
+              ]
+            },
+            "style": {
+              "font-weight": "500",
+              "color": "black",
+              "padding-left": "4px"
+            }
+          },
+          {
+            "elmType": "div",
+            "attributes": {
+              "class": "sp-row-listPadding"
+            },
+            "txtContent": {
+              "operator": "+",
+              "operands": [
+                "Release Plan  - ",
+                " ",
+                "[$PIDef]",
+                " ",
+                "[$PINumber]"
+              ]
+            },
+            "style": {
+              "flex-grow": "1",
+              "display": "flex",
+              "flex-direction": "column",
+              "flex-wrap": "nowrap",
+              "align-items": "end",
+              "max-width": "900px",
+              "min-width": "205px",
+              "margin-right": "10px",
+              "font-weight": "bold"
+            }
+          },
+          {
+            "elmType": "div",
+            "attributes": {
+              "class": "sp-row-listPadding"
+            },
+            "txtContent": "[$Description]",
+            "style": {
+              "flex-grow": "1",
+              "display": "flex",
+              "flex-direction": "column",
+              "flex-wrap": "nowrap",
+              "align-items": "center",
+              "max-width": "900px",
+              "min-width": "205px",
+              "margin-top": "8px",
+              "margin-bottom": "8px"
+            }
+          },
+          {
+            "elmType": "div",
+            "attributes": {
+              "class": "sp-row-listPadding"
+            },
+            "txtContent": {
+              "operator": "+",
+              "operands": [
+                "Activated Date ",
+                " : ",
+                "=if(getMonth([$ActivatedDate]) == 0, 'JAN', if(getMonth([$ActivatedDate]) == 1, 'FEB', if(getMonth([$ActivatedDate]) == 2, 'MAR', if(getMonth([$ActivatedDate]) == 3, 'APR',if(getMonth([$ActivatedDate]) == 4, 'MAY',if(getMonth([$ActivatedDate]) == 5, 'JUN',if(getMonth([$ActivatedDate]) == 6, 'JUL',if(getMonth([$ActivatedDate]) == 7, 'AUG',if(getMonth([$ActivatedDate]) == 8, 'SEP',if(getMonth([$ActivatedDate]) == 9, 'OCT',if(getMonth([$ActivatedDate]) == 10, 'NOV','DEC'))))))))))) + ' ' + getDate([$ActivatedDate]) + ' ' + getYear([$ClosedDate])"
+              ]
+            },
+            "style": {
+              "flex-grow": "1",
+              "display": "flex",
+              "flex-direction": "column",
+              "flex-wrap": "nowrap",
+              "align-items": "left",
+              "max-width": "900px",
+              "min-width": "205px",
+              "margin-top": "8px",
+              "margin-bottom": "8px",
+              "font-weight": "bold"
+            }
+          },
+          {
+            "elmType": "div",
+            "attributes": {
+              "class": "sp-row-listPadding"
+            },
+            "txtContent": {
+              "operator": "+",
+              "operands": [
+                "Closed Date ",
+                " : ",
+                "=if(getMonth([$ClosedDate]) == 0, 'JAN', if(getMonth([$ClosedDate]) == 1, 'FEB', if(getMonth([$ClosedDate]) == 2, 'MAR', if(getMonth([$ClosedDate]) == 3, 'APR',if(getMonth([$ClosedDate]) == 4, 'MAY',if(getMonth([$ClosedDate]) == 5, 'JUN',if(getMonth([$ClosedDate]) == 6, 'JUL',if(getMonth([$ClosedDate]) == 7, 'AUG',if(getMonth([$ClosedDate]) == 8, 'SEP',if(getMonth([$ClosedDate]) == 9, 'OCT',if(getMonth([$ClosedDate]) == 10, 'NOV','DEC'))))))))))) + ' ' + getDate([$ClosedDate]) + ' ' + getYear([$ClosedDate])"
+              ]
+            },
+            "style": {
+              "flex-grow": "1",
+              "display": "flex",
+              "flex-direction": "column",
+              "flex-wrap": "nowrap",
+              "align-items": "left",
+              "max-width": "900px",
+              "min-width": "205px",
+              "margin-top": "8px",
+              "margin-bottom": "8px",
+              "font-weight": "bold"
+            }
+          },
+          {
+            "elmType": "div",
+            "attributes": {
+              "class": "sp-row-listPadding"
+            },
+            "txtContent": {
+              "operator": "+",
+              "operands": [
+                "Assigned To ",
+                " : ",
+                "[$AssignedTo]"
+              ]
+            },
+            "style": {
+              "flex-grow": "1",
+              "display": "flex",
+              "flex-direction": "column",
+              "flex-wrap": "nowrap",
+              "align-items": "left",
+              "max-width": "900px",
+              "min-width": "205px",
+              "margin-top": "8px",
+              "margin-bottom": "8px",
+              "font-weight": "bold"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}]]></CustomFormatter>
+              <ColumnWidth>
+                <FieldRef Name="Work Item Title" width="235" />
+              </ColumnWidth>
+              <ViewData />
+            </View>
+            <View Name="{9979704E-BC7C-47F5-A3D6-B6A529AB1419}" Type="HTML" DisplayName="Group by Iteration Path" Url="{site}/Lists/Azure DevOps/Group by Iteration Path.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <GroupBy Collapse="FALSE">
+                  <FieldRef Name="IterationPath" />
+                </GroupBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="WorkItemId" />
+                <FieldRef Name="WorkItemType" />
+                <FieldRef Name="WorkItemTitle" />
+                <FieldRef Name="AssignedTo" />
+                <FieldRef Name="State" />
+                <FieldRef Name="Tags" />
+                <FieldRef Name="IterationPath" />
+                <FieldRef Name="AreaPath" />
+                <FieldRef Name="Description" />
+                <FieldRef Name="PIDef" />
+                <FieldRef Name="PINumber" />
+                <FieldRef Name="ActivatedDate" />
+                <FieldRef Name="ClosedDate" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter><![CDATA[{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/view-formatting.schema.json",
+  "schema": "https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json",
+  "hideSelection": true,
+  "hideColumnHeader": false,
+  "hideListHeader": false,
+  "groupProps": {
+    "headerFormatter": {
+      "elmType": "div",
+      "attributes": {
+        "class": "sp-row-card"
+      },
+      "style": {
+        "color": "black",
+        "background-color": "#FAF9F9",
+        "flex-grow": "1",
+        "display": "flex",
+        "flex-direction": "row",
+        "box-sizing": "border-box",
+        "padding": "4px 8px 5px 8px",
+        "border-radius": "6px",
+        "align-items": "center",
+        "flex-wrap": "nowrap",
+        "overflow": "auto",
+        "margin": "1px 4px 4px 1px",
+        "border-collapse": "seperate"
+      },
+      "children": [
+        {
+          "elmType": "img",
+          "style": {
+            "max-width": "24px",
+            "max-height": "24px",
+            "margin-top": "2px",
+            "border-radius": "2px"
+          }
+        },
+        {
+          "elmType": "div",
+          "children": [
+            {
+              "elmType": "span",
+              "style": {
+                "padding": "5px 535px 5px 5px",
+                "font-weight": "500",
+                "font-size": "15px"
+              },
+              "txtContent": "@group.fieldData.displayValue"
+            }
+          ]
+        },
+        {
+          "elmType": "div",
+          "txtContent": "[$PINumber]"
+        },
+        {
+          "elmType": "div",
+          "children": [
+            {
+              "elmType": "div",
+              "style": {
+                "display": "flex",
+                "flex-direction": "column",
+                "justify-content": "center"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rowFormatter": {
+    "elmType": "div",
+    "attributes": {
+      "class": "ms-bgColor-themeLighterAlt"
+    },
+    "style": {
+      "justify-content": "start",
+      "color": "ms-fontColor-Primary",
+      "display": "flex",
+      "padding": "1px 8px 5px 20px",
+      "border-radius": "6px",
+      "max-width": "905px",
+      "margin": "1px 4px 4px 60px"
+    },
+    "children": [
+      {
+        "elmType": "div",
+        "style": {
+          "text-align": "left",
+          "font-weight": "400",
+          "font-size": "15px"
+        },
+        "children": [
+          {
+            "elmType": "span",
+            "style": {
+              "margin-top": "8px",
+              "padding-left": "1px",
+              "color": "black"
+            },
+            "attributes": {
+              "class": "ms-fontSize-m",
+              "iconName": "Lightbulb"
+            }
+          },
+          {
+            "elmType": "span",
+            "attributes": {
+              "class": "sp-row-listPadding"
+            },
+            "txtContent": {
+              "operator": "+",
+              "operands": [
+                "Feature ID",
+                " : ",
+                "[$WorkItemId]"
+              ]
+            },
+            "style": {
+              "font-weight": "500",
+              "color": "black",
+              "padding-left": "4px"
+            }
+          },
+          {
+            "elmType": "div",
+            "attributes": {
+              "class": "sp-row-listPadding"
+            },
+            "txtContent": {
+              "operator": "+",
+              "operands": [
+                "Release Plan  - ",
+                " ",
+                "[$PIDef]",
+                " ",
+                "[$PINumber]"
+              ]
+            },
+            "style": {
+              "flex-grow": "1",
+              "display": "flex",
+              "flex-direction": "column",
+              "flex-wrap": "nowrap",
+              "align-items": "end",
+              "max-width": "900px",
+              "min-width": "205px",
+              "margin-right": "10px",
+              "font-weight": "bold"
+            }
+          },
+          {
+            "elmType": "div",
+            "attributes": {
+              "class": "sp-row-listPadding"
+            },
+            "txtContent": "[$Description]",
+            "style": {
+              "flex-grow": "1",
+              "display": "flex",
+              "flex-direction": "column",
+              "flex-wrap": "nowrap",
+              "align-items": "center",
+              "max-width": "900px",
+              "min-width": "205px",
+              "margin-top": "8px",
+              "margin-bottom": "8px"
+            }
+          },
+          {
+            "elmType": "div",
+            "attributes": {
+              "class": "sp-row-listPadding"
+            },
+            "txtContent": {
+              "operator": "+",
+              "operands": [
+                "Activated Date ",
+                " : ",
+                "=if(getMonth([$ActivatedDate]) == 0, 'JAN', if(getMonth([$ActivatedDate]) == 1, 'FEB', if(getMonth([$ActivatedDate]) == 2, 'MAR', if(getMonth([$ActivatedDate]) == 3, 'APR',if(getMonth([$ActivatedDate]) == 4, 'MAY',if(getMonth([$ActivatedDate]) == 5, 'JUN',if(getMonth([$ActivatedDate]) == 6, 'JUL',if(getMonth([$ActivatedDate]) == 7, 'AUG',if(getMonth([$ActivatedDate]) == 8, 'SEP',if(getMonth([$ActivatedDate]) == 9, 'OCT',if(getMonth([$ActivatedDate]) == 10, 'NOV','DEC'))))))))))) + ' ' + getDate([$ActivatedDate]) + ' ' + getYear([$ClosedDate])"
+              ]
+            },
+            "style": {
+              "flex-grow": "1",
+              "display": "flex",
+              "flex-direction": "column",
+              "flex-wrap": "nowrap",
+              "align-items": "left",
+              "max-width": "900px",
+              "min-width": "205px",
+              "margin-top": "8px",
+              "margin-bottom": "8px",
+              "font-weight": "bold"
+            }
+          },
+          {
+            "elmType": "div",
+            "attributes": {
+              "class": "sp-row-listPadding"
+            },
+            "txtContent": {
+              "operator": "+",
+              "operands": [
+                "Closed Date ",
+                " : ",
+                "=if(getMonth([$ClosedDate]) == 0, 'JAN', if(getMonth([$ClosedDate]) == 1, 'FEB', if(getMonth([$ClosedDate]) == 2, 'MAR', if(getMonth([$ClosedDate]) == 3, 'APR',if(getMonth([$ClosedDate]) == 4, 'MAY',if(getMonth([$ClosedDate]) == 5, 'JUN',if(getMonth([$ClosedDate]) == 6, 'JUL',if(getMonth([$ClosedDate]) == 7, 'AUG',if(getMonth([$ClosedDate]) == 8, 'SEP',if(getMonth([$ClosedDate]) == 9, 'OCT',if(getMonth([$ClosedDate]) == 10, 'NOV','DEC'))))))))))) + ' ' + getDate([$ClosedDate]) + ' ' + getYear([$ClosedDate])"
+              ]
+            },
+            "style": {
+              "flex-grow": "1",
+              "display": "flex",
+              "flex-direction": "column",
+              "flex-wrap": "nowrap",
+              "align-items": "left",
+              "max-width": "900px",
+              "min-width": "205px",
+              "margin-top": "8px",
+              "margin-bottom": "8px",
+              "font-weight": "bold"
+            }
+          },
+          {
+            "elmType": "div",
+            "attributes": {
+              "class": "sp-row-listPadding"
+            },
+            "txtContent": {
+              "operator": "+",
+              "operands": [
+                "Assigned To ",
+                " : ",
+                "[$AssignedTo]"
+              ]
+            },
+            "style": {
+              "flex-grow": "1",
+              "display": "flex",
+              "flex-direction": "column",
+              "flex-wrap": "nowrap",
+              "align-items": "left",
+              "max-width": "900px",
+              "min-width": "205px",
+              "margin-top": "8px",
+              "margin-bottom": "8px",
+              "font-weight": "bold"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}]]></CustomFormatter>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field DisplayName="Work Item Type" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="WorkItemType" Title="Work Item Type" Type="Text" ID="{ca0a92e6-7132-4938-ab97-12d9a445ced3}" SourceID="{{listid:Azure DevOps}}" StaticName="WorkItemType" ColName="nvarchar4" RowOrdinal="0" />
+            <Field CustomFormatter="{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;flex-wrap&quot;:&quot;wrap&quot;,&quot;display&quot;:&quot;flex&quot;},&quot;children&quot;:[{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;box-sizing&quot;:&quot;border-box&quot;,&quot;padding&quot;:&quot;4px 8px 5px 8px&quot;,&quot;display&quot;:&quot;flex&quot;,&quot;border-radius&quot;:&quot;16px&quot;,&quot;height&quot;:&quot;24px&quot;,&quot;align-items&quot;:&quot;center&quot;,&quot;white-space&quot;:&quot;nowrap&quot;,&quot;overflow&quot;:&quot;hidden&quot;,&quot;margin&quot;:&quot;4px 4px 4px 4px&quot;},&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;New&quot;]},&quot;sp-css-backgroundColor-BgCornflowerBlue&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Active&quot;]},&quot;sp-css-backgroundColor-BgMintGreen&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Resolved&quot;]},&quot;sp-css-backgroundColor-BgGold&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Closed&quot;]},&quot;sp-css-backgroundColor-BgCoral&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Removed&quot;]},&quot;sp-css-backgroundColor-BgDustRose&quot;,&quot;sp-field-borderAllRegular sp-field-borderAllSolid sp-css-borderColor-neutralSecondary&quot;]}]}]}]}]}]}},&quot;children&quot;:[{&quot;elmType&quot;:&quot;span&quot;,&quot;style&quot;:{&quot;line-height&quot;:&quot;16px&quot;,&quot;height&quot;:&quot;14px&quot;},&quot;attributes&quot;:{&quot;iconName&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;New&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Active&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Resolved&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Closed&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Removed&quot;]},&quot;&quot;,&quot;&quot;]}]}]}]}]}]},&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;New&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Active&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Resolved&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Closed&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Removed&quot;]},&quot;&quot;,&quot;&quot;]}]}]}]}]}]}}},{&quot;elmType&quot;:&quot;span&quot;,&quot;style&quot;:{&quot;overflow&quot;:&quot;hidden&quot;,&quot;text-overflow&quot;:&quot;ellipsis&quot;,&quot;padding&quot;:&quot;0 3px&quot;},&quot;txtContent&quot;:&quot;@currentField&quot;,&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;New&quot;]},&quot;sp-field-fontSizeSmall sp-css-color-CornflowerBlueFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Active&quot;]},&quot;sp-field-fontSizeSmall sp-css-color-MintGreenFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Resolved&quot;]},&quot;sp-field-fontSizeSmall sp-css-color-GoldFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Closed&quot;]},&quot;sp-field-fontSizeSmall sp-css-color-CoralFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Removed&quot;]},&quot;sp-field-fontSizeSmall sp-css-color-DustRoseFont&quot;,&quot;&quot;]}]}]}]}]}]}}}]}],&quot;templateId&quot;:&quot;BgColorChoicePill&quot;}" DisplayName="State" FillInChoice="FALSE" Format="Dropdown" IsModern="TRUE" Name="State" Title="State" Type="Choice" ID="{787f5edf-3a0e-4a68-b3ef-83e90425eb25}" SourceID="{{listid:Azure DevOps}}" StaticName="State" ColName="nvarchar5" RowOrdinal="0" ShowInFiltersPane="Pinned" Version="1">
+              <CHOICES>
+                <CHOICE>New</CHOICE>
+                <CHOICE>Active</CHOICE>
+                <CHOICE>Resolved</CHOICE>
+                <CHOICE>Closed</CHOICE>
+                <CHOICE>Removed</CHOICE>
+              </CHOICES>
+            </Field>
+            <Field DisplayName="Tags" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="Tags" Title="Tags" Type="Text" ID="{2e4b2049-baa2-423f-8ffc-6eaf73ac854f}" SourceID="{{listid:Azure DevOps}}" StaticName="Tags" ColName="nvarchar6" RowOrdinal="0" ShowInFiltersPane="Pinned" Version="1" />
+            <Field AppendOnly="FALSE" Description="Description" DisplayName="Description" Format="Dropdown" IsModern="TRUE" IsolateStyles="FALSE" Name="Description" RichText="FALSE" RichTextMode="Compatible" Title="Description" Type="Note" ID="{13553d22-6ec8-4e2d-934e-7276eb3b5767}" SourceID="{{listid:Azure DevOps}}" StaticName="Description" ColName="ntext2" RowOrdinal="0" />
+            <Field Description="Iteration Path" DisplayName="Iteration Path" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="IterationPath" Title="Iteration Path" Type="Text" ID="{84d4ba13-12b7-4f9a-a268-3f5117933025}" SourceID="{{listid:Azure DevOps}}" StaticName="IterationPath" ColName="nvarchar7" RowOrdinal="0" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" DisplayName="PIDef" Format="Dropdown" MaxLength="255" Name="PIDef" Title="PIDef" Type="Text" ID="{889085d8-4ef8-4759-90ee-7980dd3c4528}" Version="2" StaticName="PIDef" SourceID="{{listid:Azure DevOps}}" ColName="nvarchar8" RowOrdinal="0">
+              <Default>PI</Default>
+            </Field>
+            <Field DisplayName="PI Number" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="PINumber" Title="PI Number" Type="Text" ID="{91bd84a6-a2b4-486b-b7ac-ab2bd9e3e44a}" SourceID="{{listid:Azure DevOps}}" StaticName="PINumber" ColName="nvarchar9" RowOrdinal="0" />
+            <Field DisplayName="Activated Date" FriendlyDisplayFormat="Disabled" Format="DateOnly" IsModern="TRUE" Name="ActivatedDate" Title="Activated Date" Type="DateTime" ID="{a2ad02ed-edde-47b5-a086-1eb8ce5aba45}" SourceID="{{listid:Azure DevOps}}" StaticName="ActivatedDate" ColName="datetime1" RowOrdinal="0" />
+            <Field DisplayName="Closed Date" FriendlyDisplayFormat="Disabled" Format="DateOnly" IsModern="TRUE" Name="ClosedDate" Title="Closed Date" Type="DateTime" ID="{9fef9c48-6655-41a1-9096-bb41a40388f5}" SourceID="{{listid:Azure DevOps}}" StaticName="ClosedDate" ColName="datetime2" RowOrdinal="0" />
+            <Field DisplayName="ShowMore" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="ShowMore" Title="ShowMore" Type="Text" ID="{3af672a5-1ded-4e30-8623-b6dd1a6860b9}" SourceID="{{listid:Azure DevOps}}" StaticName="ShowMore" ColName="nvarchar11" RowOrdinal="0" />
+            <Field DisplayName="Work Item Id" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="WorkItemId" Title="Work Item Id" Type="Text" ID="{d477f3af-63a9-42eb-858e-4376bab24375}" SourceID="{{listid:Azure DevOps}}" StaticName="WorkItemId" ColName="nvarchar12" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="AssignedTo" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{52c9df72-22e7-4089-92d0-be0bb36275b7}" SourceID="{{listid:Azure DevOps}}" StaticName="AssignedTo" Name="AssignedTo" ColName="nvarchar13" RowOrdinal="0" />
+            <Field Description="Work Item Title" DisplayName="Work Item Title" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="WorkItemTitle" Title="Work Item Title" Type="Text" ID="{2a51c0fb-5533-4829-99f0-97f0fd99974b}" SourceID="{{listid:Azure DevOps}}" StaticName="WorkItemTitle" ColName="nvarchar14" RowOrdinal="0" />
+            <Field DisplayName="Area Path" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="AreaPath" Title="Area Path" Type="Text" ID="{b373c7fc-e2e3-488b-9be8-30b7846588d1}" SourceID="{{listid:Azure DevOps}}" StaticName="AreaPath" ColName="nvarchar10" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://northeurope0.pushnp.svc.ms/notifications?token=940b2a4b-ef6b-4483-8aae-b1af288aa727" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+      </pnp:Lists>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

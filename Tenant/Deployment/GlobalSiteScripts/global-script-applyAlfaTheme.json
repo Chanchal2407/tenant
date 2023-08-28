@@ -1,0 +1,11 @@
+{
+    "$schema": "schema.json",
+    "actions": [
+      {
+        "verb": "applyTheme",
+        "themeName": "Alfalaval theme"
+      }
+    ],
+    "bindata": {},
+    "version": 1
+  }

@@ -1,0 +1,30 @@
+InternalName,DisplayName,Type
+EmployeeID,Employee ID,Text
+Displayname,Display name,Text
+FirstNameLegalWestern,First Name; Legal (Western),Text
+MiddleNameLegalWestern,Middle Name; Legal (Western),Text
+LastNameLegalWestern,Last Name; Legal (Western),Text
+FirstNamePreferredWestern,First Name; Preferred (Western),Text
+MiddleNamePreferredWestern,Middle Name; Preferred (Western),Text
+LastNamePreferredWestern,Last Name; Preferred (Western),Text
+WorkerJobCategoryWCBC,Worker Job Category (WC/BC),Text
+WorkerTypeEmployeeorContingent,Worker Type (Employee or Contingent),Text
+BusinessTitle,Business Title,Text
+PositionTitle,Position Title,Text
+SupervisoryOrganizationName,Supervisory Organization Name,Text
+ManagerName,Manager Name,Text
+ManagerID,Manager ID,Text
+CostCenterName,Cost Center Name,Text
+CostCenterID,Cost Center ID,Text
+CompanyID,Company ID,Text
+CompanyName,Company Name,Text
+LocationNameBusinessSite,Location Name / Business Site,Text
+LocationCountryName,Location Country (Name),Text
+CurrentlyWorkingAtAlfaLaval,Currently Working At Alfa Laval,Text
+EmployeeworkerstatusActiveinactiveTerminated,Employee/worker status (Active/inactive/Terminated),Text
+OnLeave,On Leave,Text
+HireDate,Hire Date,Text
+OriginalHireDate,Original Hire Date,Text
+PayrollID,Payroll ID,Text
+ADUserName,AD User Name,Text
+WorkEmailaddress,Work Email address,Text

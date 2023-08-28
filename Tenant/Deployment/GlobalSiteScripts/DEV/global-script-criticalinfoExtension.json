@@ -1,0 +1,15 @@
+{
+    "$schema": "schema.json",
+    "actions": [
+      {
+        "verb": "associateExtension",
+        "title": "Critical Information Extension-dev",        
+        "location": "ClientSideExtension.ApplicationCustomizer",
+        "clientSideComponentId": "e854cc73-8b1c-45f0-9a3c-2fe5168e1457",
+        "clientSideComponentProperties":"{\"AlertSiteUrl\":\"/sites/Share\"}",
+        "scope": "Site"
+      }
+    ],
+    "bindata": {},
+    "version": 1
+  }

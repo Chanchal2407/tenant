@@ -1,0 +1,8 @@
+<root>
+  <username>###USER NAME###</username>
+  <password>###PASSWORD###</password>  
+  <shareAdminUrl>https://alfalavalonline-admin.sharepoint.com</shareAdminUrl>
+  <shareTenantUrl>https://alfalavalonline.sharepoint.com</shareTenantUrl>  
+  <ReportOutput>C:\Rahul\AlfaLaval\Scripts\Sprint 9\6864\Assign Groups To Orphan Sites\Output_ProdOrphanSitesGroupIDRemovedByMSAttachGroupToBeDeleted-38.csv</ReportOutput>
+  <InputOrphanSite>C:\Rahul\AlfaLaval\Scripts\Sprint 9\6864\Assign Groups To Orphan Sites\Input_ProdOrphanSitesGroupIDRemovedByMSAttachGroupToBeDeleted-38.csv</InputOrphanSite>  
+</root>

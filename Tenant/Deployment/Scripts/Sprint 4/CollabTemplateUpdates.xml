@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/05/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=2.26.1805.1, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-ALFA-COLLABORATION-TEMPLATE">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-ALFA-COLLABORATION-TEMPLATE" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">
+      <pnp:SiteFields>
+        <Field Type="Note" DisplayName="ALFA_Site_ServiceTaxonomy_0" StaticName="oa230dbf1adb4d1a94ee0a2fc66109cf" Name="oa230dbf1adb4d1a94ee0a2fc66109cf" ID="{a93df48f-2e49-486d-b4b4-505215287a71}" ShowInViewForms="FALSE" Required="FALSE" Hidden="TRUE" CanToggleHidden="TRUE" AllowDeletion="TRUE" SourceID="{fd7bada3-e59e-4075-af8d-0ed9c95dfa8c}" />		
+		<Field Type="TaxonomyFieldType" DisplayName="Service Taxonomy" List="{{listid:TaxonomyHiddenList}}" WebId="fd7bada3-e59e-4075-af8d-0ed9c95dfa8c" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Group="Alfalaval Collaboration Site Columns" ID="{8a230dbf-1adb-4d1a-94ee-0a2fc66109cf}" SourceID="{fd7bada3-e59e-4075-af8d-0ed9c95dfa8c}" StaticName="ALFA_Site_ServiceTaxonomy" Name="ALFA_Site_ServiceTaxonomy" AllowDeletion="TRUE">
+			<Default>
+			</Default>
+			<Customization>
+				<ArrayOfProperty>
+				  <Property>
+					<Name>SspId</Name>
+					<Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
+				  </Property>
+				  <Property>
+					<Name>GroupId</Name>
+				  </Property>
+				  <Property>
+					<Name>TermSetId</Name>
+					<Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{termsetid:Alfalaval Taxonomy:Service}</Value>
+				  </Property>
+				  <Property>
+					<Name>AnchorId</Name>
+					<Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">00000000-0000-0000-0000-000000000000</Value>
+				  </Property>
+				  <Property>
+					<Name>UserCreated</Name>
+					<Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+				  </Property>
+				  <Property>
+					<Name>Open</Name>
+					<Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+				  </Property>
+				  <Property>
+					<Name>TextField</Name>
+					<Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{a93df48f-2e49-486d-b4b4-505215287a71}</Value>
+				  </Property>
+				  <Property>
+					<Name>IsPathRendered</Name>
+					<Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+				  </Property>
+				  <Property>
+					<Name>IsKeyword</Name>
+					<Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+				  </Property>
+				  <Property>
+					<Name>TargetTemplate</Name>
+				  </Property>
+				  <Property>
+					<Name>CreateValuesInEditForm</Name>
+					<Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+				  </Property>
+				  <Property>
+					<Name>FilterAssemblyStrongName</Name>
+					<Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Value>
+				  </Property>
+				  <Property>
+					<Name>FilterClassName</Name>
+					<Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy.TaxonomyField</Value>
+				  </Property>
+				  <Property>
+					<Name>FilterMethodName</Name>
+					<Value xmlns:q12="http://www.w3.org/2001/XMLSchema" p4:type="q12:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">GetFilteringHtml</Value>
+				  </Property>
+				  <Property>
+					<Name>FilterJavascriptProperty</Name>
+					<Value xmlns:q13="http://www.w3.org/2001/XMLSchema" p4:type="q13:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">FilteringJavascript</Value>
+				  </Property>
+				</ArrayOfProperty>
+			</Customization>
+		</Field>	
+	  </pnp:SiteFields>
+      <pnp:Lists>
+        <pnp:ListInstance Title="Documents" Description="" DocumentTemplate="{site}/Shared Documents/Forms/template.dotx" OnQuickLaunch="true" TemplateType="101" Url="Shared Documents" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/Shared Documents/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/Shared Documents/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/Shared Documents/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=44" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="a93df48f-2e49-486d-b4b4-505215287a71" Name="oa230dbf1adb4d1a94ee0a2fc66109cf" Hidden="true" DisplayName="ALFA_Site_ServiceTaxonomy_0" />
+            <pnp:FieldRef ID="8a230dbf-1adb-4d1a-94ee-0a2fc66109cf" Name="ALFA_Site_ServiceTaxonomy" DisplayName="Service Taxonomy" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+	  </pnp:Lists>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

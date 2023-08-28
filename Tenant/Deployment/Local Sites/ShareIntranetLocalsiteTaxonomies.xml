@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/09/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.15.1911.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-A11BC86559C14288ADC8E0065AC5C669">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-BUSINESS-FUNTION-TERMSET" Version="1" BaseSiteTemplate="STS#0" Scope="RootSite">
+      <pnp:TermGroups>
+        <pnp:TermGroup Name="Share" ID="e7fc4e20-8584-4f54-be31-744860abcf6d" Description="" UpdateBehavior="Overwrite">
+          <pnp:TermSets>
+            <pnp:TermSet Name="Business Function" ID="56c6d5bc-df6b-4073-abd3-c14ae532d8e2" Description="Business Functions with Alfa Laval as defined by Corporate Finance">
+              <pnp:Terms>
+                <pnp:Term Name="Business Centre" ID="18848a5b-c0ad-461f-ab36-c1567b8ae1d8" Owner="" Description="" CustomSortOrder="1" SourceTermId="18848a5b-c0ad-461f-ab36-c1567b8ae1d8">
+                  <pnp:Terms />
+                </pnp:Term>
+                <pnp:Term Name="Factory" ID="01d97b2b-9c0f-4445-b7ea-f99c4a548c94" Owner="" Description="" CustomSortOrder="2" SourceTermId="01d97b2b-9c0f-4445-b7ea-f99c4a548c94">
+                  <pnp:Terms />
+                </pnp:Term>
+                <pnp:Term Name="Market Segment" ID="d87e3a66-6904-4b33-9e11-2b6ac953551e" Owner="" Description="" CustomSortOrder="3" SourceTermId="d87e3a66-6904-4b33-9e11-2b6ac953551e">
+                  <pnp:Terms />
+                </pnp:Term>
+                <pnp:Term Name="Product Centre" ID="7b79d573-6748-4f6b-b867-14a797afeb32" Owner="" Description="" CustomSortOrder="4" SourceTermId="7b79d573-6748-4f6b-b867-14a797afeb32">
+                  <pnp:Terms />
+                </pnp:Term>
+                <pnp:Term Name="Sales Company" ID="b076e1dc-73b2-431b-854d-b48ba553e274" Owner="" Description="" CustomSortOrder="5" SourceTermId="b076e1dc-73b2-431b-854d-b48ba553e274">
+                  <pnp:Terms />
+                </pnp:Term>
+                <pnp:Term Name="Service Centre" ID="009687b7-bc36-46ec-88f0-fbef9706a800" Owner="" Description="" CustomSortOrder="6" SourceTermId="009687b7-bc36-46ec-88f0-fbef9706a800">
+                  <pnp:Terms />
+                </pnp:Term>
+                <pnp:Term Name="Supply Chain" ID="75ea62ea-aa63-4536-b006-df2c118929e6" Owner="" Description="" CustomSortOrder="7" SourceTermId="75ea62ea-aa63-4536-b006-df2c118929e6">
+                  <pnp:Terms />
+                </pnp:Term>
+                <pnp:Term Name="Support Function" ID="492b0beb-611f-49ba-b355-f46d87d7aec3" Owner="" Description="" CustomSortOrder="8" SourceTermId="492b0beb-611f-49ba-b355-f46d87d7aec3">
+                  <pnp:Terms />
+                </pnp:Term>
+              </pnp:Terms>
+            </pnp:TermSet>
+          </pnp:TermSets>
+        </pnp:TermGroup>
+      </pnp:TermGroups>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

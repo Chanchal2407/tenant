@@ -1,0 +1,15 @@
+{
+    "$schema": "schema.json",
+    "actions": [
+      {
+        "verb": "associateExtension",
+        "title": "ShareSiteFooter-dev",
+        "location": "ClientSideExtension.ApplicationCustomizer",
+        "clientSideComponentId": "a14897ee-9d0b-4f0d-85cc-b85ba6b1bdde",
+        "clientSideComponentProperties":"{\"HubSiteRelativeUrl\":\"/sites/localsitelanding\", \"RequestedSitesListName\":\"All Local sites\",\"ShowOnlyOnWelcomePage\":\"N\"}",
+        "scope": "Site"
+      }
+    ],
+    "bindata": {},
+    "version": 1
+  }

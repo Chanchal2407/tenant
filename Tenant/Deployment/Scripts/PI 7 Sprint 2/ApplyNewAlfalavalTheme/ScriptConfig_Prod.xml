@@ -1,0 +1,20 @@
+<root>
+  <AlfalavalTheme>Alfalaval theme</AlfalavalTheme>  
+  <ClientId>ad1a97cf-acbc-48c0-a55f-b69d7f4226b2</ClientId>
+  <CertificatePath>C:\Dev\DevOps_DV\ITSOLNCF.ShareRealization\Deployment\Collaboration Sites\AAD\certificate\Prod\AlfalavalCollaborationOnline.pfx</CertificatePath>
+  <CertificatePassword>1qaz!QAZ</CertificatePassword>
+  <Tenant>alfalavalonline.onmicrosoft.com</Tenant>        
+  <CollabReportOutput>Output_CollaborationSites.csv</CollabReportOutput>
+  <PortalReportOutput>Output_PortalSites.csv</PortalReportOutput>
+   <LocalReportOutput>Output_PortalSites.csv</LocalReportOutput>
+    <LocalReportOutput>Output_PortalSites.csv</LocalReportOutput>
+  <AdditionalReportOutput>Output_CollaborationSites.csv</AdditionalReportOutput>
+  <inputSites>Input_SitesBranding-Prod.csv</inputSites>
+  <RootSite>alfalavalonline.sharepoint.com</RootSite>
+  <CollabLandingSiteURL>collaborationlanding/collaboration</CollabLandingSiteURL>
+   <LocalSiteLanding>https://alfalavalonline.sharepoint.com/sites/localsitelanding</LocalSiteLanding>
+    <ToolSiteLanding>https://alfalavalonline.sharepoint.com/sites/toolsitelanding</ToolSiteLanding>
+  <Username>karteek.saripalli_a@alfalaval.com</Username>
+  <Password>alfa@123</Password>
+  <AdminPortalUrl>https://alfalavalonline.sharepoint.com/sites/AdminPortal</AdminPortalUrl>
+</root>

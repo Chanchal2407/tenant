@@ -1,0 +1,986 @@
+
+PS C:\Users\Administrator> C:\Users\Administrator\Desktop\test_trash\Untitled17_CLC_tool-local-sites.ps1
+- - - - - - - Script started - - - - - - -
+Landing site:  https://alfalavalonline.sharepoint.com/sites/localsitelandingqa/
+Request list [ All Local sites ] with [ 78 ] items
+
+   Request [ DMa QA Local site ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-dmaqalocalsite]
+    Owner [1] -- [olga.skantz@alfalaval.com]
+    Editor [1] -- [Annika.Nilsson@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [olga.skantz@alfalaval.com] and editor [Annika.Nilsson@alfalaval.com]
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ MIH TEST 14.03 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-mihtest14.03]
+    Owner [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Editor [1] -- [mihails.sotnicoks@alfalavalonline.onmicrosoft.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDr Local site test v1_19.03.2019. ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-qakdrlocalsitetestv1_19.03.2019.1]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDR Local site test v2_19.03.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-qakdrlocalsitetestv2_19.03.2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDr Local site test v1_21.03.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-qakdrlocalsitetestv1_21.03.2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ DMa QA test site 1 ]
+  ..skipped URL empty
+
+   Request [ DMa QA test 2 ]
+  ..skipped URL empty
+
+   Request [ QA KDR Local site v1_03.04.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-qakdrlocalsitev1_03.04.2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDR Local site v2_03.04.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-qakdrlocalsitev2_03.04.2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDR Local site Edge v1_04.04.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-qakdrlocalsiteedgev1_04.04.2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---]
+	   Set-PnPListItem : The file "https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-qakdrlocalsiteedgev1_04.04.2019/SitePages/Home.aspx" is checked out for editing by i:0#.f|membership|kristine.dreimane@alfa.
+ --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDR Local site v2_04.04.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-qakdrlocalsitev2_04.04.2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDr Local site v5_04.04.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-qakdrlocalsitev5_04.04.2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDR Local site v6_04.04.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-qakdrlocalsitev6_04.04.2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ A1 DMa Support group test ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-a1dmasupportgrouptest]
+    Owner [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Editor [1] -- [Kristine.Dreimane@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDR Local site v1_10.04.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-qakdrlocalsitev1_10.04.2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDR Local, site v2_10-04-2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-qakdrlocal,sitev2_10-04-2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ A2 Local site with group approvers ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-a2localsitewithgroupapprovers]
+    Owner [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Editor [1] -- [Kristine.Dreimane@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA DMa flow test ]
+  ..skipped Rejected
+
+   Request [ QA KDR Local site v1_17.04.2019. ]
+  ..skipped URL empty
+
+   Request [ QA KDR Local site v2_17.04.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-qakdrlocalsitev2_17.04.2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA KDR Local site v3_17.04.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-qakdrlocalsitev3_17.04.2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ DMa QA test country ]
+  ..skipped Rejected
+
+   Request [ QA KDR Local site v4_17.04.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-qakdrlocalsitev4_17.04.2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ Kristine, comma, test ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-kristine,comma,test]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [Kristine.Dreimane@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ Kristine, comma tests ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-kristine,commatests]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [Kristine.Dreimane@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ Kristine & Test ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-kristine&test]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [Kristine.Dreimane@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ Kristine, comma, test 2 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-kristine,comma,test2]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [Kristine.Dreimane@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA: Local site with region Adriatic (Sales Company) that will be moved from Locations to Categories ]
+  ..skipped URL empty
+
+   Request [ QA region Adriatic moved from Locations to Categories v2 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-qaregionadriaticmovedfromlocationstocategoriesv2]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA: Region Oceania moved from Location to Categories ]
+  ..skipped URL empty
+
+   Request [ QA: Region Oceania moved ]
+  ..skipped URL empty
+
+   Request [ QA region Oceania moved ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-qaregionoceaniamoved]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA region Oceania moved v2 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-qaregionoceaniamovedv2]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA Country United States renamed ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-qacountryunitedstatesrenamed]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA Location Brussels renamed to Brussel ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-qalocationbrusselsrenamedtobrussel]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA Hong Kong Service Center moved ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-qahongkongservicecentermoved]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA Vietnam moved ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-qavietnammoved]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA Location Douliu deprecated ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-qalocationdouliudeprecated]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA Location Wakefield is deprecated ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-qalocationwakefieldisdeprecated]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA Country Cape Verde deprecated ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-qacountrycapeverdedeprecated]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA Location Lodz ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-qalocationlodz]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ QA Location Perth ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-qalocationperth]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ Location Nepal deprecated ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-locationnepaldeprecated]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [Kristine.Dreimane@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ Location Cuba deprecated ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-locationcubadeprecated]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR_Unique Local site ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-kdr_uniquelocalsite]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [Kristine.Dreimane@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR_Unique Local site ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-kdr_uniquelocalsite1]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR_Unique Local site ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-kdr_uniquelocalsite4]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR_Unique Local site ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-kdr_uniquelocalsite2]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR_Unique Local site ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-kdr_uniquelocalsite3]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ test Vilerts ]
+  ..skipped URL empty
+
+   Request [ KDR Local site 21.06.2019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-kdrlocalsite21.06.2019]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR_01: Local site cascading ]
+  ..skipped URL empty
+
+   Request [ KDR_02: Local site cascading ]
+  ..skipped URL empty
+
+   Request [ KDR_03: Local site cascading ]
+  ..skipped URL empty
+
+   Request [ KDR 04 Local site cascading ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-kdr04localsitecascading]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR 05 Locla site cascading ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-kdr05loclasitecascading]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR 06 Local site cascading ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-kdr06localsitecascading]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR 07 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-kdr07]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR 08 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-kdr08]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR 09 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-kdr09]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR Local site footer ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-kdrlocalsitefooter]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR Local site footer 2 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-kdrlocalsitefooter2]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR Local site footer 3 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-kdrlocalsitefooter3]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR Local site 01 ]
+  ..skipped URL empty
+
+   Request [ KDR Local site test 04092019 01 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-kdrlocalsitetest0409201901]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR Local site test 04092019 02 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-kdrlocalsitetest0409201902]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR Local site test 04092019 03 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-kdrlocalsitetest0409201903]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ DMa QA local 2019-09-10 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-dmaqalocal2019-09-10]
+    Owner [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Editor [1] -- [atvars.sefanovskis@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [Emmy.Svenle@alfalaval.com] and editor [atvars.sefanovskis@alfalaval.com]
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR Local site test 17.09.2019. 01 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-kdrlocalsitetest17.09.2019.01]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR Local site test 17.09.2019. 02 ]
+  ..skipped Rejected
+
+   Request [ KDR Local site test 178.09.2019. 03 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-kdrlocalsitetest178.09.2019.03]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ ZZE Test ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-zzetest]
+    Owner [1] -- [Zane.Zelenina@alfalaval.com]
+    Editor [1] -- [Zane.Zelenina@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ Zane Test Site - 3 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-zanetestsite-3]
+    Owner [1] -- [Zane.Zelenina@alfalaval.com]
+    Editor [1] -- [Zane.Zelenina@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ Owner KDR editor Dmitrijs ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-ownerkdreditordmitrijs]
+    Owner [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Editor [1] -- [Kristine.Dreimane@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [---] and editor [---] --owner  --editor 
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR_Test @Local site *2% ]
+  ..skipped Rejected
+
+   Request [ KDR Local site test on QA ]
+  ..skipped Rejected
+
+   Request [ KDR Test 01 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-kdrtest01]
+    Owner [1] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [1] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [Kristine.Dreimane@alfalaval.com] and editor [dmitrijs.maslobojevs@alfalaval.com]
+       Page [Health and Safety] owner [---] and editor [---] --owner  --editor 
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+
+   Request [ KDR Test 1 30102019 ]
+    Url [https://alfalavalonline.sharepoint.com/sites/LocalSiteQA-kdrtest130102019]
+    Owner [2] -- [Kristine.Dreimane@alfalaval.com]
+    Editor [2] -- [dmitrijs.maslobojevs@alfalaval.com]
+    Connecting subweb:  OK 
+    Subsite page count [ 8 ]
+       Page [Home] owner [---] and editor [---] --owner  --editor 
+       Page [Local information] owner [---] and editor [---] --owner  --editor 
+       Page [Visiting Information] owner [Kristaps.Vilerts@alfalaval.com] and editor [atvars.sefanovskis@alfalaval.com]
+       Page [Health and Safety] owner [Kristine.Dreimane@alfalaval.com] and editor [dmitrijs.maslobojevs@alfalaval.com]
+       Page [Policies and Guidelines] owner [---] and editor [---] --owner  --editor 
+       Page [HR] owner [---] and editor [---] --owner  --editor 
+       Page [Economy] owner [---] and editor [---] --owner  --editor 
+       Page [Marketing and Sales] owner [---] and editor [---] --owner  --editor 
+- - - - - - - Script ended - - - - - - -

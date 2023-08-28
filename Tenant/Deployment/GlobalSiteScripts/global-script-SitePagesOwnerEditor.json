@@ -1,0 +1,46 @@
+{
+  "$schema": "schema.json",
+    "actions": [
+      {
+        "verb": "createSiteColumnXml",
+        "schemaXml": "<Field Type=\"UserMulti\" Mult=\"TRUE\" DisplayName=\"Page Editors\" StaticName=\"ALFA_PageEditors\" Name=\"ALFA_PageEditors\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" UserSelectionMode=\"PeopleOnly\" Group=\"AlfaLaval Portal\"></Field>"
+      },
+      {
+        "verb": "createSiteColumnXml",
+        "schemaXml": "<Field Type=\"UserMulti\" Mult=\"TRUE\" DisplayName=\"Page Owners\" StaticName=\"ALFA_PageOwners\" Name=\"ALFA_PageOwners\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" UserSelectionMode=\"PeopleOnly\" Group=\"AlfaLaval Portal\"></Field>"
+      },
+      {
+        "verb": "createContentType",
+        "name": "Site Page",
+        "parentName": "Document",
+        "hidden": false,
+        "subactions": [
+          {
+            "verb": "addSiteColumn",
+            "internalName": "ALFA_PageEditors"
+          },
+          {
+            "verb": "addSiteColumn",
+            "internalName": "ALFA_PageOwners"
+          }
+        ]
+      },
+      {
+        "verb": "createSPList",
+        "listName": "Site Pages",
+        "templateType": 119,
+        "subactions": [
+          {
+            "verb": "addContentType",
+            "name": "Site Page"
+          },
+          {
+            "verb": "setTitle",
+            "title": "Site Pages"
+          }
+        ]
+      }
+    ],
+    "bindata": {},
+    "version": 1
+  }

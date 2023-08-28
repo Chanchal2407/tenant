@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.5.1901.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-4C08438051524836AE3292BA87671455">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-4C08438051524836AE3292BA87671455" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:WebSettings NoCrawl="false" WelcomePage="SitePages/Home.aspx" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="false" />
+      <pnp:RegionalSettings AdjustHijriDays="0" AlternateCalendarType="None" CalendarType="Gregorian" Collation="25" FirstDayOfWeek="Monday" FirstWeekOfYear="0" LocaleId="1033" ShowWeeks="false" Time24="false" TimeZone="13" WorkDayEndHour="5:00PM" WorkDays="62" WorkDayStartHour="8:00AM" />
+       <pnp:SupportedUILanguages>
+				<pnp:SupportedUILanguage LCID="1033"/>
+    </pnp:SupportedUILanguages>
+		<pnp:ClientSidePages>
+			<pnp:ClientSidePage PageName="Home.aspx" PromoteAsNewsArticle="false" Overwrite="true" EnableComments="false" Title="Home">
+			  <pnp:Sections>
+				<pnp:Section Order="1" Type="OneColumn">
+				  <pnp:Controls>
+					<pnp:CanvasControl WebPartType="Text" ControlId="810d4a42-328a-42e4-95cc-a1245a7676e8" Order="1" Column="1">
+					  <pnp:CanvasControlProperties>
+						<pnp:CanvasControlProperty Key="Text" Value="" />
+					  </pnp:CanvasControlProperties>
+					</pnp:CanvasControl>
+				  </pnp:Controls>
+				</pnp:Section>
+				<pnp:Section Order="2" Type="TwoColumnLeft">
+				  <pnp:Controls>
+						<pnp:CanvasControl WebPartType="Custom" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;properties&quot;: {&quot;description&quot;:&quot;Displays info from site catalog&quot;,&quot;hubsiteurl&quot;:&quot;/sites/localsitelandingUAT&quot;,&quot;title&quot;:&quot;Welcome to the new {sitename} page!&quot;,&quot;requestlistname&quot;:&quot;All Local sites&quot;}}" ControlId="f377ecf0-84ea-4e93-b87f-49dce2b32b75" Order="1" Column="1" />
+						<pnp:CanvasControl WebPartType="Custom" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;description&quot;:&quot;Portable News&quot;,&quot;title&quot;:&quot;Local News&quot;}}" ControlId="d9a46906-14ea-4fa8-9a9f-1eb805466175" Order="1" Column="2" />
+				  </pnp:Controls>
+				</pnp:Section>
+				<pnp:Section Order="3" Type="ThreeColumn">
+				  <pnp:Controls>
+					<pnp:CanvasControl WebPartType="Text" ControlId="90c068af-4d22-4ec0-8621-66af9d931cd3" Order="1" Column="1">
+					  <pnp:CanvasControlProperties>
+						<pnp:CanvasControlProperty Key="Text" Value="" />
+					  </pnp:CanvasControlProperties>
+					</pnp:CanvasControl>
+					<pnp:CanvasControl WebPartType="Text" ControlId="9dd32960-9f76-4b3b-9fc1-5f500788bcd6" Order="1" Column="2">
+					  <pnp:CanvasControlProperties>
+						<pnp:CanvasControlProperty Key="Text" Value="" />
+					  </pnp:CanvasControlProperties>
+					</pnp:CanvasControl>
+					<pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{ &quot;dataVersion&quot;: &quot;2.1&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;properties&quot;: {&quot;items&quot;:[],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;CompactCard&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:2,&quot;iconPositionType&quot;:2,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:2},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="1" Column="3" />
+				  </pnp:Controls>
+				</pnp:Section>
+			  </pnp:Sections>
+			  <pnp:Header Type="Default" />
+			</pnp:ClientSidePage>
+			<pnp:ClientSidePage PageName="local-information.aspx" PromoteAsNewsArticle="false" Overwrite="true" Title="Local information">
+				<pnp:Sections>
+					<pnp:Section Order="1" Type="OneColumn">
+					</pnp:Section>
+				</pnp:Sections>
+				<pnp:Header Type="Default" />
+			</pnp:ClientSidePage>
+			<pnp:ClientSidePage PageName="visiting-information.aspx" PromoteAsNewsArticle="false" Overwrite="true" Title="Visiting Information">
+				<pnp:Sections>
+					<pnp:Section Order="1" Type="OneColumn">
+					</pnp:Section>
+				</pnp:Sections>
+				<pnp:Header Type="Default" />
+			</pnp:ClientSidePage>
+			<pnp:ClientSidePage PageName="health-and-safety.aspx" PromoteAsNewsArticle="false" Overwrite="true" Title="Health and Safety">
+				<pnp:Sections>
+					<pnp:Section Order="1" Type="OneColumn">
+					</pnp:Section>
+				</pnp:Sections>
+				<pnp:Header Type="Default" />
+			</pnp:ClientSidePage>
+			<pnp:ClientSidePage PageName="policies-and-guidelines.aspx" PromoteAsNewsArticle="false" Overwrite="true" Title="Policies and Guidelines">
+				<pnp:Sections>
+					<pnp:Section Order="1" Type="OneColumn">
+					</pnp:Section>
+				</pnp:Sections>
+				<pnp:Header Type="Default" />
+			</pnp:ClientSidePage>
+			<pnp:ClientSidePage PageName="hr-information.aspx" PromoteAsNewsArticle="false" Overwrite="true" Title="HR">
+				<pnp:Sections>
+					<pnp:Section Order="1" Type="OneColumn">
+					</pnp:Section>
+				</pnp:Sections>
+				<pnp:Header Type="Default" />
+			</pnp:ClientSidePage>
+			<pnp:ClientSidePage PageName="economy-information.aspx" PromoteAsNewsArticle="false" Overwrite="true" Title="Economy">
+				<pnp:Sections>
+					<pnp:Section Order="1" Type="OneColumn">
+					</pnp:Section>
+				</pnp:Sections>
+				<pnp:Header Type="Default" />
+			</pnp:ClientSidePage>
+			<pnp:ClientSidePage PageName="marketing-communication.aspx" PromoteAsNewsArticle="false" Overwrite="true" Title="Marketing and Sales">
+				<pnp:Sections>
+					<pnp:Section Order="1" Type="OneColumn">
+					</pnp:Section>
+				</pnp:Sections>
+				<pnp:Header Type="Default" />
+			</pnp:ClientSidePage>
+		</pnp:ClientSidePages>	
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

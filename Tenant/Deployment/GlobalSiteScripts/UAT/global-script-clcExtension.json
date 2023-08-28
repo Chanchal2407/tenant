@@ -1,0 +1,15 @@
+{
+    "$schema": "schema.json",
+    "actions": [
+      {
+        "verb": "associateExtension",
+        "title": "Share Portal CLC Extensions-uat",
+        "location": "ClientSideExtension.ApplicationCustomizer",
+        "clientSideComponentId": "993fcf59-d674-44f6-9358-a6bfbcdb501e",
+        "clientSideComponentProperties":"{\"ConfigSiteUrl\":\"/sites/AdminPortalUAT\"}",
+        "scope": "Site"
+      }
+    ],
+    "bindata": {},
+    "version": 1
+  }

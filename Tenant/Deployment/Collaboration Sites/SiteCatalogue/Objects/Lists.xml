@@ -1,0 +1,99 @@
+<pnp:Lists xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema">
+        <pnp:ListInstance Title="Modules" Description="" TemplateType="101" Url="Modules" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" >
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Project Templates" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/Templates" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" >
+          <pnp:Fields>
+            <Field Type="Lookup" DisplayName="Modules" Required="FALSE" EnforceUniqueValues="FALSE" List="{listid:Modules}" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE" RelationshipDeleteBehavior="None" ID="{5b718e87-3264-40d3-87ef-d5e0eb35bdd7}" SourceID="{{listid:Project Templates}}" StaticName="ALFA_ALFA_Modules" Name="ALFA_ALFA_Modules" ColName="int1" RowOrdinal="0" />
+          </pnp:Fields>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Sites" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/Sites" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableAttachments="false" DefaultDisplayFormUrl="{site}/Lists/Sites/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Sites/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Sites/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=44" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0100E4D7DDB5A27749089422751FF2C0CDC30201" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0100E4D7DDB5A27749089422751FF2C0CDC30202" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{B13B478E-4EAF-4EA6-B27A-7F39A7DB73E3}" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/sites/directoryNext/collaboration/Lists/Sites/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=44">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" DisplayName="Site name" />
+                <FieldRef Name="ALFA_ProjectDescription" />
+                <FieldRef Name="ALFA_TemplateConfig" />
+                <FieldRef Name="ALFA_AccessLevel" />
+                <FieldRef Name="ALFA_InformationClassification" />
+                <FieldRef Name="ALFA_SiteStatus" />
+                <FieldRef Name="ALFA_SiteEditor" />
+                <FieldRef Name="ALFA_SiteOwners" />
+                <FieldRef Name="ID" />
+                <FieldRef Name="ALFA_SiteURL" />
+                <FieldRef Name="Project_x0020_Manager" />
+                <FieldRef Name="ContentType" />
+                <FieldRef Name="ALFA_CreateTeams" />
+                <FieldRef Name="ALFA_Category" />
+                <FieldRef Name="ALFA_SiteType" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{A2D68419-7666-4D32-B482-08A039AB0EB8}" DefaultView="TRUE" MobileView="TRUE" Type="HTML" DisplayName="My requested sites" Url="/sites/directoryNext/collaboration/Lists/Sites/My sites.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=44">
+              <Query>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="Author" />
+                    <Value Type="Integer">
+                      <UserID Type="Integer" />
+                    </Value>
+                  </Eq>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" DisplayName="Site name"  />
+                <FieldRef Name="ALFA_SiteURL" />
+                <FieldRef Name="ALFA_ProjectDescription" />
+                <FieldRef Name="ALFA_TemplateConfig" />
+                <FieldRef Name="ALFA_AccessLevel" />
+                <FieldRef Name="ALFA_InformationClassification" />
+                <FieldRef Name="ALFA_SiteStatus" />
+                <FieldRef Name="ALFA_SiteEditor" />
+                <FieldRef Name="ALFA_SiteOwners" />
+                <FieldRef Name="ID" />
+                <FieldRef Name="Project_x0020_Manager" />
+                <FieldRef Name="ContentType" />
+                <FieldRef Name="ALFA_CreateTeams" />
+                <FieldRef Name="ALFA_SiteType" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+          <Field ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Type="Text" Name="Title" DisplayName="Site name" Description="Recommended Naming convention: [Team Name]-[Department Name/Unit Name/Location]. Examples: O365 Governance-Digital workplace, IT solutions-Corporate Functions, Internal Communications-Lund For more details , please search for 'Collaboration/Teams Naming convention' keyword in Search box present in Share top navigation" />
+          <Field Type="User" DisplayName="Project Manager" List="UserInfo" Required="TRUE" EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" Group="{parameter:TemplateSpecificFieldsGroup}" ID="{7fde96bb-6472-4e58-a23f-a7b6f9412aee}" SourceID="{{siteid}}" StaticName="{parameter:GenericFieldsPrefix}ProjectManager" Name="Project_x0020_Manager" Version="2" AllowDeletion="TRUE" ColName="int7" RowOrdinal="0" />
+          <Field Type="Lookup" DisplayName="Template" Required="TRUE" EnforceUniqueValues="FALSE" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE" ID="{dc5f305c-7be2-4623-bcef-3032a9acc3fc}" SourceID="{{siteid}}" Group="{parameter:TemplateSpecificFieldsGroup}" StaticName="{parameter:GenericFieldsPrefix}TemplateConfig" Name="{parameter:GenericFieldsPrefix}TemplateConfig" ColName="int6" RowOrdinal="0" Version="3" List="{listid:Project Templates}" WebId="{siteid}" RelationshipDeleteBehavior="None" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="1390a86a-23da-45f0-8efe-ef36edadfb39" Name="TaxKeywordTaxHTField" Hidden="true" DisplayName="TaxKeywordTaxHTField" />
+            <pnp:FieldRef ID="dd24580f-ed10-46b9-89ff-9e0ff3aed672" Name="bc3223b6d50f417796d40d354a373d3c" Hidden="true" DisplayName="ALFA_Organization_0" />
+            <pnp:FieldRef ID="0cedaa12-9d11-45d9-8847-8a88fa282ec4" Name="ALFA_ProjectDescription" DisplayName="Site description" />
+            <pnp:FieldRef ID="c5d84c7b-8fed-4823-9e00-4077770b4f51" Name="ALFA_SiteOwners" DisplayName="Site Owners" />
+            <pnp:FieldRef ID="7d6e9eb3-6120-4f7c-b462-d8b068773769" Name="ALFA_SiteURL" DisplayName="Site URL" />
+            <pnp:FieldRef ID="465ba4e9-aa5d-480f-b83a-2be27f472bea" Name="ALFA_SiteStatus" DisplayName="Provision Status" />
+            <pnp:FieldRef ID="bc3e0ac1-3aab-4e22-a6e3-89385cd7b353" Name="ALFA_Compliant" DisplayName="Compliant" />
+            <pnp:FieldRef ID="3db864ea-0134-4024-bb5f-22d7d4cd1123" Name="ALFA_Comment" DisplayName="Comment" />
+            <pnp:FieldRef ID="7d3a4cb8-31a9-44b2-8c1e-bed15c9f0d8e" Name="ALFA_AccessLevel" DisplayName="Access level" />
+            <pnp:FieldRef ID="571fab00-bdfd-43fa-bac0-82fed9647844" Name="ALFA_InformationClassification" DisplayName="How sensitive is your data?" />
+            <pnp:FieldRef ID="bc3223b6-d50f-4177-96d4-0d354a373d3c" Name="ALFA_Organization" DisplayName="Organization" />
+            <pnp:FieldRef ID="98259539-f47c-4e90-9533-bb4693a73aea" Name="ALFA_SiteEditor" DisplayName="Site Editor" />
+            <pnp:FieldRef ID="23f27201-bee3-471e-b2e7-b64fd8b7ca38" Name="TaxKeyword" DisplayName="Enterprise Keywords" />
+            <pnp:FieldRef ID="7fde96bb-6472-4e58-a23f-a7b6f9412aee" Name="Project_x0020_Manager" DisplayName="Project Manager" />
+            <pnp:FieldRef ID="7b351bfb-904b-446d-9aa1-fcb63a8a1cd0" Name="ALFA_CreateTeams" DisplayName="Create Teams" />
+            <pnp:FieldRef ID="53c5e6a0-3d40-45b2-835b-e37777b58aff" Name="ALFA_Category" DisplayName="Category" />
+            <pnp:FieldRef ID="65841A11-8C10-4913-8234-7C25DCF1FCAA" Name="ALFA_SiteType" DisplayName="Site Type" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+      </pnp:Lists>

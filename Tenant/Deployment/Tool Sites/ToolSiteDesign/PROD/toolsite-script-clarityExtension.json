@@ -1,0 +1,15 @@
+{
+    "$schema": "schema.json",
+    "actions": [
+      {
+        "verb": "associateExtension",
+        "title": "Microsoft Clarity",
+        "location": "ClientSideExtension.ApplicationCustomizer",
+        "clientSideComponentId": "7f8fd1f2-9d26-4a4a-a607-bf4622d7ec11",
+        "clientSideComponentProperties":"{\"clarityID\":\"grce503s76\"}",
+        "scope": "Site"
+      }
+    ],
+    "bindata": {},
+    "version": 1
+  }

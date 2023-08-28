@@ -1,0 +1,10 @@
+<root>
+  <tenantURL>https://alfalavalonline.sharepoint.com</tenantURL>
+  <siteURL>/sites/Share</siteURL>
+  <listName>Site Pages</listName>  
+  <corporateNewsTemplate>CorporateNewsTemplate.aspx</corporateNewsTemplate>
+  <newsTemplate>NewsTemplate.aspx</newsTemplate>
+  <usrname>USERNAME</usrname>
+  <password>PASSWORD</password>
+  <ReportOutput>output_Prod.csv</ReportOutput>  
+</root>

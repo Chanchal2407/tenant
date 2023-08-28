@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema">
+	<pnp:Preferences Generator="OfficeDevPnP.Core, Version=2.26.1805.1, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+	<pnp:Templates ID="CONTAINER-TEMPLATE-ALFALAVAL_TOOLSITELANDING">
+		<pnp:ProvisioningTemplate ID="TEMPLATE-ALFALAVAL_TOOLSITELANDING" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:Security>
+        <pnp:Permissions>
+          <pnp:RoleDefinitions>
+            <pnp:RoleDefinition Name="Contribute without delete (custom)" Description="Contribute without delete (custom)">
+              <pnp:Permissions>
+                <pnp:Permission>EmptyMask</pnp:Permission>
+                <pnp:Permission>ViewListItems</pnp:Permission>
+                <pnp:Permission>AddListItems</pnp:Permission>
+                <pnp:Permission>EditListItems</pnp:Permission>
+                <pnp:Permission>OpenItems</pnp:Permission>
+                <pnp:Permission>ViewVersions</pnp:Permission>
+                <pnp:Permission>ManagePersonalViews</pnp:Permission>
+                <pnp:Permission>ViewFormPages</pnp:Permission>
+                <pnp:Permission>Open</pnp:Permission>
+                <pnp:Permission>ViewPages</pnp:Permission>
+                <pnp:Permission>CreateSSCSite</pnp:Permission>
+                <pnp:Permission>BrowseDirectories</pnp:Permission>
+                <pnp:Permission>BrowseUserInfo</pnp:Permission>
+                <pnp:Permission>AddDelPrivateWebParts</pnp:Permission>
+                <pnp:Permission>UpdatePersonalWebParts</pnp:Permission>
+                <pnp:Permission>UseClientIntegration</pnp:Permission>
+                <pnp:Permission>UseRemoteAPIs</pnp:Permission>
+                <pnp:Permission>CreateAlerts</pnp:Permission>
+                <pnp:Permission>EditMyUserInfo</pnp:Permission>
+              </pnp:Permissions>
+            </pnp:RoleDefinition>
+          </pnp:RoleDefinitions>
+        </pnp:Permissions>
+      </pnp:Security>
+			<pnp:WebSettings WelcomePage="SitePages/Home.aspx" />
+			<pnp:SupportedUILanguages>
+				<pnp:SupportedUILanguage LCID="1033" />
+			</pnp:SupportedUILanguages>
+			<pnp:Navigation AddNewPagesToNavigation="true" CreateFriendlyUrlsForNewPages="true">
+				<pnp:GlobalNavigation NavigationType="Structural">
+					<pnp:StructuralNavigation RemoveExistingNodes="false" />
+				</pnp:GlobalNavigation>
+				<pnp:CurrentNavigation NavigationType="StructuralLocal">
+					<pnp:StructuralNavigation RemoveExistingNodes="true">
+						<pnp:NavigationNode Title="All Tool sites" Url="{site}" />
+					</pnp:StructuralNavigation>
+				</pnp:CurrentNavigation>
+			</pnp:Navigation>
+			<pnp:SiteFields>
+				<Field Type="Note" DisplayName="Short Description" Description="Short description of Tool site" Required="TRUE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="FALSE" Sortable="FALSE" Group="Alfa Laval" ID="{ade96ee6-4599-4db2-8c5c-2ea0cc8d178b}" SourceID="{701369c5-c443-4827-97bf-12f262e1fcb4}" StaticName="ShortDescription" Name="ShortDescription" CustomFormatter="" RestrictedMode="TRUE" RichTextMode="Compatible" IsolateStyles="FALSE" AppendOnly="FALSE" UnlimitedLengthInDocumentLibrary="FALSE" />
+				<Field Type="Choice" DisplayName="Site Status" Description="Site creation status" EnforceUniqueValues="FALSE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" Group="Alfa Laval" ID="{6e0db900-affc-47e1-a0c9-551a8799d6b6}" SourceID="{701369c5-c443-4827-97bf-12f262e1fcb4}" StaticName="SiteStatus" Name="SiteStatus" CustomFormatter="">
+					<Default>Requested</Default>
+					<CHOICES>
+						<CHOICE>Requested</CHOICE>
+						<CHOICE>Approved</CHOICE>
+						<CHOICE>Rejected</CHOICE>
+						<CHOICE>Available</CHOICE>
+						<CHOICE>Published</CHOICE>
+						<CHOICE>Error</CHOICE>
+					</CHOICES>
+				</Field>
+				<Field Type="UserMulti" DisplayName="Site Owner" List="UserInfo" Description="Owner of Tool site" Required="TRUE" EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" Mult="TRUE" Sortable="FALSE" Group="Alfa Laval" ID="{4b259a0e-0a2c-4e03-85bf-ddbb2fbaf195}" SourceID="{{siteid}}" StaticName="SiteOwner" Name="SiteOwner" />
+				<Field Type="UserMulti" DisplayName="Site Editor" List="UserInfo" Description="Editor of Tool site" Required="TRUE" EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" Mult="TRUE" Sortable="FALSE" Group="Alfa Laval" ID="{171258f1-7d0a-4bad-9a4a-c71f1446379f}" SourceID="{{siteid}}" StaticName="SiteEditor" Name="SiteEditor" />
+				<Field Type="URL" DisplayName="Site URL" Description="Enter full URL, e.g. http://google.com" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Hyperlink" Group="Alfa Laval" ID="{cb159828-9a9d-4829-835a-49c3562799ae}" SourceID="{701369c5-c443-4827-97bf-12f262e1fcb4}" StaticName="SiteURL" Name="SiteURL" CustomFormatter="" />
+				<Field Type="Boolean" DisplayName="Open In New Window" EnforceUniqueValues="FALSE" Indexed="FALSE" Group="Alfa Laval" ID="{fcd15aca-9734-49c8-b76d-4a2fd5687ffa}" SourceID="{{siteid}}" StaticName="shareOpenInNewWindow" Name="shareOpenInNewWindow" CustomFormatter="" Required="FALSE">
+					<Default>0</Default>
+				</Field>
+				<Field Type="Calculated" DisplayName="TitleStartsWith" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" LCID="1033" ResultType="Text" ReadOnly="TRUE" Group="Alfa Laval" ID="{11ee4238-03e7-469b-8a7e-a6b81385d383}" SourceID="{3e43a786-8c58-4e54-b722-bfbfa791084b}" StaticName="TitleStartsWith" Name="TitleStartsWith">
+					<Formula>=[{fieldtitle:Title}]</Formula>
+				</Field>
+			</pnp:SiteFields>
+			<pnp:ContentTypes>
+				<pnp:ContentType ID="0x01001D62806226164646A58494222AC4A93F" Name="Tool Site" Description="Tool site list item" Group="Alfa Laval" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+					<pnp:FieldRefs>
+						<pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+						<pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" />
+						<pnp:FieldRef ID="ade96ee6-4599-4db2-8c5c-2ea0cc8d178b" Name="ShortDescription" Required="true" />
+						<pnp:FieldRef ID="4b259a0e-0a2c-4e03-85bf-ddbb2fbaf195" Name="SiteOwner" Required="true" />
+						<pnp:FieldRef ID="171258f1-7d0a-4bad-9a4a-c71f1446379f" Name="SiteEditor" Required="true" />
+						<pnp:FieldRef ID="6e0db900-affc-47e1-a0c9-551a8799d6b6" Name="SiteStatus" />
+						<pnp:FieldRef ID="cb159828-9a9d-4829-835a-49c3562799ae" Name="SiteURL" Hidden="true" />
+						<pnp:FieldRef ID="fcd15aca-9734-49c8-b76d-4a2fd5687ffa" Name="shareOpenInNewWindow" />
+						<pnp:FieldRef ID="11ee4238-03e7-469b-8a7e-a6b81385d383" Name="TitleStartsWith" />
+					</pnp:FieldRefs>
+				</pnp:ContentType>
+				<pnp:ContentType ID="0x01001D62806226164646A58494222AC4A94F" Name="Tool Link" Description="Tool without own site" Group="Alfa Laval" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+					<pnp:FieldRefs>
+						<pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+						<pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" />
+						<pnp:FieldRef ID="ade96ee6-4599-4db2-8c5c-2ea0cc8d178b" Name="ShortDescription" Required="true" />
+						<pnp:FieldRef ID="4b259a0e-0a2c-4e03-85bf-ddbb2fbaf195" Name="SiteOwner" Required="true"/>
+						<pnp:FieldRef ID="171258f1-7d0a-4bad-9a4a-c71f1446379f" Name="SiteEditor" Hidden="true" />
+						<pnp:FieldRef ID="cb159828-9a9d-4829-835a-49c3562799ae" Name="SiteURL" Hidden="false" Required="true" />
+						<pnp:FieldRef ID="fcd15aca-9734-49c8-b76d-4a2fd5687ffa" Name="shareOpenInNewWindow" />
+						<pnp:FieldRef ID="11ee4238-03e7-469b-8a7e-a6b81385d383" Name="TitleStartsWith" />
+					</pnp:FieldRefs>
+				</pnp:ContentType>
+			</pnp:ContentTypes>
+			<pnp:Lists>
+				<pnp:ListInstance Title="All Tool sites" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/ToolSiteRequests" EnableAttachments="false" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="false" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/ToolSiteRequests/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/ToolSiteRequests/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/ToolSiteRequests/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=45" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+					<pnp:ContentTypeBindings>
+						<pnp:ContentTypeBinding ContentTypeID="0x01001D62806226164646A58494222AC4A93F" Default="true" />
+						<pnp:ContentTypeBinding ContentTypeID="0x01001D62806226164646A58494222AC4A94F" Default="false" />   
+					</pnp:ContentTypeBindings>
+					<pnp:Views>
+						<View Name="{85C472D9-809A-415B-A2C6-F61B15B8B45D}" DefaultView="FALSE" MobileView="TRUE" MobileDefaultView="FALSE" Type="HTML" DisplayName="All Items" Url="AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=45">
+							<Query>
+								<OrderBy>
+									<FieldRef Name="ID" />
+								</OrderBy>
+							</Query>
+							<ViewFields>
+								<FieldRef Name="LinkTitle" />
+								<FieldRef Name="SiteOwner" />
+								<FieldRef Name="SiteEditor" />
+								<FieldRef Name="ShortDescription" />
+								<FieldRef Name="SiteStatus" />
+								<FieldRef Name="SiteURL" />
+								<FieldRef Name="Created" />
+								<FieldRef Name="Author" />
+							</ViewFields>
+							<RowLimit Paged="TRUE">30</RowLimit>
+							<Aggregations Value="Off" />
+							<JSLink>clienttemplates.js</JSLink>
+							<CustomFormatter />
+							<ColumnWidth>
+								<FieldRef Name="Author" width="164" />
+							</ColumnWidth>
+						</View>
+						<View Name="{4CF5DAC8-CD9B-438A-8074-17D222EF6637}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="My Requests" Url="MyRequests.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=45">
+							<Query>
+								<OrderBy>
+									<FieldRef Name="ID" />
+								</OrderBy>
+								<Where>
+									<Eq>
+										<FieldRef Name="Author"/>
+										<Value Type="Integer">
+											<UserID/>
+										</Value>
+									</Eq>
+								</Where>
+							</Query>
+							<ViewFields>
+								<FieldRef Name="LinkTitle" />
+								<FieldRef Name="SiteOwner" />
+								<FieldRef Name="SiteEditor" />
+								<FieldRef Name="ShortDescription" />
+								<FieldRef Name="SiteStatus" />
+								<FieldRef Name="SiteURL" />
+								<FieldRef Name="Created" />
+								<FieldRef Name="Author" />
+							</ViewFields>
+							<RowLimit Paged="TRUE">30</RowLimit>
+							<Aggregations Value="Off" />
+							<JSLink>clienttemplates.js</JSLink>
+							<CustomFormatter />
+							<ColumnWidth>
+								<FieldRef Name="Author" width="164" />
+							</ColumnWidth>
+						</View>
+					</pnp:Views>
+					<pnp:FieldRefs>
+						<pnp:FieldRef ID="ade96ee6-4599-4db2-8c5c-2ea0cc8d178b" Name="ShortDescription" DisplayName="Short Description" Required="true" />
+						<pnp:FieldRef ID="4b259a0e-0a2c-4e03-85bf-ddbb2fbaf195" Name="SiteOwner" DisplayName="Site Owner" Required="true" />
+						<pnp:FieldRef ID="171258f1-7d0a-4bad-9a4a-c71f1446379f" Name="SiteEditor" DisplayName="Site Editor" Required="true" />
+						<pnp:FieldRef ID="6e0db900-affc-47e1-a0c9-551a8799d6b6" Name="SiteStatus" DisplayName="Site Status" />
+						<pnp:FieldRef ID="11ee4238-03e7-469b-8a7e-a6b81385d383" Name="TitleStartsWith" DisplayName="TitleStartsWith" />
+						<pnp:FieldRef ID="1390a86a-23da-45f0-8efe-ef36edadfb39" Name="TaxKeywordTaxHTField" Hidden="true" DisplayName="TaxKeywordTaxHTField" />
+						<pnp:FieldRef ID="23f27201-bee3-471e-b2e7-b64fd8b7ca38" Name="TaxKeyword" DisplayName="Enterprise Keywords" />
+					</pnp:FieldRefs>
+					<pnp:Webhooks>
+						<pnp:Webhook ServerNotificationUrl="https://5-westeurope1.pushp.svc.ms/notifications?token=w2-b7d3b164-4bac-4742-96d1-56ba38022f05" ExpiresInDays="1" />
+						<pnp:Webhook ServerNotificationUrl="https://16-westeurope1.pushp.svc.ms/notifications?token=w1-a4cb11cc-eb31-435f-98a8-d37596bd3958" ExpiresInDays="1" />
+						<pnp:Webhook ServerNotificationUrl="https://6-westeurope1.pushp.svc.ms/notifications?token=w2-75b0019a-b26e-4278-a324-2d14a4347595" ExpiresInDays="1" />
+						<pnp:Webhook ServerNotificationUrl="https://8-westeurope1.pushp.svc.ms/notifications?token=w0-e043e681-adfd-431c-9395-78b02d2d20c9" ExpiresInDays="1" />
+						<pnp:Webhook ServerNotificationUrl="https://4-westeurope1.pushp.svc.ms/notifications?token=w0-cc2600ac-c203-40ab-8727-adbabc39b80a" ExpiresInDays="1" />
+						<pnp:Webhook ServerNotificationUrl="https://4-westeurope1.pushp.svc.ms/notifications?token=w0-0ca0e26f-fad4-453a-a504-eef287629df4" ExpiresInDays="1" />
+						<pnp:Webhook ServerNotificationUrl="https://4-westeurope1.pushp.svc.ms/notifications?token=w0-38062488-3fdf-4fca-a6f2-bff0a853d533" ExpiresInDays="1" />
+						<pnp:Webhook ServerNotificationUrl="https://4-westeurope1.pushp.svc.ms/notifications?token=w0-b63b16e7-73d7-48f7-885c-10e8e91cab18" ExpiresInDays="1" />
+						<pnp:Webhook ServerNotificationUrl="https://4-westeurope1.pushp.svc.ms/notifications?token=w0-82a1a17c-5c57-4b55-9750-ad66bfe7946d" ExpiresInDays="1" />
+					</pnp:Webhooks>
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false">
+              <pnp:RoleAssignment Principal="{associatedownergroupid}" RoleDefinition="Full Control" />
+              <pnp:RoleAssignment Principal="{associatedvisitorgroupid}" RoleDefinition="Contribute without delete (custom)" />
+              <pnp:RoleAssignment Principal="{associatedmembergroupid}" RoleDefinition="Edit" />
+            </pnp:BreakRoleInheritance>
+          </pnp:Security>
+				</pnp:ListInstance>
+			</pnp:Lists>
+			<pnp:ClientSidePages>
+				<pnp:ClientSidePage PageName="Home.aspx" PromoteAsNewsArticle="false" Overwrite="true" EnableComments="false">
+					<pnp:Sections>
+						<pnp:Section Order="1" Type="TwoColumnLeft">
+							<pnp:Controls>
+								<pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{ &quot;dataVersion&quot;: &quot;2.1&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Tool Site request form&quot;,&quot;items[0].title&quot;:&quot;Request tool site&quot;,&quot;items[1].title&quot;:&quot;Add tool link&quot;,&quot;items[0].description&quot;:&quot;&quot;,&quot;items[1].description&quot;:&quot;&quot;,&quot;items[0].altText&quot;:&quot;&quot;,&quot;items[1].altText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;items[1].rawPreviewImageUrl&quot;:&quot;{hosturl}{site}/_layouts/15/getpreview.ashx?guidFile={pageuniqueidencoded:Lists/ToolSiteRequests/NewForm.aspx}&amp;guidWeb={siteidencoded}&amp;guidSite={sitecollectionidencoded}&quot;},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;{site}/lists/toolsiterequests/newform.aspx?Source={site}&quot;,&quot;items[1].sourceItem.url&quot;:&quot;{site}/Lists/ToolSiteRequests/NewForm.aspx?ContentTypeId=0x01001D62806226164646A58494222AC4A94F00F0379276D1B2074BB06BC2A580A05F35&amp;Source={site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;properties&quot;: {&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;58802c59-4dab-4cbc-b99a-b72eeb51f461&quot;},&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:3,&quot;id&quot;:1},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:Lists/ToolSiteRequests/NewForm.aspx}&quot;},&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:2,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;puzzle&quot;}}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;Button&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:3,&quot;iconPositionType&quot;:2,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:2},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;pane_link_button&quot;:0}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="1" Column="2" />
+							</pnp:Controls>
+						</pnp:Section>
+					</pnp:Sections>
+				</pnp:ClientSidePage>
+			</pnp:ClientSidePages>
+		</pnp:ProvisioningTemplate>
+	</pnp:Templates>
+</pnp:Provisioning>

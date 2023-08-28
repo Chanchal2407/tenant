@@ -1,0 +1,66 @@
+Id,Level,Visible,Title,Url,Order,ParentId,ParentTitle
+2025,Level 1,TRUE,Organizations,https://alfalavalonline.sharepoint.com/sites/organization,1,0,
+2124,Level 1,TRUE,Local sites,https://alfalavalonline.sharepoint.com/sites/localsitelanding,2,0,
+2026,Level 1,TRUE,Strategy & Initiatives,https://alfalavalonline.sharepoint.com/sites/StrategiesInitiatives,3,0,
+2165,Level 2,TRUE,Alfa Laval DNA,https://alfalavalonline.sharepoint.com/sites/AlfaLavalDNA,4,2026,Strategy & Initiatives
+2162,Level 2,TRUE,Strategy 2020 - Releasing the power,https://alfalavalonline.sharepoint.com/sites/StrategiesInitiatives/Strategy/SitePages/Releasing-the-power---Strategy-2020.aspx,5,2026,Strategy & Initiatives
+2163,Level 2,TRUE,Key Initiatives and Projects,https://alfalavalonline.sharepoint.com/sites/StrategiesInitiatives/keyinitiativesandprojects/SitePages/Key-Initiatives-and-Projects.aspx,6,2026,Strategy & Initiatives
+2027,Level 1,TRUE,Sustainability,https://alfalavalonline.sharepoint.com/sites/Sustainability,7,0,
+2050,Level 2,TRUE,Business Principles,https://alfalavalonline.sharepoint.com/sites/Policiesandguidelines/SitePages/Business%20Principles.aspx,8,2027,Sustainability
+2051,Level 2,TRUE,Stakeholder engagement and material aspects,https://alfalavalonline.sharepoint.com/sites/Sustainability/SitePages/Material-aspects.aspx,9,2027,Sustainability
+2052,Level 2,TRUE,Safe and inclusive culture,https://alfalavalonline.sharepoint.com/sites/Sustainability/SitePages/People.aspx,10,2027,Sustainability
+2126,Level 3,TRUE,Health & safety targets and performance,https://alfalavalonline.sharepoint.com/sites/Sustainability/SitePages/Social-targets.aspx,11,2052,Safe and inclusive culture
+2127,Level 3,TRUE,Diversity and equality,https://alfalavalonline.sharepoint.com/sites/Sustainability/SitePages/Diversity-and-equality.aspx,12,2052,Safe and inclusive culture
+2128,Level 3,TRUE,Human rights,https://alfalavalonline.sharepoint.com/sites/Sustainability/SitePages/Human-rights.aspx,13,2052,Safe and inclusive culture
+2129,Level 3,TRUE,Training and career development,https://alfalavalonline.sharepoint.com/sites/Sustainability/SitePages/Training-and-career-development.aspx,14,2052,Safe and inclusive culture
+2130,Level 2,TRUE,Environmental commitment and performance,https://alfalavalonline.sharepoint.com/sites/Sustainability/SitePages/Planet---Environment.aspx,15,2027,Sustainability
+2131,Level 3,TRUE,Environmental targets and performance,https://alfalavalonline.sharepoint.com/sites/Sustainability/SitePages/Environmental-targets-and-performance.aspx,16,2130,Environmental commitment and performance
+2132,Level 3,TRUE,Climate,https://alfalavalonline.sharepoint.com/sites/Sustainability/SitePages/Climate.aspx,17,2130,Environmental commitment and performance
+2053,Level 2,TRUE,Responsible supply chain,https://alfalavalonline.sharepoint.com/sites/Sustainability/SitePages/Responsible-sourcing.aspx,18,2027,Sustainability
+2154,Level 2,TRUE,Community involvement,https://alfalavalonline.sharepoint.com/sites/Sustainability/SitePages/Community-involvement.aspx,19,2027,Sustainability
+2155,Level 2,TRUE,Sustainability projects,https://alfalavalonline.sharepoint.com/sites/Sustainability/SitePages/Important-sustainability-projects.aspx,20,2027,Sustainability
+2156,Level 3,TRUE,Environment,https://alfalavalonline.sharepoint.com/sites/Sustainability/SitePages/Important-projects---environment.aspx,21,2155,Sustainability projects
+2157,Level 3,TRUE,Health & safety,https://alfalavalonline.sharepoint.com/sites/Sustainability/SitePages/Important-projects---health-&-safety.aspx,22,2155,Sustainability projects
+2158,Level 3,TRUE,Diversity and equality,https://alfalavalonline.sharepoint.com/sites/Sustainability/SitePages/Important-projects--diversity.aspx,23,2155,Sustainability projects
+2159,Level 3,TRUE,Responsible sourcing,https://alfalavalonline.sharepoint.com/sites/Sustainability/SitePages/Important-projects---responsible-sourcing.aspx,24,2155,Sustainability projects
+2160,Level 3,TRUE,Local Projects,https://alfalavalonline.sharepoint.com/sites/Sustainability/SitePages/Every-action-counts.aspx,25,2155,Sustainability projects
+2028,Level 1,TRUE,Policies & Guidelines,https://alfalavalonline.sharepoint.com/sites/Policiesandguidelines,26,0,
+2064,Level 2,TRUE,Business Principles,https://alfalavalonline.sharepoint.com/sites/Policiesandguidelines/SitePages/Business Principles.aspx,27,2028,Policies & Guidelines
+2065,Level 3,TRUE,Business Integrity,https://alfalavalonline.sharepoint.com/sites/Policiesandguidelines/SitePages/Business integrity.aspx,28,2064,Business Principles
+2066,Level 3,TRUE,Business Principle Environment,https://alfalavalonline.sharepoint.com/sites/Policiesandguidelines/SitePages/Business Principle Environment.aspx,29,2064,Business Principles
+2067,Level 3,TRUE,Social Business Principle,https://alfalavalonline.sharepoint.com/sites/Policiesandguidelines/SitePages/Social Business Principle.aspx,30,2064,Business Principles
+2068,Level 3,TRUE,Transparency,https://alfalavalonline.sharepoint.com/sites/Policiesandguidelines/SitePages/Transparency.aspx,31,2064,Business Principles
+2069,Level 3,TRUE,Speak up!,https://alfalavalonline.sharepoint.com/sites/Policiesandguidelines/SitePages/Speak-up!.aspx,32,2064,Business Principles
+2070,Level 2,TRUE,Corporate Governance,https://alfalavalonline.sharepoint.com/sites/Policiesandguidelines/SitePages/Corporate Governance.aspx,33,2028,Policies & Guidelines
+2098,Level 3,TRUE,Corporate Governance Policies,https://alfalavalonline.sharepoint.com/sites/Policiesandguidelines/SitePages/Corporate-Governance-Policies.aspx,34,2070,Corporate Governance
+2099,Level 2,TRUE,GDPR at Alfa Laval,https://alfalavalonline.sharepoint.com/sites/Policiesandguidelines/SitePages/GDPR-at-Alfa-Laval.aspx,35,2028,Policies & Guidelines
+2166,Level 2,TRUE,Group Information Security,https://alfalavalonline.sharepoint.com/sites/policiesandguidelines/GroupEnterpriseInformationSecurityPolicy/SitePages/Group-Enterprise-Information-Security-Policy.aspx,36,2028,Policies & Guidelines
+2030,Level 1,TRUE,Facts & History,"/sites/aboutalfalaval/SitePages/Facts & Figures, History, Key industries & technologies.aspx",37,0,
+2071,Level 2,TRUE,Alfa Laval historical material,/sites/aboutalfalaval/SitePages/Alfa Laval historical material.aspx,38,2030,Facts & History
+2072,Level 2,TRUE,Alfa Laval historical wall,/sites/aboutalfalaval/SitePages/Alfa Laval historical wall.aspx,39,2030,Facts & History
+2031,Level 1,TRUE,Communication & Brand,https://alfalavalonline.sharepoint.com/sites/communicationbrand,40,0,
+2040,Level 2,TRUE,Internal Communication,https://alfalavalonline.sharepoint.com/sites/communicationbrand/internalcommunications,41,2031,Communication & Brand
+2036,Level 2,TRUE,External Communication,https://alfalavalonline.sharepoint.com/sites/communicationbrand//SitePages/Communication.aspx,42,2031,Communication & Brand
+2122,Level 3,TRUE,Here magazine,https://alfalavalonline.sharepoint.com/sites/communicationbrand/SitePages/Here-magazine.aspx,43,2036,External Communication
+2078,Level 3,TRUE,Public Relations - PR,https://alfalavalonline.sharepoint.com/sites/communicationbrand/SitePages/Public Relations - PR.aspx,44,2036,External Communication
+2079,Level 3,TRUE,Social Media,https://alfalavalonline.sharepoint.com/sites/communicationbrand/SitePages/Social-Media.aspx,45,2036,External Communication
+2037,Level 2,TRUE,Brand identity,https://alfalavalonline.sharepoint.com/sites/communicationbrand/SitePages/Brand identity.aspx,46,2031,Communication & Brand
+2164,Level 3,TRUE,Updated brand identity guidelines,https://alfalavalonline.sharepoint.com/sites/communicationbrand/SitePages/Brand-identity-guidelines.aspx,47,2037,Brand identity
+2080,Level 3,TRUE,Alfa Laval brand mark,https://alfalavalonline.sharepoint.com/sites/communicationbrand/SitePages/Alfa Laval brand mark.aspx,48,2037,Brand identity
+2081,Level 3,TRUE,Artwork templates,https://alfalavalonline.sharepoint.com/sites/communicationbrand/SitePages/Artwork templates.aspx,49,2037,Brand identity
+2082,Level 3,TRUE,Channel partner guidelines,https://alfalavalonline.sharepoint.com/sites/communicationbrand/SitePages/Channel partner communication guidelines.aspx,50,2037,Brand identity
+2083,Level 3,TRUE,Communication guidelines,https://alfalavalonline.sharepoint.com/sites/communicationbrand/SitePages/Communication guidelines.aspx,51,2037,Brand identity
+2084,Level 3,TRUE,Office templates,/sites/aboutalfalaval/SitePages/Office templates.aspx,52,2037,Brand identity
+2085,Level 3,TRUE,Packaging guidelines,https://alfalavalonline.sharepoint.com/sites/communicationbrand/SitePages/Packaging guidelines.aspx,53,2037,Brand identity
+2086,Level 3,TRUE,Product marking guidelines,https://alfalavalonline.sharepoint.com/sites/communicationbrand/SitePages/Product marking guidelines.aspx,54,2037,Brand identity
+2087,Level 3,TRUE,Service vehicle signage guidelines,https://alfalavalonline.sharepoint.com/sites/communicationbrand/SitePages/Service vehicle signage guidelines.aspx,55,2037,Brand identity
+2088,Level 3,TRUE,Sign guidelines,https://alfalavalonline.sharepoint.com/sites/communicationbrand/SitePages/Sign guidelines.aspx,56,2037,Brand identity
+2089,Level 3,TRUE,Stationary guidelines,https://alfalavalonline.sharepoint.com/sites/communicationbrand/SitePages/Stationary guidelines.aspx,57,2037,Brand identity
+2039,Level 2,TRUE,"Events, Exhibitions & Meetings","https://alfalavalonline.sharepoint.com/sites/communicationbrand/SitePages/Events,%20Exhibitions%20&%20Meetings.aspx",58,2031,Communication & Brand
+2091,Level 3,TRUE,Registration form,https://alfalavalonline.sharepoint.com/sites/communicationbrand/Lists/Exhibition_and_event_schedule/newform.aspx,59,2039,"Events, Exhibitions & Meetings"
+2092,Level 3,TRUE,Exhibition and event schedule,https://alfalavalonline.sharepoint.com/sites/communicationbrand/Lists/Exhibition_and_event_schedule/AllItems.aspx,60,2039,"Events, Exhibitions & Meetings"
+2093,Level 3,TRUE,Exhibition policy,https://alfalavalonline.sharepoint.com/sites/communicationbrand/SitePages/Exhibition policy.aspx,61,2039,"Events, Exhibitions & Meetings"
+2094,Level 3,TRUE,Exhibition guidelines,https://alfalavalonline.sharepoint.com/sites/communicationbrand/SitePages/Exhibition guidelines.aspx,62,2039,"Events, Exhibitions & Meetings"
+2095,Level 3,TRUE,Exhibition concept and elements,https://alfalavalonline.sharepoint.com/sites/communicationbrand/SitePages/Exhibition concept and elements.aspx,63,2039,"Events, Exhibitions & Meetings"
+2096,Level 3,TRUE,Questions and Answers,https://alfalavalonline.sharepoint.com/sites/communicationbrand/SitePages/Questions and Answers.aspx,64,2039,"Events, Exhibitions & Meetings"
+2032,Level 1,TRUE,How We Work,https://alfalavalonline.sharepoint.com/sites/HWW,65,0,

@@ -1,0 +1,15 @@
+{
+    "$schema": "schema.json",
+    "actions": [
+      {
+        "verb": "associateExtension",
+        "title": "Share Portal CLC Extensions",
+        "location": "ClientSideExtension.ApplicationCustomizer",
+        "clientSideComponentId": "fcbed7f6-ce9b-4815-8748-8e3bbb5a46b5",
+        "clientSideComponentProperties":"{\"ConfigSiteUrl\":\"/sites/AdminPortal\"}",
+        "scope": "Site"
+      }
+    ],
+    "bindata": {},
+    "version": 1
+  }

@@ -1,0 +1,239 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.10.1906.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-0887CAD8B6F441AAAE44B3F0311656C9">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-0887CAD8B6F441AAAE44B3F0311656C9" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:SiteFields>
+        
+        <Field Type="Number" DisplayName="CLC Second Notification" Description="Number of days after first notification was sent" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Min="0" Max="365" Decimals="0" Group="AlfaLaval" ID="{6a962776-f345-4b2d-821c-e0799357c70d}" SourceID="{2983a6cd-4b3e-4820-8f47-3b6ec718180b}" StaticName="ALFA_ADM_SecondNotificationDays" Name="ALFA_ADM_SecondNotificationDays" CustomFormatter="" Percentage="FALSE">
+          <Default>14</Default>
+        </Field>
+        <Field Type="Number" DisplayName="CLC Third Notification" Description="Number of days after second notification was sent" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Min="0" Max="365" Decimals="0" Group="AlfaLaval" ID="{af563b05-b194-4b42-8025-f4ceb45ffba1}" SourceID="{2983a6cd-4b3e-4820-8f47-3b6ec718180b}" StaticName="ALFA_ADM_ThirdNotificationDays" Name="ALFA_ADM_ThirdNotificationDays" CustomFormatter="" Percentage="FALSE">
+          <Default>14</Default>
+        </Field>
+        <Field Type="Number" DisplayName="CLC Unpublish" Required="FALSE" Description="Number of days after third notification was sent to unpublish the pages" EnforceUniqueValues="FALSE"  Min="0" Max="365" Decimals="0" Indexed="FALSE" Group="AlfaLaval" ID="{fa4b3921-a31c-4aff-b0dc-026e0f2877a5}" SourceID="{2983a6cd-4b3e-4820-8f47-3b6ec718180b}" StaticName="ALFA_ADM_Unpublish" Name="ALFA_ADM_Unpublish" CustomFormatter="" Percentage="FALSE">
+          <Default>14</Default>
+        </Field>
+        <Field Type="Boolean" DisplayName="CLC Needed" EnforceUniqueValues="FALSE" Indexed="FALSE" Group="AlfaLaval" ID="{02ce25ac-4793-4d2e-996a-e0ef12b0bc2e}" SourceID="{2983a6cd-4b3e-4820-8f47-3b6ec718180b}" StaticName="ALFA_ADM_CLC_Needed" Name="ALFA_ADM_CLC_Needed" CustomFormatter="" Required="FALSE">
+          <Default>1</Default>
+        </Field>
+        <Field Type="URL" DisplayName="Site URL" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Hyperlink" Group="AlfaLaval" ID="{0ba188e8-50dc-46fe-94f5-9ce0131bcefc}" SourceID="{2983a6cd-4b3e-4820-8f47-3b6ec718180b}" StaticName="ALFA_ADM_SiteUrl" Name="ALFA_ADM_SiteUrl" CustomFormatter="">
+        </Field>
+        <Field Type="Number" DisplayName="CLC First Notification" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Min="0" Max="365" Decimals="0" Group="AlfaLaval" ID="{93ef29ee-f3e5-4f01-9d7c-201afd06751d}" SourceID="{2983a6cd-4b3e-4820-8f47-3b6ec718180b}" StaticName="ALFA_ADM_FirstNotificationDays" Name="ALFA_ADM_FirstNotificationDays" CustomFormatter="" Percentage="FALSE" Description="Number of days after last modification">
+          <Default>182</Default>
+        </Field>
+        <Field Type="Text" DisplayName="E-Mail Subject" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="AlfaLaval Admin" ID="{5ee5933a-3b6d-43da-8fef-b78329c4a39f}" SourceID="{6d196f7f-4f27-4ee2-ad79-e94164f4c3d1}" StaticName="ALFA_ADM_EMailSubject" Name="ALFA_ADM_EMailSubject" CustomFormatter="">
+        </Field>
+        <Field Type="HTML" DisplayName="E-Mail Body" RichText="TRUE" RichTextMode="ThemeHtml" Required="FALSE" Group="AlfaLaval Admin" ID="{07d1c558-1135-4854-a56f-c85839ae6d04}" SourceID="{6d196f7f-4f27-4ee2-ad79-e94164f4c3d1}" StaticName="ALFA_ADM_EMailBody" Name="ALFA_ADM_EMailBody" />
+        <Field Type="Choice" DisplayName="E-Mail Type" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" Group="AlfaLaval Admin" ID="{367f7bf5-fc38-4cde-96f1-a15459c344f8}" SourceID="{6d196f7f-4f27-4ee2-ad79-e94164f4c3d1}" StaticName="ALFA_ADM_EMailType" Name="ALFA_ADM_EMailType" CustomFormatter="">
+          <Default>Page First reminder</Default>
+          <CHOICES>
+            <CHOICE>Page First reminder</CHOICE>
+            <CHOICE>Page Second reminder</CHOICE>
+            <CHOICE>Page Third reminder</CHOICE>
+            <CHOICE>Page Unpublished</CHOICE>
+            <CHOICE>Site Owner Consolidated Email</CHOICE>
+          </CHOICES>
+        </Field>
+      </pnp:SiteFields>
+      <pnp:ContentTypes>
+        <pnp:ContentType ID="0x010008FA1F1AA9F1824F85B5AB36803B1709" Name="CLC Site" Description="" Group="AlfaLaval" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="0ba188e8-50dc-46fe-94f5-9ce0131bcefc" Name="ALFA_ADM_SiteUrl" Required="true" UpdateChildren="false" />
+            <pnp:FieldRef ID="02ce25ac-4793-4d2e-996a-e0ef12b0bc2e" Name="ALFA_ADM_CLC_Needed" UpdateChildren="false" />
+            <pnp:FieldRef ID="93ef29ee-f3e5-4f01-9d7c-201afd06751d" Name="ALFA_ADM_FirstNotificationDays" Required="true" UpdateChildren="false" />
+            <pnp:FieldRef ID="6a962776-f345-4b2d-821c-e0799357c70d" Name="ALFA_ADM_SecondNotificationDays" Required="true" UpdateChildren="false" />
+            <pnp:FieldRef ID="af563b05-b194-4b42-8025-f4ceb45ffba1" Name="ALFA_ADM_ThirdNotificationDays" Required="true" UpdateChildren="false" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Hidden="true" UpdateChildren="false" />
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" UpdateChildren="false" />
+            <pnp:FieldRef ID="fa4b3921-a31c-4aff-b0dc-026e0f2877a5" Name="ALFA_ADM_Unpublish" UpdateChildren="true" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x01006A0C23C8EEC62849AF65197A50821EE6" Name="E-Mail template" Description="" Group="AlfaLaval Admin" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" UpdateChildren="false" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" UpdateChildren="false" />
+            <pnp:FieldRef ID="367f7bf5-fc38-4cde-96f1-a15459c344f8" Name="ALFA_ADM_EMailType" UpdateChildren="false" />
+            <pnp:FieldRef ID="5ee5933a-3b6d-43da-8fef-b78329c4a39f" Name="ALFA_ADM_EMailSubject" Required="true" UpdateChildren="false" />
+            <pnp:FieldRef ID="07d1c558-1135-4854-a56f-c85839ae6d04" Name="ALFA_ADM_EMailBody" Required="true" UpdateChildren="false" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+      </pnp:ContentTypes>
+      <pnp:Lists>
+        <pnp:ListInstance Title="CLC Inclusion List" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/CLCInclusionList" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/CLCInclusionList/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/CLCInclusionList/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/CLCInclusionList/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x010008FA1F1AA9F1824F85B5AB36803B1709" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{10C1E5E1-B520-49A1-B092-025795219DEB}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/CLCInclusionList/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="ALFA_ADM_SiteUrl" />
+                <FieldRef Name="ALFA_ADM_CLC_Needed" />
+                <FieldRef Name="ALFA_ADM_FirstNotificationDays" />
+                <FieldRef Name="ALFA_ADM_SecondNotificationDays" />
+                <FieldRef Name="ALFA_ADM_ThirdNotificationDays" />
+                <FieldRef Name="ALFA_ADM_Unpublish" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="0ba188e8-50dc-46fe-94f5-9ce0131bcefc" Name="ALFA_ADM_SiteUrl" DisplayName="Site URL" />
+            <pnp:FieldRef ID="02ce25ac-4793-4d2e-996a-e0ef12b0bc2e" Name="ALFA_ADM_CLC_Needed" DisplayName="CLC Needed" />
+            <pnp:FieldRef ID="93ef29ee-f3e5-4f01-9d7c-201afd06751d" Name="ALFA_ADM_FirstNotificationDays" DisplayName="CLC First Notification" />
+            <pnp:FieldRef ID="6a962776-f345-4b2d-821c-e0799357c70d" Name="ALFA_ADM_SecondNotificationDays" DisplayName="CLC Second Notification" />
+            <pnp:FieldRef ID="af563b05-b194-4b42-8025-f4ceb45ffba1" Name="ALFA_ADM_ThirdNotificationDays" DisplayName="CLC Third Notification" />
+            <pnp:FieldRef ID="fa4b3921-a31c-4aff-b0dc-026e0f2877a5" Name="ALFA_ADM_Unpublish" DisplayName="CLC Unpublish" />
+          </pnp:FieldRefs>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://10-northeurope1.pushp.svc.ms/notifications?token=w1-9c08d4d3-8277-42eb-be35-528d2cdc290b" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="E-Mail Templates" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/EMailTemplates" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableAttachments="false" EnableFolderCreation="false" NoCrawl="true" DefaultDisplayFormUrl="{site}/Lists/EMailTemplates/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/EMailTemplates/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/EMailTemplates/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01006A0C23C8EEC62849AF65197A50821EE6" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{4AC19334-2379-4AD1-9093-249B0894CE4C}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/EMailTemplates/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitleNoMenu" />
+                <FieldRef Name="ALFA_ADM_EMailType" />
+                <FieldRef Name="ALFA_ADM_EMailSubject" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="367f7bf5-fc38-4cde-96f1-a15459c344f8" Name="ALFA_ADM_EMailType" DisplayName="E-Mail Type" />
+            <pnp:FieldRef ID="5ee5933a-3b6d-43da-8fef-b78329c4a39f" Name="ALFA_ADM_EMailSubject" DisplayName="E-Mail Subject" />
+            <pnp:FieldRef ID="07d1c558-1135-4854-a56f-c85839ae6d04" Name="ALFA_ADM_EMailBody" DisplayName="E-Mail Body" />
+          </pnp:FieldRefs>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://9-westeurope1.pushp.svc.ms/notifications?token=w2-27209d0d-ec32-44e0-91fe-df2b75672c7c" ExpiresInDays="1" />
+            <pnp:Webhook ServerNotificationUrl="https://0-westeurope1.pushp.svc.ms/notifications?token=w2-60230d3d-dbbb-4c1b-bcda-980ca94463d8" ExpiresInDays="1" />
+            <pnp:Webhook ServerNotificationUrl="https://0-westeurope1.pushp.svc.ms/notifications?token=w0-ea0481ba-b8a3-423f-a5e9-a0bbb1801e30" ExpiresInDays="1" />
+            <pnp:Webhook ServerNotificationUrl="https://0-westeurope1.pushp.svc.ms/notifications?token=w2-dfbf1417-bad9-4fc2-bd9f-f8276abcd70b" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Portal site prefix" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/Portal site prefix" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Portal site prefix/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Portal site prefix/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Portal site prefix/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{934DC646-35AA-4D45-AEEA-7EEF883B733A}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Portal site prefix/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Prefix" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field DisplayName="Prefix" Format="Dropdown" MaxLength="255" Name="Prefix" Title="Prefix" Type="Text" ID="{99820443-1336-46e9-bf57-b470ad246a07}" SourceID="{{listid:Portal site prefix}}" StaticName="Prefix" ColName="nvarchar4" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://23-westeurope1.pushp.svc.ms/notifications?token=w1-9da05aab-6280-44a6-9df5-61c9342bf39e" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="CLC Email Exclusion List" Description="List contains people need to be excluded from receiving CLC Site Owners consolidated emails" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/CLC Email Exclusion List" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableAttachments="false" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/CLC Email Exclusion List/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/CLC Email Exclusion List/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/CLC Email Exclusion List/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{E6626638-E46B-4E33-8A02-9C1BE9DC388B}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/CLC Email Exclusion List/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="ALFA_ADM_CLCExcludedPerson" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter />
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="User" DisplayName="Excluded Person" List="UserInfo" Required="TRUE" EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{5b0e2533-8c10-4b48-b074-c6c54f232ae6}" SourceID="{{listid:CLC Email Exclusion List}}" StaticName="ALFA_ADM_CLCExcludedPerson" Name="ALFA_ADM_CLCExcludedPerson" ColName="int2" RowOrdinal="0" Group="" Version="1" />
+          </pnp:Fields>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://centralindia0.pushnp.svc.ms/notifications?token=aacdb13e-d831-4121-b422-12d839328246" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="PortalSites" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/PortalSites" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/PortalSites/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/PortalSites/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/PortalSites/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:PropertyBagEntries>
+            <pnp:PropertyBagEntry Key="wte_Source" Value="https://alfalavalonline.sharepoint.com/sites/AdminPortal/Lists/CLCInclusionList/AllItems.aspx" Overwrite="false" />
+          </pnp:PropertyBagEntries>
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x010008FA1F1AA9F1824F85B5AB36803B1709" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{D305DE0A-87ED-4FA1-B56E-9148E249C606}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/PortalSites/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="ALFA_ADM_SiteUrl" />
+                <FieldRef Name="ALFA_ADM_CLC_Needed" />
+                <FieldRef Name="SiteID" />
+                <FieldRef Name="SiteTitle" />
+                <FieldRef Name="Stite" />
+                <FieldRef Name="WebID" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter />
+              <ColumnWidth>
+                <FieldRef Name="Site URL" width="480" />
+                <FieldRef Name="CLC Needed" width="136" />
+                <FieldRef Name="CLC First Notification" width="185" />
+                <FieldRef Name="CLC Second Notification" width="183" />
+                <FieldRef Name="CLC Third Notification" width="172" />
+              </ColumnWidth>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field DisplayName="SiteID" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="SiteID" Title="SiteID" Type="Text" ID="{f7876ce2-b06e-4712-846b-f0226d6906c1}" SourceID="{{listid:PortalSites}}" StaticName="SiteID" ColName="nvarchar6" RowOrdinal="0" />
+            <Field DisplayName="SiteTitle" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="SiteTitle" Title="SiteTitle" Type="Text" ID="{de86d649-4379-4ea6-9653-d88b1a7ea205}" SourceID="{{listid:PortalSites}}" StaticName="SiteTitle" ColName="nvarchar7" RowOrdinal="0" />
+            <Field DisplayName="Stite" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="Stite" Title="Stite" Type="Text" ID="{c74cbe61-b065-4f58-818c-fb1e10915ef5}" SourceID="{{listid:PortalSites}}" StaticName="Stite" ColName="nvarchar8" RowOrdinal="0" />
+            <Field DisplayName="WebID" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="WebID" Title="WebID" Type="Text" ID="{6109835c-1357-4cc6-a820-143310ffc836}" SourceID="{{listid:PortalSites}}" StaticName="WebID" ColName="nvarchar9" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="0ba188e8-50dc-46fe-94f5-9ce0131bcefc" Name="ALFA_ADM_SiteUrl" DisplayName="Site URL" />
+            <pnp:FieldRef ID="02ce25ac-4793-4d2e-996a-e0ef12b0bc2e" Name="ALFA_ADM_CLC_Needed" DisplayName="CLC Needed" />
+            <pnp:FieldRef ID="93ef29ee-f3e5-4f01-9d7c-201afd06751d" Name="ALFA_ADM_FirstNotificationDays" DisplayName="CLC First Notification" />
+            <pnp:FieldRef ID="6a962776-f345-4b2d-821c-e0799357c70d" Name="ALFA_ADM_SecondNotificationDays" DisplayName="CLC Second Notification" />
+            <pnp:FieldRef ID="cf7fb9d4-0b7e-45e1-a232-2db2f28eacfd" Name="ALFA_ADM_ThirdNotificationDays" DisplayName="CLC Third Notification" />
+            <pnp:FieldRef ID="fa4b3921-a31c-4aff-b0dc-026e0f2877a5" Name="ALFA_ADM_Unpublish" DisplayName="CLC Unpublish" />
+          </pnp:FieldRefs>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://flow-apim-europe-001-francecentral-01.azure-apim.net/apim/sharepointonline/ontableupdatedhook?r=https%253a%252f%252fprod-41.westeurope.logic.azure.com%252fworkflows%252f484cd44589b34c57b13d881368942910%252ftriggers%252fWhen_an_item_is_created%252fpaths%252finvoke%253fapi-version%253d2016-06-01%2526sp%253d%25252Ftriggers%25252FWhen_an_item_is_created%25252Frun%25252C%25252Ftriggers%25252FWhen_an_item_is_created%25252Fread%2526sv%253d1.0%2526sig%253dZlWWi4_IEQRTTuYIUSaSk_PRjTysW5tzMNxXdK7diEs" ExpiresInDays="2" />
+            <pnp:Webhook ServerNotificationUrl="https://northeurope0.pushnp.svc.ms/notifications?token=6f07be0f-9e9d-4257-8f50-1069e1b78c95" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+      </pnp:Lists>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

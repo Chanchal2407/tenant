@@ -1,0 +1,81 @@
+# PowerShell Function App to Windows on Azure
+# Build a PowerShell Function App and deploy it to Azure as a Windows function app.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-powershell
+trigger:
+  branches:
+    include:
+    - none
+variables:
+  # Azure Resource Manager connection created during pipeline creation
+  azureSubscription: 'Visual Studio Enterprise Subscription(e60bcc2d-eb26-4ac9-86cf-406fcc666ff8)'
+  # Pre prod Function app name
+  preProdFunctionAppName: 'dev-externaltoggler-function-app'
+  # Prod Function app name
+  # prodFunctionAppName: 'dev-test-function-app'
+  # Agent VM image name
+  vmImageName: 'windows-2019'
+  # Working Directory
+  workingDirectory: '$(Build.SourcesDirectory)'
+stages:
+- stage: Build
+  displayName: Build stage
+  condition: eq(variables['Build.SourceBranch'], 'refs/heads/Dev')
+  jobs:
+  - job: Build
+    displayName: Build
+    pool:
+      vmImage: $(vmImageName)
+    steps:
+    - task: ArchiveFiles@2
+      displayName: 'Archive files'
+      inputs:
+        rootFolderOrFile: $(workingDirectory)
+        includeRootFolder: false
+        archiveType: zip
+        archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+        replaceExistingArchive: true
+    - publish: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+      artifact: drop
+- stage: Deploy_to_PreProd
+  displayName: Deploy To PreProd
+  dependsOn: Build
+  condition: succeeded()
+  jobs:
+  - deployment: DeployToPreProd
+    displayName: Deploy To PreProd
+    environment: PreProd
+    pool:
+      vmImage: '$(vmImageName)'
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - task: AzureFunctionApp@1
+            displayName: 'Azure functions app deploy'
+            inputs:
+              azureSubscription: '$(azureSubscription)'
+              appType: 'functionApp'
+              appName: '$(preProdFunctionAppName)'
+              package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
+# - stage: Deploy_to_Production
+#   displayName: Deploy To Production
+#   dependsOn: Build
+#   condition: succeeded()
+#   jobs:
+#   - deployment: DeployToProduction
+#     displayName: Deploy To Production
+#     environment: Internal-and-Leadership-Communication Production
+#     pool:
+#       vmImage: '$(vmImageName)'
+#     strategy:
+#       runOnce:
+#         deploy:
+#           steps:
+#           - task: AzureFunctionApp@1
+#             displayName: 'Azure functions app deploy'
+#             inputs:
+#               azureSubscription: '$(azureSubscription)'
+#               appType: 'functionApp'
+#               appName: '$(prodFunctionAppName)'
+#               package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'

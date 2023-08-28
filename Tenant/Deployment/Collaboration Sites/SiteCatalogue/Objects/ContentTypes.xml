@@ -1,0 +1,74 @@
+ <pnp:ContentTypes xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema">
+       <pnp:ContentType ID="0x0100E4D7DDB5A27749089422751FF2C0CDC3" Name="Top Level Site Element" Description="Create a new list item." Group="AlfaLaval Site Catalogue Content Types" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x0100E4D7DDB5A27749089422751FF2C0CDC302" Name="Alfalaval Online Root Content Type" Description="Create a new list item." Group="AlfaLaval Site Catalogue Content Types" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" />
+            <pnp:FieldRef ID="0cedaa12-9d11-45d9-8847-8a88fa282ec4" Name="{parameter:GenericFieldsPrefix}ProjectDescription" Required="true" />
+            <pnp:FieldRef ID="c5d84c7b-8fed-4823-9e00-4077770b4f51" Name="{parameter:GenericFieldsPrefix}SiteOwners" Required="true" />
+            <pnp:FieldRef ID="7d6e9eb3-6120-4f7c-b462-d8b068773769" Name="{parameter:GenericFieldsPrefix}SiteURL" />
+            <pnp:FieldRef ID="465ba4e9-aa5d-480f-b83a-2be27f472bea" Name="{parameter:GenericFieldsPrefix}SiteStatus" />
+            <pnp:FieldRef ID="bc3e0ac1-3aab-4e22-a6e3-89385cd7b353" Name="{parameter:GenericFieldsPrefix}Compliant" />
+            <pnp:FieldRef ID="3db864ea-0134-4024-bb5f-22d7d4cd1123" Name="{parameter:GenericFieldsPrefix}Comment" />
+            <pnp:FieldRef ID="7d3a4cb8-31a9-44b2-8c1e-bed15c9f0d8e" Name="{parameter:GenericFieldsPrefix}AccessLevel" />
+            <pnp:FieldRef ID="571fab00-bdfd-43fa-bac0-82fed9647844" Name="{parameter:GenericFieldsPrefix}InformationClassification" />
+            <pnp:FieldRef ID="dd24580f-ed10-46b9-89ff-9e0ff3aed672" Name="bc3223b6d50f417796d40d354a373d3c" Hidden="true" />
+            <pnp:FieldRef ID="f3b0adf9-c1a2-4b02-920d-943fba4b3611" Name="TaxCatchAll" Hidden="true" />
+            <pnp:FieldRef ID="8f6b6dd8-9357-4019-8172-966fcd502ed2" Name="TaxCatchAllLabel" Hidden="true" />
+            <pnp:FieldRef ID="bc3223b6-d50f-4177-96d4-0d354a373d3c" Name="{parameter:GenericFieldsPrefix}Organization" />
+            <pnp:FieldRef ID="98259539-f47c-4e90-9533-bb4693a73aea" Name="{parameter:GenericFieldsPrefix}SiteEditor" />
+            <pnp:FieldRef ID="53c5e6a0-3d40-45b2-835b-e37777b58aff" Name="{parameter:GenericFieldsPrefix}Category" />
+            <pnp:FieldRef ID="7b351bfb-904b-446d-9aa1-fcb63a8a1cd0" Name="{parameter:GenericFieldsPrefix}CreateTeams" />
+            <pnp:FieldRef ID="65841A11-8C10-4913-8234-7C25DCF1FCAA" Name="{parameter:GenericFieldsPrefix}SiteType" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x0100E4D7DDB5A27749089422751FF2C0CDC30201" Name="Collaboration site" Description="This is content type used for creating Alfalaval Collaboration site" Group="AlfaLaval Site Catalogue Content Types" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" />
+            <pnp:FieldRef ID="0cedaa12-9d11-45d9-8847-8a88fa282ec4" Name="{parameter:GenericFieldsPrefix}ProjectDescription" Required="true" />
+            <pnp:FieldRef ID="c5d84c7b-8fed-4823-9e00-4077770b4f51" Name="{parameter:GenericFieldsPrefix}SiteOwners" Required="true" />
+            <pnp:FieldRef ID="98259539-f47c-4e90-9533-bb4693a73aea" Name="{parameter:GenericFieldsPrefix}SiteEditor" Required="true" />
+            <pnp:FieldRef ID="7d6e9eb3-6120-4f7c-b462-d8b068773769" Name="{parameter:GenericFieldsPrefix}SiteURL" />
+            <pnp:FieldRef ID="465ba4e9-aa5d-480f-b83a-2be27f472bea" Name="{parameter:GenericFieldsPrefix}SiteStatus" />
+            <pnp:FieldRef ID="bc3e0ac1-3aab-4e22-a6e3-89385cd7b353" Name="{parameter:GenericFieldsPrefix}Compliant" />
+            <pnp:FieldRef ID="3db864ea-0134-4024-bb5f-22d7d4cd1123" Name="{parameter:GenericFieldsPrefix}Comment" />
+            <pnp:FieldRef ID="7d3a4cb8-31a9-44b2-8c1e-bed15c9f0d8e" Name="{parameter:GenericFieldsPrefix}AccessLevel" />
+            <pnp:FieldRef ID="571fab00-bdfd-43fa-bac0-82fed9647844" Name="{parameter:GenericFieldsPrefix}InformationClassification" />
+            <pnp:FieldRef ID="dd24580f-ed10-46b9-89ff-9e0ff3aed672" Name="bc3223b6d50f417796d40d354a373d3c" Hidden="true" />
+            <pnp:FieldRef ID="f3b0adf9-c1a2-4b02-920d-943fba4b3611" Name="TaxCatchAll" Hidden="true" />
+            <pnp:FieldRef ID="8f6b6dd8-9357-4019-8172-966fcd502ed2" Name="TaxCatchAllLabel" Hidden="true" />
+            <pnp:FieldRef ID="bc3223b6-d50f-4177-96d4-0d354a373d3c" Name="{parameter:GenericFieldsPrefix}Organization" />
+            <pnp:FieldRef ID="53c5e6a0-3d40-45b2-835b-e37777b58aff" Name="{parameter:GenericFieldsPrefix}Category" />
+            <pnp:FieldRef ID="7b351bfb-904b-446d-9aa1-fcb63a8a1cd0" Name="{parameter:GenericFieldsPrefix}CreateTeams" />
+            <pnp:FieldRef ID="65841A11-8C10-4913-8234-7C25DCF1FCAA" Name="{parameter:GenericFieldsPrefix}SiteType" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x0100E4D7DDB5A27749089422751FF2C0CDC30202" Name="Project Site" Description="This content type is used to create Alfalaval project site" Group="AlfaLaval Site Catalogue Content Types" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" />
+            <pnp:FieldRef ID="0cedaa12-9d11-45d9-8847-8a88fa282ec4" Name="{parameter:GenericFieldsPrefix}ProjectDescription" Required="true" />
+            <pnp:FieldRef ID="c5d84c7b-8fed-4823-9e00-4077770b4f51" Name="{parameter:GenericFieldsPrefix}SiteOwners" Required="true" />
+            <pnp:FieldRef ID="98259539-f47c-4e90-9533-bb4693a73aea" Name="{parameter:GenericFieldsPrefix}SiteEditor" Required="true"/>
+            <pnp:FieldRef ID="7d6e9eb3-6120-4f7c-b462-d8b068773769" Name="{parameter:GenericFieldsPrefix}SiteURL" />
+            <pnp:FieldRef ID="465ba4e9-aa5d-480f-b83a-2be27f472bea" Name="{parameter:GenericFieldsPrefix}SiteStatus" />
+            <pnp:FieldRef ID="bc3e0ac1-3aab-4e22-a6e3-89385cd7b353" Name="{parameter:GenericFieldsPrefix}Compliant" />
+            <pnp:FieldRef ID="3db864ea-0134-4024-bb5f-22d7d4cd1123" Name="{parameter:GenericFieldsPrefix}Comment" />
+            <pnp:FieldRef ID="7d3a4cb8-31a9-44b2-8c1e-bed15c9f0d8e" Name="{parameter:GenericFieldsPrefix}AccessLevel" />
+            <pnp:FieldRef ID="571fab00-bdfd-43fa-bac0-82fed9647844" Name="{parameter:GenericFieldsPrefix}InformationClassification" />
+            <pnp:FieldRef ID="dd24580f-ed10-46b9-89ff-9e0ff3aed672" Name="bc3223b6d50f417796d40d354a373d3c" Hidden="true" />
+            <pnp:FieldRef ID="f3b0adf9-c1a2-4b02-920d-943fba4b3611" Name="TaxCatchAll" Hidden="true" />
+            <pnp:FieldRef ID="8f6b6dd8-9357-4019-8172-966fcd502ed2" Name="TaxCatchAllLabel" Hidden="true" />
+            <pnp:FieldRef ID="bc3223b6-d50f-4177-96d4-0d354a373d3c" Name="{parameter:GenericFieldsPrefix}Organization" />
+            <pnp:FieldRef ID="53c5e6a0-3d40-45b2-835b-e37777b58aff" Name="{parameter:GenericFieldsPrefix}Category" />
+            <pnp:FieldRef ID="7b351bfb-904b-446d-9aa1-fcb63a8a1cd0" Name="{parameter:GenericFieldsPrefix}CreateTeams" />
+            <pnp:FieldRef ID="65841A11-8C10-4913-8234-7C25DCF1FCAA" Name="{parameter:GenericFieldsPrefix}SiteType" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+      </pnp:ContentTypes>

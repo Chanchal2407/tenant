@@ -1,0 +1,11 @@
+{
+    "$schema": "schema.json",
+    "actions": [
+        {
+            "verb": "joinHubSite",
+            "hubSiteId": "89695e7f-efd4-4400-aa86-e62e4ead4818"
+        }
+    ],
+    "bindata": {},
+    "version": 1
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.22.2006.2, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-48C920E314A24E92A42E52248E44298B">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-48C920E314A24E92A42E52248E44298B" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:Lists>
+        <pnp:ListInstance Title="Apps for Authentication" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Apps for Authentication" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Apps for Authentication/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Apps for Authentication/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Apps for Authentication/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{09331DA2-3DD5-47C6-B659-5B686D398763}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Apps for Authentication/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="AppID" />
+                <FieldRef Name="AppSecret" />
+                <FieldRef Name="StartDate" />
+                <FieldRef Name="ExpiryDate" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" DisplayName="App ID" Format="Dropdown" MaxLength="255" Name="AppID" Title="App ID" Type="Text" ID="{4bac12fa-811a-49b0-9ecb-c7cb21eb23e5}" Version="2" StaticName="AppID" SourceID="{{listid:Apps for Authentication}}" ColName="nvarchar4" RowOrdinal="0" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" DisplayName="App Secret" Format="Dropdown" MaxLength="255" Name="AppSecret" Title="App Secret" Type="Text" ID="{816cef1b-49b1-4822-98bf-ccfe2176dc9c}" Version="2" StaticName="AppSecret" SourceID="{{listid:Apps for Authentication}}" ColName="nvarchar5" RowOrdinal="0" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" DisplayName="Start Date" FriendlyDisplayFormat="Disabled" Format="DateOnly" Name="StartDate" Title="Start Date" Type="DateTime" ID="{ed7603b4-0206-4069-978f-c112d77ec490}" Version="2" StaticName="StartDate" SourceID="{{listid:Apps for Authentication}}" ColName="datetime1" RowOrdinal="0" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" DisplayName="Expiry Date" FriendlyDisplayFormat="Disabled" Format="DateOnly" Name="ExpiryDate" Title="Expiry Date" Type="DateTime" ID="{aa50fc9d-bff3-4784-bdef-6724c507d145}" Version="2" StaticName="ExpiryDate" SourceID="{{listid:Apps for Authentication}}" ColName="datetime2" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://1-southindia1.pushp.svc.ms/notifications?token=w1-67e3b429-9e61-427b-898b-0067a69901c3" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+      </pnp:Lists>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

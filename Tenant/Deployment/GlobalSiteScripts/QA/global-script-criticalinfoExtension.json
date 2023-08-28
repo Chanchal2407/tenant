@@ -1,0 +1,15 @@
+{
+    "$schema": "schema.json",
+    "actions": [
+      {
+        "verb": "associateExtension",
+        "title": "Critical Information Extension-qa",
+        "location": "ClientSideExtension.ApplicationCustomizer",
+        "clientSideComponentId": "63b3de04-5937-4a4a-80cd-96d95befa5b5",
+        "clientSideComponentProperties":"{\"AlertSiteUrl\":\"/sites/ShareQA\"}",
+        "scope": "Site"
+      }
+    ],
+    "bindata": {},
+    "version": 1
+  }
